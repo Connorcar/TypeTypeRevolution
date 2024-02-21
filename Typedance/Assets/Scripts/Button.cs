@@ -23,7 +23,7 @@ public class Button : MonoBehaviour
 
     public Canvas MainMenu;
     public Canvas Options;
-    public GameObject OptionsBackground;
+    public GameObject CountDownBackground;
     public AudioSource goSound;
 
     private GameObject PlayButton;
@@ -35,23 +35,20 @@ public class Button : MonoBehaviour
     {
         MainMenu.GetComponent<Canvas>().enabled = true;
         Options.GetComponent<Canvas>().enabled = false;
+        CountDownBackground.SetActive(false);
         PlayButton = GameObject.Find("Button-Play");
         Countdown = GameObject.Find("Countdown");
         countdownText = Countdown.GetComponent<TextMeshProUGUI>();
         countdownText.enabled = false;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
+
 
     private IEnumerator LoadGame()
     {
         goSound.Play();
-        OptionsBackground.SetActive(false);
+        CountDownBackground.SetActive(true);
         countdownText.enabled = true;
         yield return new WaitForSeconds(0.8f);
         countdownText.text = "2";
