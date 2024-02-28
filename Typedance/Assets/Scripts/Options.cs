@@ -82,7 +82,6 @@ public class Options : MonoBehaviour
         if (gc.letter_op == 0 && gc.song_op == 0 &&
             gc.speed_op == 0 && gc.theme_op == 0)
         {
-            Debug.Log("Meow");
             CustomPanel.SetActive(false);
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[0];
             modeText.GetComponent<TextMeshProUGUI>().text = modeArr[0];

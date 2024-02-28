@@ -1241,6 +1241,12 @@ MonoBehaviour:
   letter_op: 0
   theme_op: 0
   song_op: 0
+  currentMultiplier: 1
+  multiplierTracker: 0
+  multiplierThresholds: 
+  currentScore: 0
+  scorePerGoodNote: 125
+  scorePerPerfectNote: 150
 --- !u!4 &254803868
 Transform:
   m_ObjectHideFlags: 0
@@ -6064,7 +6070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 852612440}
   Options: {fileID: 2006056259}
-  CountDownBackground: {fileID: 0}
+  CountDownBackground: {fileID: 1197733743}
   goSound: {fileID: 1375612709}
 --- !u!114 &1404966388
 MonoBehaviour:

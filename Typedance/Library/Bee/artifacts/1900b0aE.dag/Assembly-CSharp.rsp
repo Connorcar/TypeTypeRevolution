@@ -361,6 +361,7 @@
 "Assets/Scripts/GameSounds.cs"
 "Assets/Scripts/GameStuff.cs"
 "Assets/Scripts/GO.cs"
+"Assets/Scripts/HitSprites.cs"
 "Assets/Scripts/Music.cs"
 "Assets/Scripts/Options.cs"
 "Assets/Scripts/Pause.cs"

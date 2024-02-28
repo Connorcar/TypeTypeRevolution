@@ -29,7 +29,9 @@ public class Button : MonoBehaviour
     private GameObject PlayButton;
     private GameObject Countdown;
     private TextMeshProUGUI countdownText;
-    
+    private GameObject g;
+    private Game game;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -38,10 +40,10 @@ public class Button : MonoBehaviour
         CountDownBackground.SetActive(false);
         PlayButton = GameObject.Find("Button-Play");
         Countdown = GameObject.Find("Countdown");
+        g = GameObject.Find("GameController");
+        game = g.GetComponent<Game>();
         countdownText = Countdown.GetComponent<TextMeshProUGUI>();
         countdownText.enabled = false;
-
-
     }
 
 

@@ -47,6 +47,7 @@ public class ArrowSpawner : MonoBehaviour
         game.possibleHits = SongArrowNum;
         spawnTime = game.gameStuff.spawnTimes[game.speed_op];
         game.isOver = false;
+        game.GameSceneSetup();
         StartCoroutine("RepeatSpawnArrows");
     }
     
