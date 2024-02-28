@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -416,7 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -425,6 +424,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &76284650
 AudioSource:
   m_ObjectHideFlags: 0
@@ -859,10 +859,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!114 &144194273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,10 +1685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!114 &289650329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2385,10 +2383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!82 &351953340
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3499,7 +3496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -3508,6 +3504,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &510119312
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4185,10 +4182,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!82 &625249380
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5357,7 +5353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -5366,6 +5361,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &806211851
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5868,10 +5864,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!114 &853199062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6618,7 +6613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -6627,6 +6621,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &977870756
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7006,8 +7001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd9be3108a49b742b116dc367896d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenu: {fileID: 1713423020}
-  startText: {fileID: 1046905282}
+  Options: {fileID: 0}
+  startImage: {fileID: 0}
 --- !u!82 &1046905285
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7116,7 +7111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1905ad7f1a7073846aedf09beca43f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenu: {fileID: 1713423020}
+  Options: {fileID: 0}
   goSound: {fileID: 1046905285}
 --- !u!1 &1063032417
 GameObject:
@@ -7277,7 +7272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -7286,6 +7280,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &1063032423
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8676,10 +8671,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!82 &1341380156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10234,10 +10228,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!82 &1628277132
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10704,7 +10697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -10713,6 +10705,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &1658665858
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12224,10 +12217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 1713423020}
-  Tutorial: {fileID: 1830267934}
-  Tutorial1: {fileID: 313313092}
   Options: {fileID: 1161947882}
-  Songs: {fileID: 2074596154}
+  CountDownBackground: {fileID: 0}
+  goSound: {fileID: 0}
 --- !u!82 &1883493760
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12693,7 +12685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -12702,6 +12693,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &2065875470
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13272,7 +13264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CustomPanel: {fileID: 1275917104}
   PresetPanel: {fileID: 2078988574}
   presetText: {fileID: 380992324}
   ModePanel: {fileID: 1289637809}
@@ -13281,6 +13272,7 @@ MonoBehaviour:
   WLText: {fileID: 495296654}
   StylePanel: {fileID: 1918268185}
   themeText: {fileID: 747444854}
+  CustomPanel: {fileID: 1275917104}
 --- !u!82 &2085791933
 AudioSource:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ public class Button : MonoBehaviour
 
     public Canvas MainMenu;
     public Canvas Options;
+    public Canvas TrophyCase;
     public GameObject CountDownBackground;
     public AudioSource goSound;
 
@@ -33,8 +34,12 @@ public class Button : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        MainMenu.GetComponent<Canvas>().enabled = true;
-        Options.GetComponent<Canvas>().enabled = false;
+        // MainMenu.GetComponent<Canvas>().enabled = true;
+        // Options.GetComponent<Canvas>().enabled = false;
+        // TrophyCase.GetComponent<Canvas>().enabled = false;
+        enable(MainMenu.GetComponent<Canvas>());
+        disable(Options.GetComponent<Canvas>());
+        disable(TrophyCase.GetComponent<Canvas>());
         CountDownBackground.SetActive(false);
         PlayButton = GameObject.Find("Button-Play");
         Countdown = GameObject.Find("Countdown");
@@ -61,21 +66,65 @@ public class Button : MonoBehaviour
 
     public void OnPlayClick()
     {
-        MainMenu.GetComponent<Canvas>().enabled = false;
-        Options.GetComponent<Canvas>().enabled = true;
+        // MainMenu.GetComponent<Canvas>().enabled = false;
+        // Options.GetComponent<Canvas>().enabled = true;
+        disable(MainMenu.GetComponent<Canvas>());
+        enable(Options.GetComponent<Canvas>());
     }
     
     public void OnBackClick()
     {
-        if (Options.GetComponent<Canvas>().enabled)
+        // if (Options.GetComponent<Canvas>().enabled)
+        // {
+        //     Options.GetComponent<Canvas>().enabled = false;
+        //     MainMenu.GetComponent<Canvas>().enabled = true;
+        // }
+        // else if (TrophyCase.GetComponent<Canvas>().enabled)
+        // {
+        //     TrophyCase.GetComponent<Canvas>().enabled = false;
+        //     MainMenu.GetComponent<Canvas>().enabled = true;
+        // }
+        if(isEnabled(Options.GetComponent<Canvas>()))
         {
-            Options.GetComponent<Canvas>().enabled = false;
-            MainMenu.GetComponent<Canvas>().enabled = true;
+            disable(Options.GetComponent<Canvas>());
+            enable(MainMenu.GetComponent<Canvas>());
+        }
+        else if(isEnabled(TrophyCase.GetComponent<Canvas>()))
+        {
+            disable(TrophyCase.GetComponent<Canvas>());
+            enable(MainMenu.GetComponent<Canvas>());
         }
     }
 
     public void onStartClick()
     {
         StartCoroutine(LoadGame());
+    }
+
+    public void onTrophyClick()
+    {
+        // MainMenu.GetComponent<Canvas>().enabled = false;
+        // TrophyCase.GetComponent<Canvas>().enabled = true;
+        disable(MainMenu.GetComponent<Canvas>());
+        enable(TrophyCase.GetComponent<Canvas>());
+    }
+
+    public bool isEnabled(Canvas canvas)
+    {
+        return canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().alpha == 1;
+    }
+
+    public void enable(Canvas canvas)
+    {
+        canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().alpha = 1;
+        canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().interactable = true;
+        canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().blocksRaycasts = true;
+    }
+
+    public void disable(Canvas canvas)
+    {
+        canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().alpha = 0;
+        canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().interactable = false;
+        canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }
