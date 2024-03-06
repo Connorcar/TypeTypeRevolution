@@ -56,6 +56,7 @@ public class ArrowScroller : MonoBehaviour
             if (pos.position.y > 6.3)
             {
                 Destroy(this.gameObject);
+                game.NoteMiss();
                 arrowSpawner.removeArrow();
             } 
         }

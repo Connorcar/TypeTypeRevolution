@@ -18,9 +18,9 @@ using Cache = UnityEngine.Cache;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Button : MonoBehaviour
+public class Button : MonoBehaviour 
 {
-
+    
     public Canvas MainMenu;
     public Canvas Options;
     public Canvas TrophyCase;
@@ -30,6 +30,8 @@ public class Button : MonoBehaviour
     private GameObject PlayButton;
     private GameObject Countdown;
     private TextMeshProUGUI countdownText;
+    private GameObject g;
+    private Game game;
     
     // Start is called before the first frame update
     void Awake()
@@ -45,9 +47,10 @@ public class Button : MonoBehaviour
         Countdown = GameObject.Find("Countdown");
         countdownText = Countdown.GetComponent<TextMeshProUGUI>();
         countdownText.enabled = false;
-
-
+        g = GameObject.Find("GameController");
+        game = g.GetComponent<Game>();
     }
+    
 
 
     private IEnumerator LoadGame()
@@ -93,6 +96,10 @@ public class Button : MonoBehaviour
         {
             disable(TrophyCase.GetComponent<Canvas>());
             enable(MainMenu.GetComponent<Canvas>());
+        if (Options.GetComponent<Canvas>().enabled)
+        {
+            Options.GetComponent<Canvas>().enabled = false;
+            MainMenu.GetComponent<Canvas>().enabled = true;
         }
     }
 
@@ -128,3 +135,4 @@ public class Button : MonoBehaviour
         canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }
+

@@ -1472,6 +1472,12 @@ MonoBehaviour:
   achievementsPopup: {fileID: 1190150101}
   achievementIcon: {fileID: 863256098}
   achievementTitle: {fileID: 758207805}
+  currentMultiplier: 1
+  multiplierTracker: 0
+  multiplierThresholds: 
+  currentScore: 0
+  scorePerGoodNote: 125
+  scorePerPerfectNote: 150
 --- !u!4 &254803868
 Transform:
   m_ObjectHideFlags: 0
