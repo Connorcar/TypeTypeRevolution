@@ -87,15 +87,16 @@ public class Button : MonoBehaviour
         //     TrophyCase.GetComponent<Canvas>().enabled = false;
         //     MainMenu.GetComponent<Canvas>().enabled = true;
         // }
-        if(isEnabled(Options.GetComponent<Canvas>()))
+        if (isEnabled(Options.GetComponent<Canvas>()))
         {
             disable(Options.GetComponent<Canvas>());
             enable(MainMenu.GetComponent<Canvas>());
         }
-        else if(isEnabled(TrophyCase.GetComponent<Canvas>()))
+        else if (isEnabled(TrophyCase.GetComponent<Canvas>()))
         {
             disable(TrophyCase.GetComponent<Canvas>());
             enable(MainMenu.GetComponent<Canvas>());
+        }
         if (Options.GetComponent<Canvas>().enabled)
         {
             Options.GetComponent<Canvas>().enabled = false;
