@@ -33,8 +33,15 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
-            PauseGame();
-            PauseMenu.enabled = true;
+            if (PauseMenu.enabled == false)
+            {
+                PauseGame();
+                PauseMenu.enabled = true;
+            }
+            else
+            {
+                onResumeClick();
+            }
         }
     }
 
