@@ -17,6 +17,7 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public Canvas PauseMenu;
+    public Music music;
     
     private Game game;
     private GameObject gc;
@@ -26,6 +27,7 @@ public class Pause : MonoBehaviour
         PauseMenu.enabled = false;
         gc = GameObject.Find("GameController");
         game = gc.GetComponent<Game>();
+        music = GameObject.Find("Music").GetComponent<Music>();
     }
 
     // Update is called once per frame
@@ -36,25 +38,26 @@ public class Pause : MonoBehaviour
             if (PauseMenu.enabled == false)
             {
                 PauseGame();
-                PauseMenu.enabled = true;
             }
             else
             {
-                onResumeClick();
+                ResumeGame();
             }
         }
     }
 
-    public void onHomeClick()
+    private void PauseGame()
     {
-        SceneManager.LoadScene("Main");
-        Time.timeScale = 1;
+        PauseMenu.enabled = true;
+        Time.timeScale = 0;
+        music.PauseMusic();
     }
 
-    public void onResumeClick()
+    public void ResumeGame()
     {
         PauseMenu.enabled = false;
         Time.timeScale = 1;
+        music.PlayMusic();
     }
 
     public void onRestartClick()
@@ -64,8 +67,9 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    private void PauseGame()
+    public void onHomeClick()
     {
-        Time.timeScale = 0;
+        SceneManager.LoadScene("Main");
+        Time.timeScale = 1;
     }
 }

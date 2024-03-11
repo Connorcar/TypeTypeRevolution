@@ -21,10 +21,18 @@ public class Music : MonoBehaviour
     
     private Game game;
     private GameObject gc;
+    private Canvas pauseMenu;
+
     void Start()
     {
         gc = GameObject.Find("GameController");
         game = gc.GetComponent<Game>();
+
+        PlayMusic();
+    }
+
+    public void PlayMusic()
+    {
         switch (game.song_op)
         {
             case 0:
@@ -32,6 +40,21 @@ public class Music : MonoBehaviour
                 break;
             case 1:
                 Resolve.Play();
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void PauseMusic()
+    {
+        switch (game.song_op)
+        {
+            case 0:
+                Bay.Pause();
+                break;
+            case 1:
+                Resolve.Pause();
                 break;
             default:
                 break;
