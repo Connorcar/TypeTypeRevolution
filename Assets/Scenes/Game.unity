@@ -3117,6 +3117,7 @@ MonoBehaviour:
   arrow: {fileID: 0}
   arrowSpawner: {fileID: 371765273}
   typeClick: {fileID: 1726941642}
+  pauseMenu: {fileID: 2052266955}
   currentWord: 
 --- !u!82 &1726941642
 AudioSource:

@@ -23,6 +23,8 @@ public class Arrow : MonoBehaviour
     public bool canBePressed;
     public TMPro.TextMeshPro wordoutput;
     public int Num;
+
+    public Canvas pauseMenu;
     
     private Game game;
     private WordBank wordBank;
@@ -46,6 +48,7 @@ public class Arrow : MonoBehaviour
         game = g.GetComponent<Game>();
         wordBank = wb.GetComponent<WordBank>();
         wordoutput = GameObject.Find("Output").GetComponent<TMPro.TextMeshPro>();
+        pauseMenu = GameObject.Find("Canvas-PauseMenu").GetComponent<Canvas>();
         switch (Num)
         {
             case 1:
@@ -67,7 +70,7 @@ public class Arrow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyToPress))
+        if (Input.GetKeyDown(keyToPress) && pauseMenu.enabled == false)
         {
             if (canBePressed && isFullyTyped)
             {
