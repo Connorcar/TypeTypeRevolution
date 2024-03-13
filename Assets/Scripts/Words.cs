@@ -77,6 +77,7 @@ public class Words : MonoBehaviour
     {
         if (isCorrectLetter(typedLetter))
         {
+            //typeClick.pitch = UnityEngine.Random.Range(0.75f, 1.25f);
             typeClick.Play();
             RemoveLetter();
             if (IsWordComplete())

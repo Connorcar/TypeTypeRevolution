@@ -27,16 +27,16 @@ public class GameSounds : MonoBehaviour
 
     public void playTwo()
     {
-        hitSound2.Play();
+        hitSound1.Play();
     }
 
     public void playThree()
     {
-        hitSound3.Play();
+        hitSound1.Play();
     }
 
     public void playFour()
     {
-        hitSound4.Play();
+        hitSound1.Play();
     }
 }
