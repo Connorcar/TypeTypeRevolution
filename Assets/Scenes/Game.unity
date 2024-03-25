@@ -1246,7 +1246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   default_type: {fileID: 8300000, guid: 57796e839094fc24da6d1100d13f4bf9, type: 3}
-  default_hit: {fileID: 8300000, guid: f4cc61aed3117574d88ac5cfcc772823, type: 3}
+  default_hit_1: {fileID: 8300000, guid: f4cc61aed3117574d88ac5cfcc772823, type: 3}
   winter_type: {fileID: 8300000, guid: bb99118e0fea1d245a0389f6223c2474, type: 3}
   winter_hit: {fileID: 8300000, guid: f2a286aeffdffcc4faf5961aaea15fab, type: 3}
   ocean_type: {fileID: 8300000, guid: 310d2742ab0f6d64393b70d2805c4806, type: 3}
@@ -3577,9 +3577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitSound1: {fileID: 1313998612}
-  hitSound2: {fileID: 172136055}
-  hitSound3: {fileID: 496732778}
-  hitSound4: {fileID: 1935502909}
 --- !u!4 &2016910459
 Transform:
   m_ObjectHideFlags: 0

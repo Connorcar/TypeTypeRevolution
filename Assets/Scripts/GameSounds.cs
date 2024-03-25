@@ -16,27 +16,28 @@ using UnityEngine;
 public class GameSounds : MonoBehaviour
 {
     public AudioSource hitSound1;
-    public AudioSource hitSound2;
-    public AudioSource hitSound3;
-    public AudioSource hitSound4;
 
     public void playOne()
     {
+        hitSound1.pitch = 0.67f;
         hitSound1.Play();
     }
 
     public void playTwo()
     {
+        hitSound1.pitch = 0.76f;
         hitSound1.Play();
     }
 
     public void playThree()
     {
+        hitSound1.pitch = 0.86f;
         hitSound1.Play();
     }
 
     public void playFour()
     {
+        hitSound1.pitch = 1.01f;
         hitSound1.Play();
     }
 }

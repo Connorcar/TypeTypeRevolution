@@ -16,7 +16,7 @@ using UnityEngine;
 public class SoundChanger : MonoBehaviour
 {
     public AudioClip default_type;
-    public AudioClip default_hit;
+    public AudioClip default_hit_1;
 
     public AudioClip winter_type;
     public AudioClip winter_hit;
@@ -49,7 +49,7 @@ public class SoundChanger : MonoBehaviour
         {
             case 0: // default theme
                 typer.GetComponent<AudioSource>().clip = default_type;
-                hitter.hitSound1.clip = default_hit;
+                hitter.hitSound1.clip = default_hit_1;
                 break;
             case 1: // ocean theme
                 typer.GetComponent<AudioSource>().clip = ocean_type;
