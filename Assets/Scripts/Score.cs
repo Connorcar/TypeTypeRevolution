@@ -26,13 +26,13 @@ public class Score : MonoBehaviour
     public GameObject perfect;
     private GameObject gc;
     private Game game;
-    private Achievements achievements;
+    private AchievementManager achievements;
 
     void Start()
     {
         gc = GameObject.Find("GameController");
         game = gc.GetComponent<Game>();
-        achievements = gc.GetComponent<Achievements>();
+        achievements = gc.GetComponent<AchievementManager>();
         
         totalScore.text = game.score.ToString() + "%";
 
@@ -42,7 +42,7 @@ public class Score : MonoBehaviour
             golden.SetActive(false);
             okay.SetActive(false);
             perfect.SetActive(false);
-            achievements.UnlockAchievement("Thing 1", true);
+            achievements.UnlockAchievement("fail");
         } 
         else if (game.score < 90f)
         {
@@ -50,7 +50,7 @@ public class Score : MonoBehaviour
             golden.SetActive(false);
             okay.SetActive(true);
             perfect.SetActive(false);
-            achievements.UnlockAchievement("Thing 2", true);
+            achievements.UnlockAchievement("okay");
         } 
         else if (game.score < 100f)
         {
@@ -58,7 +58,7 @@ public class Score : MonoBehaviour
             golden.SetActive(true);
             okay.SetActive(false);
             perfect.SetActive(false);
-            achievements.UnlockAchievement("Thing 3", true);
+            achievements.UnlockAchievement("golden");
         }
         else
         {
@@ -66,7 +66,7 @@ public class Score : MonoBehaviour
             golden.SetActive(false);
             okay.SetActive(false);
             perfect.SetActive(true);
-            achievements.UnlockAchievement("Thing 4", true);
+            achievements.UnlockAchievement("perfect");
         }
 
     }

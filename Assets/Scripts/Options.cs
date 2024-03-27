@@ -45,6 +45,7 @@ public class Options : MonoBehaviour
     public GameObject CustomPanel;
     private GameObject gameController;
     private Game gc;
+    private AchievementManager am;
     
     private List<string> presetArr = new List<string>()
     {
@@ -70,6 +71,7 @@ public class Options : MonoBehaviour
     {
         gameController = GameObject.Find("GameController");
         gc = gameController.GetComponent<Game>();
+        am = gameController.GetComponent<AchievementManager>();
         InitialSetup();
     }
 
@@ -146,6 +148,7 @@ public class Options : MonoBehaviour
     {
         changeThemeColor(gc.theme_op);
         themeText.GetComponent<TextMeshProUGUI>().text = themeArr[gc.theme_op];
+        
     }
 
     public void onPresetNext()
@@ -363,6 +366,8 @@ public class Options : MonoBehaviour
         }
 
         changeThemeColor(currIndex);
+        Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
+        am.setTheme(themeText.GetComponent<TextMeshProUGUI>().text);
     }
 
     public void onThemePrev()
@@ -379,6 +384,8 @@ public class Options : MonoBehaviour
         }
 
         changeThemeColor(currIndex);
+        Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
+        am.setTheme(themeText.GetComponent<TextMeshProUGUI>().text);
     }
 
     private void changeThemeColor(int currIndex)
@@ -410,5 +417,6 @@ public class Options : MonoBehaviour
         }
         
         gc.theme_op = currIndex;
+        gc.setAchievementColor(themeBacking.color);
     }
 }

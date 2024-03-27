@@ -50,10 +50,10 @@ public class Achievements : MonoBehaviour
                 achievementTitle.color = Color.green;
                 if(achievementIcons[i].gameObject.activeSelf == false){
                     achievementIcons[i].gameObject.SetActive(true);
-                    if (newAchievement)
-                    {
-                        game.AchievementsPopup(achievementIcons[i], achievementTitle);
-                    }
+                    // if (newAchievement)
+                    // {
+                    //     game.AchievementsPopup(achievementIcons[i], achievementTitle);
+                    // }
                 }
             }
             i++;

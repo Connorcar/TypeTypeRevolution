@@ -6,57 +6,73 @@ using TMPro;
 
 public class AchievementManager : MonoBehaviour
 {
+    public Game game;
+    public string theme = "default"; 
+    
     static public int numAchievements = 27;
     //public bool[] achievements = new bool[numAchievements];
     public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
-    public Image[] achievementIcons;
+    public Sprite achievementSprite;
+    public Image achievementIcon;
 
-    void Start(){
 
-        achievements.Add("failDefault", false);
-        achievements.Add("okayDefault", false);
-        achievements.Add("goldenDefault", false);
-        achievements.Add("perfectDefault", false);
-        achievements.Add("playedDefault", false);
+    void Start(){   
 
-        achievements.Add("failOcean", false);
-        achievements.Add("okayOcean", false);
-        achievements.Add("goldenOcean", false);
-        achievements.Add("perfectOcean", false);
-        achievements.Add("playedOcean", false);
+        achievements.Add("faildefault", false);
+        achievements.Add("okaydefault", false);
+        achievements.Add("goldendefault", false);
+        achievements.Add("perfectdefault", false);
+        achievements.Add("playeddefault", false);
 
-        achievements.Add("failFarm", false);
-        achievements.Add("okayFarm", false);
-        achievements.Add("goldenFarm", false);
-        achievements.Add("perfectFarm", false);
-        achievements.Add("playedFarm", false);
+        achievements.Add("failocean", false);
+        achievements.Add("okayocean", false);
+        achievements.Add("goldenocean", false);
+        achievements.Add("perfectocean", false);
+        achievements.Add("playedocean", false);
 
-        achievements.Add("failWinter", false);
-        achievements.Add("okayWinter", false);
-        achievements.Add("goldenWinter", false);
-        achievements.Add("perfectWinter", false);
-        achievements.Add("playedWinter", false);
+        achievements.Add("failfarm", false);
+        achievements.Add("okayfarm", false);
+        achievements.Add("goldenfarm", false);
+        achievements.Add("perfectfarm", false);
+        achievements.Add("playedfarm", false);
 
-        achievements.Add("failEvil", false);
-        achievements.Add("okayEvil", false);
-        achievements.Add("goldenEvil", false);
-        achievements.Add("perfectEvil", false);
-        achievements.Add("playedEvil", false);
+        achievements.Add("failwinter", false);
+        achievements.Add("okaywinter", false);
+        achievements.Add("goldenwinter", false);
+        achievements.Add("perfectwinter", false);
+        achievements.Add("playedwinter", false);
+
+        achievements.Add("failevil", false);
+        achievements.Add("okayevil", false);
+        achievements.Add("goldenevil", false);
+        achievements.Add("perfectevil", false);
+        achievements.Add("playedevil", false);
 
         achievements.Add("allPerfect", false);
         achievements.Add("allThemes", false);
+
+        achievementIcon.sprite = achievementSprite;   
     }
 
-    public void UnlockAchievement(string achievementName, string theme)
+    public void UnlockAchievement(string score)
     {
+        string achievementName = score;
+        if(score.Contains("all") == false && score.Contains("played") == false){
+            achievementName = score + theme;
+        }
+        
+        Debug.Log("checking for " + achievementName);
         if(achievements.ContainsKey(achievementName))
         {
             //if already unlocked, return
             if(achievements[achievementName] == true)
             {
+                Debug.Log("already unlocked");
                 return;
             }else{
-                achievements[achievementName] = true;            
+                achievements[achievementName] = true; 
+                Debug.Log("unlocking achievement " + achievementName);
+                game.AchievementsPopup(achievementIcon, achievementName);           
             }
             checkIfPlayed(theme);
             if(PartialMatch("played")){
@@ -67,41 +83,44 @@ public class AchievementManager : MonoBehaviour
             }
             PlayerPrefs.SetInt(achievementName, 1);
             PlayerPrefs.Save();
+        }else{
+            Debug.Log("Achievement not found");
+            printAchievements();
         }
     }
     public void checkAllThemes()
     {
-        if(achievements["playedDefault"] == true && achievements["playedOcean"] == true && achievements["playedFarm"] == true && achievements["playedWinter"] == true && achievements["playedEvil"] == true)
+        if(achievements["playeddefault"] == true && achievements["playedocean"] == true && achievements["playedfarm"] == true && achievements["playedwinter"] == true && achievements["playedevil"] == true)
         {
-            UnlockAchievement("allThemes", "none");
+            UnlockAchievement("allThemes" );
         }
     }
     public void checkAllPerfect(){
-        if(achievements["perfectDefault"] == true && achievements["perfectOcean"] == true && achievements["perfectFarm"] == true && achievements["perfectWinter"] == true && achievements["perfectEvil"] == true)
+        if(achievements["perfectdefault"] == true && achievements["perfectocean"] == true && achievements["perfectfarm"] == true && achievements["perfectwinter"] == true && achievements["perfectevil"] == true)
         {
-            UnlockAchievement("allPerfect", "none");
+            UnlockAchievement("allPerfect" );
         }
     }
     public void checkIfPlayed(string theme){
         if(theme == "default"){
-            if(achievements["playedDefault"] == false){
-                UnlockAchievement("playedDefault", "none");
+            if(achievements["playeddefault"] == false){
+                UnlockAchievement("playeddefault" );
             }
         }else if(theme == "ocean"){
-            if(achievements["playedOcean"] == false){
-                UnlockAchievement("playedOcean", "none");
+            if(achievements["playedocean"] == false){
+                UnlockAchievement("playedocean" );
             }
         }else if(theme == "farm"){
-            if(achievements["playedFarm"] == false){
-                UnlockAchievement("playedFarm", "none");
+            if(achievements["playedfarm"] == false){
+                UnlockAchievement("playedfarm" );
             }
         }else if(theme == "winter"){
-            if(achievements["playedWinter"] == false){
-                UnlockAchievement("playedWinter", "none");
+            if(achievements["playedwinter"] == false){
+                UnlockAchievement("playedwinter" );
             }
         }else if(theme == "evil"){
-            if(achievements["playedEvil"] == false){
-                UnlockAchievement("playedEvil", "none");
+            if(achievements["playedevil"] == false){
+                UnlockAchievement("playedevil" );
             }
         }
         return;
@@ -119,6 +138,18 @@ public class AchievementManager : MonoBehaviour
         }
         return false; // Return false if partial text is not found
         
+    }
+
+    public void setTheme(string newTheme){
+        theme = newTheme.ToLower();
+        Debug.Log("current theme is " + theme);
+    }
+
+    public void printAchievements(){
+        foreach (KeyValuePair<string, bool> kvp in achievements)
+        {
+            Debug.Log("Key = " + kvp.Key + ", Value = " + kvp.Value);
+        }
     }
 
 }
