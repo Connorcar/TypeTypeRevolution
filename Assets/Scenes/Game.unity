@@ -1216,6 +1216,60 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 35.33829, y: 15.938285}
   m_EdgeRadius: 0
+--- !u!1 &712235846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712235848}
+  - component: {fileID: 712235847}
+  m_Layer: 0
+  m_Name: SoundChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &712235847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712235846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 150c8b5f423e22846b6a6850ae723446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  default_type: {fileID: 8300000, guid: 57796e839094fc24da6d1100d13f4bf9, type: 3}
+  default_hit_1: {fileID: 8300000, guid: f4cc61aed3117574d88ac5cfcc772823, type: 3}
+  winter_type: {fileID: 8300000, guid: bb99118e0fea1d245a0389f6223c2474, type: 3}
+  winter_hit: {fileID: 8300000, guid: f2a286aeffdffcc4faf5961aaea15fab, type: 3}
+  ocean_type: {fileID: 8300000, guid: 310d2742ab0f6d64393b70d2805c4806, type: 3}
+  ocean_hit: {fileID: 8300000, guid: 9f55b46ea2a53c04d97d7ed24883fc91, type: 3}
+  farm_type: {fileID: 8300000, guid: 9d83578815fefca449bec4889586b2f6, type: 3}
+  farm_hit: {fileID: 8300000, guid: dbf4bbd25d29bdc45a11276b78087396, type: 3}
+  evil_type: {fileID: 8300000, guid: 434c0953a521cff4393b8084ae1d9fbb, type: 3}
+  evil_hit: {fileID: 8300000, guid: 8195a39f3bf52194c80555b42577521f, type: 3}
+--- !u!4 &712235848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712235846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782915940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3523,9 +3577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitSound1: {fileID: 1313998612}
-  hitSound2: {fileID: 172136055}
-  hitSound3: {fileID: 496732778}
-  hitSound4: {fileID: 1935502909}
 --- !u!4 &2016910459
 Transform:
   m_ObjectHideFlags: 0
@@ -4350,6 +4401,7 @@ SceneRoots:
   - {fileID: 1726941640}
   - {fileID: 815606283}
   - {fileID: 882014305}
+  - {fileID: 712235848}
   - {fileID: 2016910459}
   - {fileID: 2052266956}
   - {fileID: 2040893975}
