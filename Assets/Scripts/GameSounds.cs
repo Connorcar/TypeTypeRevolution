@@ -19,7 +19,7 @@ public class GameSounds : MonoBehaviour
 
     public void playOne()
     {
-        hitSound1.pitch = 0.67f;
+        hitSound1.pitch = 0.68f;
         hitSound1.Play();
     }
 
@@ -37,7 +37,7 @@ public class GameSounds : MonoBehaviour
 
     public void playFour()
     {
-        hitSound1.pitch = 1.01f;
+        hitSound1.pitch = 1.015f;
         hitSound1.Play();
     }
 }

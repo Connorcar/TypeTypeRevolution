@@ -53,19 +53,19 @@ public class SoundChanger : MonoBehaviour
                 break;
             case 1: // ocean theme
                 typer.GetComponent<AudioSource>().clip = ocean_type;
-                hitter.hitSound1.clip = ocean_hit;
+                hitter.hitSound1.clip = default_hit_1;
                 break; 
             case 2: // winter theme
                 typer.GetComponent<AudioSource>().clip = winter_type;
-                hitter.hitSound1.clip = winter_hit;
+                hitter.hitSound1.clip = default_hit_1;
                 break;
             case 3: // farm theme
                 typer.GetComponent<AudioSource>().clip = farm_type;
-                hitter.hitSound1.clip = farm_hit;
+                hitter.hitSound1.clip = default_hit_1;
                 break;
             case 4: // evil theme
                 typer.GetComponent<AudioSource>().clip = evil_type;
-                hitter.hitSound1.clip = evil_hit;
+                hitter.hitSound1.clip = default_hit_1;
                 break; 
         }
         /*
