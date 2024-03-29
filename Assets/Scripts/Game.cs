@@ -47,6 +47,11 @@ public class Game : MonoBehaviour
     public Transform canvasTransform;
     public Color achievementColor;
     public GameObject achievementPanel;
+    // public Color defaultColor;
+    // public Color farmColor;
+    // public Color oceanColor;
+    // public Color winterColor;
+    // public Color evilColor;
 
     // Combo & Accuracy Stuff
     public int currentCombo = 0;
@@ -78,21 +83,21 @@ public class Game : MonoBehaviour
         // Find the canvas by name
         //Transform canvasTransform = instance.transform.Find(canvasName);
 
-        if (canvasTransform != null)
-        {
+        // if (canvasTransform != null)
+        // {
             // Get the Canvas component from the found canvas Transform
-            achievementsPopup = canvasTransform.GetComponent<Canvas>();
-            achievementIcon = canvasTransform.GetComponentInChildren<Image>();
-            achievementTitle = canvasTransform.GetComponentInChildren<TextMeshProUGUI>();
+            // achievementsPopup = canvasTransform.GetComponent<Canvas>();
+            // achievementIcon = canvasTransform.GetComponentInChildren<Image>();
+            // achievementTitle = canvasTransform.GetComponentInChildren<TextMeshProUGUI>();
 
             DontDestroyOnLoad(achievementsPopup);
             //DontDestroyOnLoad(achievementIcon);
             //DontDestroyOnLoad(achievementTitle);
-        }
-        else
-        {
-            Debug.LogError("Canvas with the name: " + canvasName + " not found.");
-        }
+        // }
+        // else
+        // {
+        //     Debug.LogError("Canvas with the name: " + canvasName + " not found.");
+        // }
 
         DontDestroyOnLoad(gameObject);
   
@@ -223,9 +228,22 @@ public class Game : MonoBehaviour
         comboText.text = "Combo: " + currentCombo;
     }
 
-    public void setAchievementColor(Color color)
+    public void setAchievementColor(Color theme)
     {
-        achievementColor = color;
+        // themeText = themeText.ToLower();
+        // if(themeText == "default"){
+        //     achievementColor = defaultColor;
+        // }else if(themeText == "ocean"){
+        //     achievementColor = oceanColor;
+        // }else if(themeText == "farm"){
+        //     achievementColor = farmColor;
+        // }else if(themeText == "winter"){
+        //     achievementColor = winterColor;
+        // }else if(themeText == "evil"){
+        //     achievementColor = evilColor;
+        // }
+        // Debug.Log("Achievement Color: " + themeText);
+        achievementColor = theme;
         achievementPanel.GetComponent<Image>().color = achievementColor;
     }
 

@@ -294,14 +294,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &58452065
 MonoBehaviour:
@@ -1294,14 +1291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &243282289
 MonoBehaviour:
@@ -1484,6 +1478,7 @@ MonoBehaviour:
   numPerfect: 0
   numMissed: 0
   currentScore: 0
+  currentAcc: 100
 --- !u!4 &254803868
 Transform:
   m_ObjectHideFlags: 0
@@ -2548,14 +2543,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &403166193
 MonoBehaviour:
@@ -2812,14 +2804,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &412098169
 MonoBehaviour:
@@ -4040,14 +4029,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &567880771
 MonoBehaviour:
@@ -4643,14 +4629,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &777297093
 MonoBehaviour:
@@ -5883,9 +5866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 852612440}
   Options: {fileID: 2006056259}
-  TrophyCase: {fileID: 1191879535}
   CountDownBackground: {fileID: 1197733743}
   goSound: {fileID: 1375612709}
+  CDswipeController: {fileID: 0}
 --- !u!114 &915330613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8690,7 +8673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd9be3108a49b742b116dc367896d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Options: {fileID: 2006056259}
+  canvas: {fileID: 0}
   startImage: {fileID: 1375612706}
 --- !u!114 &1375612705
 MonoBehaviour:
@@ -8800,9 +8783,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 852612440}
   Options: {fileID: 2006056259}
-  TrophyCase: {fileID: 0}
   CountDownBackground: {fileID: 1197733743}
   goSound: {fileID: 1375612709}
+  CDswipeController: {fileID: 0}
 --- !u!82 &1375612709
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9125,9 +9108,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 852612440}
   Options: {fileID: 2006056259}
-  TrophyCase: {fileID: 1191879535}
   CountDownBackground: {fileID: 1197733743}
   goSound: {fileID: 1375612709}
+  CDswipeController: {fileID: 0}
 --- !u!114 &1404966388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10019,9 +10002,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 852612440}
   Options: {fileID: 2006056259}
-  TrophyCase: {fileID: 1191879535}
   CountDownBackground: {fileID: 1197733743}
   goSound: {fileID: 1873874404}
+  CDswipeController: {fileID: 0}
 --- !u!114 &1500983294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11212,14 +11195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &1650346425
 MonoBehaviour:
@@ -11358,9 +11338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenu: {fileID: 852612440}
   Options: {fileID: 2006056259}
-  TrophyCase: {fileID: 1191879535}
   CountDownBackground: {fileID: 1197733743}
   goSound: {fileID: 1873874404}
+  CDswipeController: {fileID: 0}
 --- !u!4 &1727321714
 Transform:
   m_ObjectHideFlags: 0
@@ -11653,14 +11633,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PresetPanel: {fileID: 400498647}
   presetText: {fileID: 1438307624}
-  ModePanel: {fileID: 1077877748}
   modeText: {fileID: 1931102083}
-  WLPanel: {fileID: 891221808}
   WLText: {fileID: 320914947}
-  StylePanel: {fileID: 896588993}
   themeText: {fileID: 1277254758}
+  songText: {fileID: 0}
   CustomPanel: {fileID: 1545554700}
 --- !u!114 &1736222157
 MonoBehaviour:

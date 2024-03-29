@@ -28,6 +28,7 @@ public class Button : MonoBehaviour
     // public Canvas TrophyCase;
     public GameObject CountDownBackground;
     public AudioSource goSound;
+    public AudioSource mainMenuMusic;
     public SwipeController CDswipeController;
     
     
@@ -66,6 +67,7 @@ public class Button : MonoBehaviour
 
     private IEnumerator LoadGame()
     {
+        mainMenuMusic.Stop();
         goSound.Play();
         CountDownBackground.SetActive(true);
         // countdownText.enabled = true;

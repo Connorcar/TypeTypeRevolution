@@ -75,7 +75,7 @@ public class Score : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

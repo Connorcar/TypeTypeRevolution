@@ -19,6 +19,7 @@ public class GameStuff : MonoBehaviour
 {
     public List<List<List<string>>> themedWords = new List<List<List<string>>>(5);
     public List<List<string>> levelArrows = new List<List<string>>(3);
+    public Color[] themeColors;
     
     // Tempo Config
     public List<int> tempos = new List<int>()
@@ -37,6 +38,7 @@ public class GameStuff : MonoBehaviour
     private List<List<string>> farmWords = new List<List<string>>(4);
     private List<List<string>> winterWords = new List<List<string>>(4);
     private List<List<string>> evilWords = new List<List<string>>(4);
+    
 
     // Default Words
     private List<string> threeFour_default = new List<string>()
