@@ -114,6 +114,7 @@ public class Button : MonoBehaviour
             disable(TrophyCase.GetComponent<Canvas>());
             enable(MainMenu.GetComponent<Canvas>());
         }
+        */
         // if (Options.GetComponent<Canvas>().enabled)
         // {
         //     Options.GetComponent<Canvas>().enabled = false;
