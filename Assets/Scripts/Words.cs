@@ -24,6 +24,8 @@ public class Words : MonoBehaviour
     public GameObject arrow;
     public ArrowSpawner arrowSpawner;
     public AudioSource typeClick;
+
+    public Canvas pauseMenu;
     
     public string currentWord = string.Empty;
     private string remainingWord = string.Empty;
@@ -61,7 +63,7 @@ public class Words : MonoBehaviour
     
     private void CheckInput()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && pauseMenu.enabled == false)
         {
             string keysPressed = Input.inputString;
             if (keysPressed.Length == 1)
@@ -75,6 +77,7 @@ public class Words : MonoBehaviour
     {
         if (isCorrectLetter(typedLetter))
         {
+            typeClick.pitch = UnityEngine.Random.Range(0.92f, 1.08f);
             typeClick.Play();
             RemoveLetter();
             if (IsWordComplete())
