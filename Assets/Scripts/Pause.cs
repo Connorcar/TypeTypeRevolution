@@ -69,7 +69,7 @@ public class Pause : MonoBehaviour
 
     public void onHomeClick()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }
 }
