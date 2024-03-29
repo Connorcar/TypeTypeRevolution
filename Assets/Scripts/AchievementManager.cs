@@ -72,9 +72,9 @@ public class AchievementManager : MonoBehaviour
             }else{
                 achievements[achievementName] = true; 
                 Debug.Log("unlocking achievement " + achievementName);
-                if(!(score.Contains("all") && score.Contains("played"))){ // no popup for all themes or played
+                //if(!(score.Contains("all") && score.Contains("played"))){ // no popup for all themes or played
                     game.AchievementsPopup(achievementIcon, achievementName);
-                }           
+                //}           
             }
             checkIfPlayed(theme);
             if(PartialMatch("played")){
