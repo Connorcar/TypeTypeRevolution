@@ -17,11 +17,11 @@ using UnityEngine.UI;
 
 public class Blinker : MonoBehaviour
 {
-    public Canvas Options;
+    public Canvas canvas;
     // public TMP_Text startText;
     public Image startImage;
     
-    private float blinkDuration = 1f;
+    private float blinkDuration = 0.8f;
     private bool isBlinking = false;
     
     // Start is called before the first frame update
@@ -33,7 +33,7 @@ public class Blinker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Options.GetComponent<Canvas>().enabled)
+        if (canvas.GetComponent<Canvas>().enabled)
         {
             if (!isBlinking)
             {
