@@ -22,34 +22,51 @@ public class Score : MonoBehaviour
     public TextMeshProUGUI totalScore;
     public GameObject fail;
     public GameObject okay;
-    public GameObject success;
+    public GameObject golden;
+    public GameObject perfect;
     private GameObject gc;
     private Game game;
+    private AchievementManager achievements;
 
     void Start()
     {
         gc = GameObject.Find("GameController");
         game = gc.GetComponent<Game>();
+        achievements = gc.GetComponent<AchievementManager>();
         
         totalScore.text = game.score.ToString() + "%";
 
         if (game.score < 60f)
         {
             fail.SetActive(true);
-            success.SetActive(false);
+            golden.SetActive(false);
             okay.SetActive(false);
+            perfect.SetActive(false);
+            achievements.UnlockAchievement("fail");
         } 
         else if (game.score < 90f)
         {
             fail.SetActive(false);
-            success.SetActive(false);
+            golden.SetActive(false);
             okay.SetActive(true);
+            perfect.SetActive(false);
+            achievements.UnlockAchievement("okay");
         } 
-        else if (game.score <= 100f)
+        else if (game.score < 100f)
         {
             fail.SetActive(false);
-            success.SetActive(true);
+            golden.SetActive(true);
             okay.SetActive(false);
+            perfect.SetActive(false);
+            achievements.UnlockAchievement("golden");
+        }
+        else
+        {
+            fail.SetActive(false);
+            golden.SetActive(false);
+            okay.SetActive(false);
+            perfect.SetActive(true);
+            achievements.UnlockAchievement("perfect");
         }
 
     }

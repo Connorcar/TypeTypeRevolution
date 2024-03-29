@@ -44,6 +44,9 @@ public class Game : MonoBehaviour
     public Canvas achievementsPopup;
     public Image achievementIcon;
     public TextMeshProUGUI achievementTitle;
+    public Transform canvasTransform;
+    public Color achievementColor;
+    public GameObject achievementPanel;
 
     // Combo & Accuracy Stuff
     public int currentCombo = 0;
@@ -73,7 +76,7 @@ public class Game : MonoBehaviour
         instance = this;
 
         // Find the canvas by name
-        Transform canvasTransform = instance.transform.Find(canvasName);
+        //Transform canvasTransform = instance.transform.Find(canvasName);
 
         if (canvasTransform != null)
         {
@@ -81,16 +84,18 @@ public class Game : MonoBehaviour
             achievementsPopup = canvasTransform.GetComponent<Canvas>();
             achievementIcon = canvasTransform.GetComponentInChildren<Image>();
             achievementTitle = canvasTransform.GetComponentInChildren<TextMeshProUGUI>();
+
+            DontDestroyOnLoad(achievementsPopup);
+            //DontDestroyOnLoad(achievementIcon);
+            //DontDestroyOnLoad(achievementTitle);
         }
         else
         {
             Debug.LogError("Canvas with the name: " + canvasName + " not found.");
         }
 
-        DontDestroyOnLoad(gameObject);   
-        // DontDestroyOnLoad(achievementsPopup);
-        // DontDestroyOnLoad(achievementIcon);
-        // DontDestroyOnLoad(achievementTitle);
+        DontDestroyOnLoad(gameObject);
+  
 
         if (achievementsPopup != null)
         {
@@ -159,12 +164,13 @@ public class Game : MonoBehaviour
         currentAcc = 100;
     }
 
-    public void AchievementsPopup(Image currAchievementIcon, TextMeshProUGUI currAchievementTitle)
+    public void AchievementsPopup(Image currAchievementIcon, string currAchievementTitle)
     {
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 1;
-        Debug.Log("Achievement Unlocked: " + currAchievementTitle.text);    
-        achievementIcon.color = currAchievementIcon.color;
-        achievementTitle.text = currAchievementTitle.text;
+        Debug.Log("Achievement Unlocked: " + currAchievementTitle);    
+        achievementIcon = currAchievementIcon;
+        achievementTitle.text = currAchievementTitle;
+        achievementPanel.GetComponent<Image>().color = achievementColor;
         instance.StartCoroutine(CloseAchievementsPopup());
     }
 
@@ -215,6 +221,12 @@ public class Game : MonoBehaviour
         numMissed++;
         currentAcc -= 100 * 1 / possibleHits;
         comboText.text = "Combo: " + currentCombo;
+    }
+
+    public void setAchievementColor(Color color)
+    {
+        achievementColor = color;
+        achievementPanel.GetComponent<Image>().color = achievementColor;
     }
 
     public IEnumerator HitStatus(GameObject status)

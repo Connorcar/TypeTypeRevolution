@@ -1420,6 +1420,7 @@ GameObject:
   - component: {fileID: 254803868}
   - component: {fileID: 254803867}
   - component: {fileID: 254803866}
+  - component: {fileID: 254803869}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1474,6 +1475,9 @@ MonoBehaviour:
   achievementsPopup: {fileID: 1190150101}
   achievementIcon: {fileID: 863256098}
   achievementTitle: {fileID: 758207805}
+  canvasTransform: {fileID: 1190150098}
+  achievementColor: {r: 1, g: 0, b: 1, a: 1}
+  achievementPanel: {fileID: 1771714707}
   currentCombo: 0
   highestCombo: 0
   numGood: 0
@@ -1495,6 +1499,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254803869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254803865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b752361d30fca34f836a72b3ce7095b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 254803867}
+  theme: default
+  achievementSprite: {fileID: 21300000, guid: 38ba61eaf0dfb534386332165e26c4b9, type: 3}
+  achievementIcon: {fileID: 863256098}
 --- !u!1 &307987179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,8 +4352,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7499,6 +7519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 254803867}
+  achievementManager: {fileID: 0}
   achievementIcons:
   - {fileID: 979622437}
   - {fileID: 560529395}

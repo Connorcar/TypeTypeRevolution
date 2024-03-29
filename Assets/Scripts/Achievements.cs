@@ -7,7 +7,7 @@ using TMPro;
 public class Achievements : MonoBehaviour
 {
     public Game game;
-    public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
+    public AchievementManager achievementManager;
 
     public Image[] achievementIcons;
     public TextMeshProUGUI[] achievementTitles;
@@ -50,10 +50,10 @@ public class Achievements : MonoBehaviour
                 achievementTitle.color = Color.green;
                 if(achievementIcons[i].gameObject.activeSelf == false){
                     achievementIcons[i].gameObject.SetActive(true);
-                    if (newAchievement)
-                    {
-                        game.AchievementsPopup(achievementIcons[i], achievementTitle);
-                    }
+                    // if (newAchievement)
+                    // {
+                    //     game.AchievementsPopup(achievementIcons[i], achievementTitle);
+                    // }
                 }
             }
             i++;
