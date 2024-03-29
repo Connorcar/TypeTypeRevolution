@@ -17,6 +17,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using System.Transactions;
+using Unity.VisualScripting;
 
 public class Game : MonoBehaviour
 {
@@ -51,19 +52,22 @@ public class Game : MonoBehaviour
     public int numPerfect;
     public int numMissed;
     public double currentScore = 0;
+    public double currentAcc = 100;
     private double scorePerGoodNote = 1;
     private double scorePerPerfectNote = 1.25;
     private GameObject ST;
     private GameObject MT;
+    private GameObject AT;
     private TextMeshProUGUI scoreText;
     private TextMeshProUGUI comboText;
+    private TextMeshProUGUI accuracyText;
 
     private void Awake()
     {
         if (instance != null)
         {
-        Destroy(gameObject);
-        return;
+            Destroy(gameObject);
+            return;
         }
 
         instance = this;
@@ -83,10 +87,10 @@ public class Game : MonoBehaviour
             Debug.LogError("Canvas with the name: " + canvasName + " not found.");
         }
 
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(achievementsPopup);
-        DontDestroyOnLoad(achievementIcon);
-        DontDestroyOnLoad(achievementTitle);
+        DontDestroyOnLoad(gameObject);   
+        // DontDestroyOnLoad(achievementsPopup);
+        // DontDestroyOnLoad(achievementIcon);
+        // DontDestroyOnLoad(achievementTitle);
 
         if (achievementsPopup != null)
         {
@@ -115,12 +119,17 @@ public class Game : MonoBehaviour
         Debug.Log("Game Scene Setup");
         ST = GameObject.Find("ScoreText");
         MT = GameObject.Find("ComboText");
+        AT = GameObject.Find("AccuracyText");
         scoreText = ST.GetComponent<TextMeshProUGUI>();
         comboText = MT.GetComponent<TextMeshProUGUI>();
+        accuracyText = AT.GetComponent<TextMeshProUGUI>();
         GoodHitStatus = GameObject.Find("GoodHitStatus");
         PerfectHitStatus = GameObject.Find("PerfectHitStatus");
+        GoodHitStatus.SetActive(false);
+        PerfectHitStatus.SetActive(false);
         currentCombo = 0;
         currentScore = 0;
+        currentAcc = 100;
     }
     
     // Loads score scene and calculates the score
@@ -145,6 +154,9 @@ public class Game : MonoBehaviour
         numGood = 0;
         numPerfect = 0;
         numMissed = 0;
+        currentCombo = 0;
+        currentScore = 0;
+        currentAcc = 100;
     }
 
     public void AchievementsPopup(Image currAchievementIcon, TextMeshProUGUI currAchievementTitle)
@@ -164,11 +176,10 @@ public class Game : MonoBehaviour
 
     public void NoteHit()
     {
-        Debug.Log("Hits: " + hits);
-        Debug.Log("Possible Hits: " + possibleHits);
-        currentScore = 100 * hits / (possibleHits * 1.25);
+        currentScore = 100 * hits / (possibleHits * scorePerPerfectNote);
         scoreText.text = "Score: " + Math.Round(currentScore,2) + "%";
         comboText.text = "Combo: " + currentCombo;
+        accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
 
     }
 
@@ -178,6 +189,8 @@ public class Game : MonoBehaviour
         hits += scorePerGoodNote;
         currentCombo++;
         numGood++;
+        currentAcc -= 100 * 0.25 / possibleHits;
+        StartCoroutine(HitStatus(GoodHitStatus));
         NoteHit();
     }
     
@@ -190,6 +203,7 @@ public class Game : MonoBehaviour
         hits += scorePerPerfectNote;
         currentCombo++;
         numPerfect++;
+        StartCoroutine(HitStatus(PerfectHitStatus));
         NoteHit();
     }
 
@@ -199,7 +213,17 @@ public class Game : MonoBehaviour
         Debug.Log("Highest Combo: " + highestCombo);
         currentCombo = 0;
         numMissed++;
+        currentAcc -= 100 * 1 / possibleHits;
         comboText.text = "Combo: " + currentCombo;
     }
+
+    public IEnumerator HitStatus(GameObject status)
+    {
+        status.SetActive(true);
+        yield return new WaitForSeconds(1);
+        status.SetActive(false);
+    }
+    
+    
     
 }
