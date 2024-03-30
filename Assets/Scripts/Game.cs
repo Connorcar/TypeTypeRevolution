@@ -80,25 +80,7 @@ public class Game : MonoBehaviour
 
         instance = this;
 
-        // Find the canvas by name
-        //Transform canvasTransform = instance.transform.Find(canvasName);
-
-        // if (canvasTransform != null)
-        // {
-            // Get the Canvas component from the found canvas Transform
-            // achievementsPopup = canvasTransform.GetComponent<Canvas>();
-            // achievementIcon = canvasTransform.GetComponentInChildren<Image>();
-            // achievementTitle = canvasTransform.GetComponentInChildren<TextMeshProUGUI>();
-
-            DontDestroyOnLoad(achievementsPopup);
-            //DontDestroyOnLoad(achievementIcon);
-            //DontDestroyOnLoad(achievementTitle);
-        // }
-        // else
-        // {
-        //     Debug.LogError("Canvas with the name: " + canvasName + " not found.");
-        // }
-
+        DontDestroyOnLoad(achievementsPopup);
         DontDestroyOnLoad(gameObject);
   
 
@@ -171,18 +153,27 @@ public class Game : MonoBehaviour
 
     public void AchievementsPopup(Image currAchievementIcon, string currAchievementTitle)
     {
+        if(achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha == 1){ 
+            Debug.Log("Achievement Popup already open");
+            instance.StartCoroutine(WaitForPopup());
+        } 
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 1;
         Debug.Log("Achievement Unlocked: " + currAchievementTitle);    
         achievementIcon = currAchievementIcon;
         achievementTitle.text = currAchievementTitle;
         achievementPanel.GetComponent<Image>().color = achievementColor;
-        instance.StartCoroutine(CloseAchievementsPopup());
+        instance.StartCoroutine(CloseAchievementsPopup());      
     }
 
     public IEnumerator CloseAchievementsPopup()
     {
         yield return new WaitForSeconds(3);
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 0;
+    }
+
+    public IEnumerator WaitForPopup()
+    {
+        yield return new WaitForSeconds(3);
     }
 
     public void NoteHit()
@@ -230,19 +221,6 @@ public class Game : MonoBehaviour
 
     public void setAchievementColor(Color theme)
     {
-        // themeText = themeText.ToLower();
-        // if(themeText == "default"){
-        //     achievementColor = defaultColor;
-        // }else if(themeText == "ocean"){
-        //     achievementColor = oceanColor;
-        // }else if(themeText == "farm"){
-        //     achievementColor = farmColor;
-        // }else if(themeText == "winter"){
-        //     achievementColor = winterColor;
-        // }else if(themeText == "evil"){
-        //     achievementColor = evilColor;
-        // }
-        // Debug.Log("Achievement Color: " + themeText);
         achievementColor = theme;
         achievementPanel.GetComponent<Image>().color = achievementColor;
     }
