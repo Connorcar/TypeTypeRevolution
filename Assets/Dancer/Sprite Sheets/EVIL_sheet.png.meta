@@ -1,0 +1,3643 @@
+fileFormatVersion: 2
+guid: f3b100bbb1ce3874982f4c078f3116fb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EVIL_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573d5466509ccab4693098691a98378d
+      internalID: -296955285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2998a03bfdaa4f439463436d869b029
+      internalID: 519936998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb5336d95e11c144ba7a36834ebe1c5
+      internalID: 1192772754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c395bc35173474a84469615334f464
+      internalID: -448093923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8502997bbed19245b77a745e80867eb
+      internalID: 2087159160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c245f8d6f5b4c842a07d9bb5ce3eabb
+      internalID: -471750999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2873eef3809ef8d448272cce32f2f4cd
+      internalID: 1305708853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a76795cb13c5a94cb9f3ce17011c290
+      internalID: -1853397859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80284ceb30fc8b4d8e13fe52e649541
+      internalID: 1146301811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57a5e68af472c5469277240295c866b
+      internalID: -1174390854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34465bbf8e8f08649afc94c8fc950a71
+      internalID: 950894125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1fe0d7f24b69444185c3c3b590e6c8b
+      internalID: -490923015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 8665
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211ce0f650bcf5047b33b7a98057a394
+      internalID: -19344372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13952bf755ce98a449c7f1a0e50a05be
+      internalID: -1764194510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28973c0f4d08814a809e1e0dd5246fd
+      internalID: 171101503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfc78d1e8f88984c88105e019b7d256
+      internalID: 1897930858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59b4b717cdd52f40ad6551512c34c12
+      internalID: 1491698863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734394968d3237046bb7c3cb06e00a98
+      internalID: -1753705299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5107e43e5db8df547ba590261c9ce998
+      internalID: 1078333862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9704a5018eb34124cba7b0b3184a9f4b
+      internalID: -685959216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a157f4682e8f74fa01af1d80791411
+      internalID: -516736734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c3cb74b77d6a942b4535c9dbfc713c
+      internalID: 690132848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf94d5f1dd535d84980998936d76dfa9
+      internalID: 654798610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a762ef779deb2e8438710acf96b8fcf3
+      internalID: -1581529963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1bd2b0306d298498e59699318d7962
+      internalID: -287724132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 7943
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fed4fb62497b54ba858d2dddc45c5a
+      internalID: -254395936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2aed2bb60acf91488f6f21fe159a2ff
+      internalID: -354800239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f7159d3bb18794e8224dae5da55921
+      internalID: 436235222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7548469ceb6a607489f628e96bebc41f
+      internalID: -634400893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1427275f960913e4389d5b184a3314bf
+      internalID: 1580078543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98ec9143eb191d439953c9574ed726a
+      internalID: -1149492659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1757b3c541dd94b880c8327bbfd20b
+      internalID: -31304054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10f48a3a7011d046b424f6e5b29f12c
+      internalID: -7190723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aadfe65d34e8d64aa1b3c50e25a8b0e
+      internalID: -529708010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecca45ff1b484c46943bfeb7266ae70
+      internalID: -2121342709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49144ae25575db49a31ffad5af11444
+      internalID: -403845834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75bb2f0cf8760a4f94e78c06f764ee7
+      internalID: 663969774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9e725dcb844f44cac03368213da1fb
+      internalID: -1221647817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 7221
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db97095edb6d8e40924c5cf7d57c268
+      internalID: -1690352647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b88e259b2105714b9330be9469cb630
+      internalID: 939184209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39a9df5e8828cc4eaab173258f2a92f
+      internalID: 1927000132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187e214ae65775c48a06c760678913a2
+      internalID: -1273640043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53deb00c4dc7994428544ce0be2d345c
+      internalID: 1361709356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbdf83881905ef44bf2aa0e558011f7
+      internalID: -995279711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0383856f79593fa49b2eb32bda6c6050
+      internalID: 3458615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d035792f63e334489f70682195ba863
+      internalID: -416030288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67842ac0bee60c748babfd1518da37bc
+      internalID: -1729377260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c626e9dd808906d4b9dc2464afe26122
+      internalID: 204618505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d516bd7059d05924eb466e5da5627a59
+      internalID: -2008027328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3701899e49acc2341b31f60b06d49e0b
+      internalID: 625574334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd54f0bd22a0aab4ebf878d551accb1e
+      internalID: -1260593938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 6499
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61bab19fcbb96044aabd641e643a538
+      internalID: 1319786074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13709fb361081841a66a6cfc47a70f5
+      internalID: -1933245307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf09baf2526b5704384c5c006fc7ce10
+      internalID: 1659406376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cd2921bec99c741b2940807c8a88ff
+      internalID: -1427636010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4621babf6857342ab4a37444141584
+      internalID: -1181761832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409ee58b167de9d418bcf066aebb87bb
+      internalID: 2130672634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1de21cbbcf027499645928a87bb988
+      internalID: -462794647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8387cd80665e78543bf23731b3c7f084
+      internalID: 681807530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aceccbbedd73b50409bea991eab6de35
+      internalID: 167341577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386a0a99a9a086f4bb631ab4bd916334
+      internalID: 395404513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1212803d9eac69945b998dc0cc7c19e8
+      internalID: 1179962113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e856c0a3e161f246a53b3fa52adf7d4
+      internalID: 964620840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e4d51157f2a3749a3c575440f85d3c
+      internalID: -2010787135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 5777
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4b4b75ac6cfe5438a94aefb5f84dbd
+      internalID: -1955607754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da60b95dc13ba6e45a615839be0b8ddc
+      internalID: 931764495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987e2ecbed26e5b429a2fdc0b41c89ab
+      internalID: -840352686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1194d485b5448ac468e0206145bbb8a7
+      internalID: -953946244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961f9de8cdc18c94b977655291e83656
+      internalID: -72327281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1fb3d8a23bb5d43a29ede1123d705d
+      internalID: -1697226096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569746d72a736504ea5c1f65e546bf19
+      internalID: -18625365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d058954d6788169438cfdae5c0641ad6
+      internalID: 2127525020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f5cc1359f4098489a9427a8aa4bbc0
+      internalID: 206668844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b50d46f855995419793e82c1a7cfdc
+      internalID: -928468835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edf06a3180786d43b56225256e76dd5
+      internalID: -867861077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81557be1e3f8043428fa06b0a5c89328
+      internalID: 6702342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5fbcd928dea32409d5ac33584e519d
+      internalID: -2065745974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 5055
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89affe03e47e244da8709381be838cd
+      internalID: 265703314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beec716597742cd4b8e82c8592e0d472
+      internalID: 1099669048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0801d91ad7082b041a03e35f49cda178
+      internalID: 442089996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86da3d445a6e62c4caf1ce1ef30524cf
+      internalID: -1352241826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11311537703fee248b79b62963f6a580
+      internalID: 767378452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186d7100617436c45be62f493a404192
+      internalID: -1188710207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399d2afe7beb6cb4b9455a3ca1f930ea
+      internalID: 636648325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ac31c4725337f459b0135a66e12a0f
+      internalID: -1119518943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646137414a6669d4c96b05193a2b188d
+      internalID: -953940219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd33592374ea8f4483527c2db5d4330
+      internalID: -510072770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8817386be8115944b20238cb15eff75
+      internalID: 1049895319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bad2c13b232fb499fd90dca482beca
+      internalID: 106440603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d094b86eaabf546b141753e1ccd8f6
+      internalID: -818358009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_90
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 4333
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca247be24d41e341a056c59899add19
+      internalID: 1107072826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dcd973533385d1438516c66693c713f
+      internalID: -825186690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_92
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef11ef3a15d9d246892fb2b17ef5345
+      internalID: -519758982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff1c5355f7296d4cb9c29bec52a6c00
+      internalID: 1049115097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_94
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e354d9f6e9425a46bb5fa77dd55a266
+      internalID: -1793511010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_95
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51efd380750c90e458537d87b1ad9df1
+      internalID: 253256084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_96
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d652b2223bfe474b9191b5af31b4350
+      internalID: 85838163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_97
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af14b0bd70f4144ba08896d4f609863
+      internalID: 1553551206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_98
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b722ae339152fb47a0cf081a1b926f7
+      internalID: 807766815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_99
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04207f3fc1e4ee9419962762803c079b
+      internalID: 1183152529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_100
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbd2a8c82f2a5a45ad89b9c30d16f76
+      internalID: 201615930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_101
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f7d96205efe43488484fff29a3c6aa
+      internalID: -362246774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_102
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdefa65860275b47883c596dc605cd1
+      internalID: -403820674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_103
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 3611
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ca792125a0d9d45b8c94ce859de4b2
+      internalID: -1760417546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45eabc7983a42e54a9113612d3fcc658
+      internalID: 95651299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_105
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16bfceed8d3d0a4b8192f5e4f06de6a
+      internalID: 18152410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_106
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aed2dcba36dca4198ec343cf9a20d0
+      internalID: -2126282344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_107
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576bedb44f28b5648a5ab6149f042a7e
+      internalID: 1713471404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_108
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc6d7b69af77814db1cc447538f28e3
+      internalID: 124022487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_109
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546eb91a296e05d4aa0d8db82aa2da3f
+      internalID: -1269468005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_110
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ebb116475099c429b00aad974abcb4
+      internalID: 306674808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_111
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519996cf33637d143b6a80258dca3b58
+      internalID: 214070445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_112
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a304b866d324746aa09ed6860cf4f6
+      internalID: -1723312864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_113
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0a6489eb3ef604cb69e8a2899c19b5
+      internalID: -278698815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_114
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96986b35a13b111488c56987a95df67a
+      internalID: -1567336171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_115
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32aef1fc1eb930f41bd9f180d99ba139
+      internalID: 93762382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_116
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 2889
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb5cd4645ec33a469cf60c1e6bd331c
+      internalID: 1304669576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92965d2822706e24f8d43b9038780242
+      internalID: 1853471735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_118
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03605181daba3624b93d9e354eae1de0
+      internalID: 1086533726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90f2fd34df886c44a5a2f29e2afa640
+      internalID: 1829687138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_120
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67d288224fc744478c7889dbc62dd57
+      internalID: -1816686039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_121
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08329a90813e25a4fbcc9e5a5d205628
+      internalID: -1828720370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_122
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535d9a85a88478c4db1cc2c6819897e0
+      internalID: -1899328958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_123
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706462cc694ab2a499bbc9c7c5578bab
+      internalID: -1222755988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_124
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e0c0440211c6045b85716ac840339f
+      internalID: -1048468516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_125
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae97285a7de7234497d713d5e674d30
+      internalID: -153933118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_126
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b643790a77af14b9f8a5bf56dc6dad
+      internalID: 1940127403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_127
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5028a88bc13687a4bb4f421595a46773
+      internalID: 711638339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_128
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856415c79628f6c4bba7abf8250e2793
+      internalID: -887351044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_129
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 2167
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2cd9bf388011fc45a028a6c3a15233e
+      internalID: 1147998187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456dad401e00bd54aa17ccb9a8d97683
+      internalID: 2013779909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_131
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14687fbc52313e147b3db1edb04b2975
+      internalID: -812946440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_132
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b510e25b8ee824a91584500f439306
+      internalID: -1768410919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_133
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1f62473754a5e41bda314804c0bd98
+      internalID: 1379642152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_134
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637d64187d1ac694b9b4b7e72ca11d58
+      internalID: 568017972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_135
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3f74edb0cbe6f49976f1428847e87c
+      internalID: -1293104155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_136
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b307e10ae815646971ee438441ee87
+      internalID: 1686981129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_137
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d390657d1aac5d74bb52f214e8cf62f7
+      internalID: -945372407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_138
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4dc37c6f0f9ce4db191c6406e10cf2
+      internalID: -1788421708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_139
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f1c33fb1a4831448aa804a85accb49
+      internalID: 638337198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_140
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e00cc343291ad469fbcfc8e7a1ee05
+      internalID: 61528302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_141
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22abf821a40f2f840a08366c23aea3f2
+      internalID: 1547363170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_142
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 1445
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca49eed706bdd54d86b51fcba61ab5a
+      internalID: 388290485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_143
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceda4e2a230be845b13895cf96cbcd9
+      internalID: -506388939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_144
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949895e3f04e6024ca695d2d84bc95a8
+      internalID: -917276274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2840fb960d24aa4a971167b0ba819a0
+      internalID: 1463946822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_146
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbaae943a56d6c4409660e8302220ed4
+      internalID: -970616543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_147
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2418896b0deb22c45862704718dc6973
+      internalID: -1132995622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_148
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bff3a22d127b741ac7da13e1b2c824
+      internalID: -414092383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_149
+      rect:
+        serializedVersion: 2
+        x: 4332
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca9dabd284c955429ebbaea75ccd4fc
+      internalID: -597176434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_150
+      rect:
+        serializedVersion: 2
+        x: 5054
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8413914919ab8e44899a1a9e4293a8e
+      internalID: 1171040079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_151
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1d7873af3d688439a5a4728eebae91
+      internalID: 1252082105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_152
+      rect:
+        serializedVersion: 2
+        x: 6498
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9af4438a09d4cf45ba3ec096a58d986
+      internalID: 1990418553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_153
+      rect:
+        serializedVersion: 2
+        x: 7220
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef67c9d52c2fdc43ba4e430fdf642a6
+      internalID: 2099161386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_154
+      rect:
+        serializedVersion: 2
+        x: 7942
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac7889278688b64d803c4a8488e0ea5
+      internalID: -265491265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_155
+      rect:
+        serializedVersion: 2
+        x: 8664
+        y: 723
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ad9c41c1b552f47807c3589a2489d6
+      internalID: -1551513886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c38280e5d855bf439c5c597a618c5f9
+      internalID: -1747891416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_157
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7a10ba06bcdf34981cbbac33f4de05
+      internalID: 1077421162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_158
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eccb8b9b10b0efd498b1c7430fa9047f
+      internalID: 1991315690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EVIL_sheet_159
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 1
+        width: 721
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b89d2acd78bb76418e385afb5e93b38
+      internalID: 317990108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7e5c5d19a6084b545a60021112fb430c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EVIL_sheet_11: -490923015
+      EVIL_sheet_118: 1086533726
+      EVIL_sheet_65: 931764495
+      EVIL_sheet_144: -917276274
+      EVIL_sheet_24: -287724132
+      EVIL_sheet_74: -867861077
+      EVIL_sheet_146: -970616543
+      EVIL_sheet_68: -72327281
+      EVIL_sheet_112: -1723312864
+      EVIL_sheet_143: -506388939
+      EVIL_sheet_49: 625574334
+      EVIL_sheet_42: 1361709356
+      EVIL_sheet_124: -1048468516
+      EVIL_sheet_71: 2127525020
+      EVIL_sheet_31: -31304054
+      EVIL_sheet_80: -1352241826
+      EVIL_sheet_58: 681807530
+      EVIL_sheet_111: 214070445
+      EVIL_sheet_43: -995279711
+      EVIL_sheet_150: 1171040079
+      EVIL_sheet_115: 93762382
+      EVIL_sheet_28: -634400893
+      EVIL_sheet_151: 1252082105
+      EVIL_sheet_105: 18152410
+      EVIL_sheet_76: -2065745974
+      EVIL_sheet_8: 1146301811
+      EVIL_sheet_63: -2010787135
+      EVIL_sheet_55: -1181761832
+      EVIL_sheet_2: 1192772754
+      EVIL_sheet_6: 1305708853
+      EVIL_sheet_21: 690132848
+      EVIL_sheet_26: -354800239
+      EVIL_sheet_5: -471750999
+      EVIL_sheet_81: 767378452
+      EVIL_sheet_83: 636648325
+      EVIL_sheet_102: -403820674
+      EVIL_sheet_149: -597176434
+      EVIL_sheet_38: -1690352647
+      EVIL_sheet_40: 1927000132
+      EVIL_sheet_56: 2130672634
+      EVIL_sheet_114: -1567336171
+      EVIL_sheet_119: 1829687138
+      EVIL_sheet_57: -462794647
+      EVIL_sheet_95: 253256084
+      EVIL_sheet_39: 939184209
+      EVIL_sheet_96: 85838163
+      EVIL_sheet_157: 1077421162
+      EVIL_sheet_89: -818358009
+      EVIL_sheet_14: 171101503
+      EVIL_sheet_117: 1853471735
+      EVIL_sheet_140: 61528302
+      EVIL_sheet_48: -2008027328
+      EVIL_sheet_87: 1049895319
+      EVIL_sheet_78: 1099669048
+      EVIL_sheet_136: 1686981129
+      EVIL_sheet_77: 265703314
+      EVIL_sheet_46: -1729377260
+      EVIL_sheet_79: 442089996
+      EVIL_sheet_0: -296955285
+      EVIL_sheet_22: 654798610
+      EVIL_sheet_15: 1897930858
+      EVIL_sheet_107: 1713471404
+      EVIL_sheet_66: -840352686
+      EVIL_sheet_72: 206668844
+      EVIL_sheet_3: -448093923
+      EVIL_sheet_61: 1179962113
+      EVIL_sheet_152: 1990418553
+      EVIL_sheet_156: -1747891416
+      EVIL_sheet_47: 204618505
+      EVIL_sheet_88: 106440603
+      EVIL_sheet_64: -1955607754
+      EVIL_sheet_92: -519758982
+      EVIL_sheet_45: -416030288
+      EVIL_sheet_113: -278698815
+      EVIL_sheet_153: 2099161386
+      EVIL_sheet_100: 201615930
+      EVIL_sheet_20: -516736734
+      EVIL_sheet_18: 1078333862
+      EVIL_sheet_70: -18625365
+      EVIL_sheet_51: 1319786074
+      EVIL_sheet_23: -1581529963
+      EVIL_sheet_12: -19344372
+      EVIL_sheet_73: -928468835
+      EVIL_sheet_104: 95651299
+      EVIL_sheet_120: -1816686039
+      EVIL_sheet_59: 167341577
+      EVIL_sheet_148: -414092383
+      EVIL_sheet_137: -945372407
+      EVIL_sheet_103: -1760417546
+      EVIL_sheet_91: -825186690
+      EVIL_sheet_128: -887351044
+      EVIL_sheet_85: -953940219
+      EVIL_sheet_7: -1853397859
+      EVIL_sheet_53: 1659406376
+      EVIL_sheet_33: -529708010
+      EVIL_sheet_67: -953946244
+      EVIL_sheet_98: 807766815
+      EVIL_sheet_134: 568017972
+      EVIL_sheet_139: 638337198
+      EVIL_sheet_50: -1260593938
+      EVIL_sheet_142: 388290485
+      EVIL_sheet_13: -1764194510
+      EVIL_sheet_130: 2013779909
+      EVIL_sheet_116: 1304669576
+      EVIL_sheet_154: -265491265
+      EVIL_sheet_41: -1273640043
+      EVIL_sheet_147: -1132995622
+      EVIL_sheet_94: -1793511010
+      EVIL_sheet_1: 519936998
+      EVIL_sheet_32: -7190723
+      EVIL_sheet_27: 436235222
+      EVIL_sheet_62: 964620840
+      EVIL_sheet_158: 1991315690
+      EVIL_sheet_17: -1753705299
+      EVIL_sheet_52: -1933245307
+      EVIL_sheet_16: 1491698863
+      EVIL_sheet_44: 3458615
+      EVIL_sheet_69: -1697226096
+      EVIL_sheet_93: 1049115097
+      EVIL_sheet_35: -403845834
+      EVIL_sheet_97: 1553551206
+      EVIL_sheet_90: 1107072826
+      EVIL_sheet_106: -2126282344
+      EVIL_sheet_54: -1427636010
+      EVIL_sheet_101: -362246774
+      EVIL_sheet_29: 1580078543
+      EVIL_sheet_34: -2121342709
+      EVIL_sheet_122: -1899328958
+      EVIL_sheet_138: -1788421708
+      EVIL_sheet_131: -812946440
+      EVIL_sheet_4: 2087159160
+      EVIL_sheet_109: -1269468005
+      EVIL_sheet_159: 317990108
+      EVIL_sheet_30: -1149492659
+      EVIL_sheet_60: 395404513
+      EVIL_sheet_37: -1221647817
+      EVIL_sheet_141: 1547363170
+      EVIL_sheet_19: -685959216
+      EVIL_sheet_126: 1940127403
+      EVIL_sheet_86: -510072770
+      EVIL_sheet_123: -1222755988
+      EVIL_sheet_132: -1768410919
+      EVIL_sheet_75: 6702342
+      EVIL_sheet_127: 711638339
+      EVIL_sheet_135: -1293104155
+      EVIL_sheet_108: 124022487
+      EVIL_sheet_129: 1147998187
+      EVIL_sheet_82: -1188710207
+      EVIL_sheet_133: 1379642152
+      EVIL_sheet_84: -1119518943
+      EVIL_sheet_110: 306674808
+      EVIL_sheet_155: -1551513886
+      EVIL_sheet_9: -1174390854
+      EVIL_sheet_99: 1183152529
+      EVIL_sheet_125: -153933118
+      EVIL_sheet_10: 950894125
+      EVIL_sheet_121: -1828720370
+      EVIL_sheet_25: -254395936
+      EVIL_sheet_36: 663969774
+      EVIL_sheet_145: 1463946822
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
