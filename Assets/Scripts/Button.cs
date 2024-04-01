@@ -9,6 +9,8 @@ Type Type Revolution
 /* DESCRIPTION
 Contains methods that handles the buttons on the main menu including "next" and "back" buttons
 */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -18,18 +20,22 @@ using Cache = UnityEngine.Cache;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Button : MonoBehaviour
+public class Button : MonoBehaviour 
 {
-
+    
     public Canvas MainMenu;
     public Canvas Options;
-    public Canvas TrophyCase;
+    // public Canvas TrophyCase;
     public GameObject CountDownBackground;
     public AudioSource goSound;
-
-    private GameObject PlayButton;
+    public AudioSource mainMenuMusic;
+    public SwipeController CDswipeController;
+    
+    
     private GameObject Countdown;
     private TextMeshProUGUI countdownText;
+    private GameObject g;
+    private Game game;
     
     // Start is called before the first frame update
     void Awake()
@@ -39,28 +45,43 @@ public class Button : MonoBehaviour
         // TrophyCase.GetComponent<Canvas>().enabled = false;
         enable(MainMenu.GetComponent<Canvas>());
         disable(Options.GetComponent<Canvas>());
-        disable(TrophyCase.GetComponent<Canvas>());
+        // disable(TrophyCase.GetComponent<Canvas>());
         CountDownBackground.SetActive(false);
-        PlayButton = GameObject.Find("Button-Play");
+        
         Countdown = GameObject.Find("Countdown");
-        countdownText = Countdown.GetComponent<TextMeshProUGUI>();
-        countdownText.enabled = false;
+        // countdownText = Countdown.GetComponent<TextMeshProUGUI>();
+        // countdownText.enabled = false;
+        g = GameObject.Find("GameController");
+        game = g.GetComponent<Game>();
+    }
 
-
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("helo");
+            OnPlayClick();
+        }
     }
 
 
     private IEnumerator LoadGame()
     {
+        mainMenuMusic.Stop();
         goSound.Play();
         CountDownBackground.SetActive(true);
-        countdownText.enabled = true;
+        // countdownText.enabled = true;
         yield return new WaitForSeconds(0.8f);
-        countdownText.text = "2";
+        CDswipeController.Next();
+        // countdownText.text = "2";
         yield return new WaitForSeconds(0.8f);
-        countdownText.text = "1";
+        CDswipeController.Next();
+        // countdownText.text = "1";
         yield return new WaitForSeconds(0.8f);
-        countdownText.text = "go";
+        // countdownText.text = "go";
+        CDswipeController.Next();
+        yield return new WaitForSeconds(0.8f);
+        CDswipeController.Next();
         SceneManager.LoadScene("Game");
     }
 
@@ -84,16 +105,23 @@ public class Button : MonoBehaviour
         //     TrophyCase.GetComponent<Canvas>().enabled = false;
         //     MainMenu.GetComponent<Canvas>().enabled = true;
         // }
-        if(isEnabled(Options.GetComponent<Canvas>()))
+        if (isEnabled(Options.GetComponent<Canvas>()))
         {
             disable(Options.GetComponent<Canvas>());
             enable(MainMenu.GetComponent<Canvas>());
         }
-        else if(isEnabled(TrophyCase.GetComponent<Canvas>()))
+        /*
+        else if (isEnabled(TrophyCase.GetComponent<Canvas>()))
         {
             disable(TrophyCase.GetComponent<Canvas>());
             enable(MainMenu.GetComponent<Canvas>());
         }
+        */
+        // if (Options.GetComponent<Canvas>().enabled)
+        // {
+        //     Options.GetComponent<Canvas>().enabled = false;
+        //     MainMenu.GetComponent<Canvas>().enabled = true;
+        // }
     }
 
     public void onStartClick()
@@ -101,6 +129,7 @@ public class Button : MonoBehaviour
         StartCoroutine(LoadGame());
     }
 
+    /*
     public void onTrophyClick()
     {
         // MainMenu.GetComponent<Canvas>().enabled = false;
@@ -108,6 +137,7 @@ public class Button : MonoBehaviour
         disable(MainMenu.GetComponent<Canvas>());
         enable(TrophyCase.GetComponent<Canvas>());
     }
+    */
 
     public bool isEnabled(Canvas canvas)
     {
@@ -128,3 +158,4 @@ public class Button : MonoBehaviour
         canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 }
+

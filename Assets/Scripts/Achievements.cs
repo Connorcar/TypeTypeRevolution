@@ -7,7 +7,7 @@ using TMPro;
 public class Achievements : MonoBehaviour
 {
     public Game game;
-    public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
+    public AchievementManager achievementManager;
 
     public Image[] achievementIcons;
     public TextMeshProUGUI[] achievementTitles;
@@ -18,43 +18,41 @@ public class Achievements : MonoBehaviour
         // Set all achievements to locked
         foreach (Image achievementIcon in achievementIcons)
         {
-            achievementIcon.gameObject.SetActive(false);
+            achievementIcon.color = new Color(255, 255, 255, 0);
         }
         foreach (TextMeshProUGUI achievementTitle in achievementTitles)
         {
-            achievementTitle.color = Color.red;
+            achievementTitle.color = new Color(255, 255, 255, 0);
         }
         LoadAchievements();
     }
 
     // Function to unlock achievement
-    public void UnlockAchievement(string achievementName, bool newAchievement)
+    public void UnlockAchievement(string achievementName)
     {
         // if (!achievements.ContainsKey(achievementName))
         // {
         //     achievements.Add(achievementName, true);
             // Display achievement unlocked message
-            ShowAchievementUnlocked(achievementName, newAchievement);
+            ShowAchievementUnlocked(achievementName);
             PlayerPrefs.SetInt(achievementName, 1);
             PlayerPrefs.Save();
         //}
     }
 
-    public void ShowAchievementUnlocked(string achievementName, bool newAchievement)
+    public void ShowAchievementUnlocked(string achievementName)
     {
         int i = 0;
         foreach (TextMeshProUGUI achievementTitle in achievementTitles)
         {
             if (achievementTitle.text == achievementName)
             {
-                achievementTitle.color = Color.green;
-                if(achievementIcons[i].gameObject.activeSelf == false){
-                    achievementIcons[i].gameObject.SetActive(true);
-                    if (newAchievement)
-                    {
-                        game.AchievementsPopup(achievementIcons[i], achievementTitle);
-                    }
-                }
+                achievementTitle.color = new Color(255, 255, 255, 255);
+                Debug.Log("Now Showing " + achievementName);
+                //if(achievementIcons[i].gameObject.activeSelf == false){
+                    //achievementIcons[i].gameObject.SetActive(true);
+                    achievementIcons[i].color = new Color(255, 255, 255, 255);
+                //}
             }
             i++;
         }
@@ -63,7 +61,7 @@ public class Achievements : MonoBehaviour
     public void onAchievementClick(int i)
     {
         // Display achievement unlocked message
-        UnlockAchievement("Thing " + i, true);
+        UnlockAchievement("Thing " + i);
     }
 
     public void clearAchievements()
@@ -71,11 +69,11 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.DeleteAll();
         foreach (Image achievementIcon in achievementIcons)
         {
-            achievementIcon.gameObject.SetActive(false);
+            achievementIcon.color = new Color(255, 255, 255, 0);
         }
         foreach (TextMeshProUGUI achievementTitle in achievementTitles)
         {
-            achievementTitle.color = Color.red;
+            achievementTitle.color = new Color(255, 255, 255, 0);
         }
     }
 
@@ -85,7 +83,8 @@ public class Achievements : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(achievementTitle.text) == 1)
             {
-                UnlockAchievement(achievementTitle.text, false);
+                UnlockAchievement(achievementTitle.text);
+                Debug.Log("Loaded " + achievementTitle.text);
             }
         }
         PlayerPrefs.Save();

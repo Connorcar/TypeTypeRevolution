@@ -22,29 +22,37 @@ using Image = UnityEngine.UI.Image;
 
 public class Options : MonoBehaviour
 {
+    
     // Difficulty Presets
-    public GameObject PresetPanel;
+    // public GameObject PresetPanel;
     public TextMeshProUGUI presetText;
     private Image presetBacking;
     
     // Speed
-    public GameObject ModePanel;
+    // public GameObject ModePanel;
     public TextMeshProUGUI modeText;
     private Image modeBacking;
     
     // Word Length
-    public GameObject WLPanel;
+    // public GameObject WLPanel;
     public TextMeshProUGUI WLText;
     private Image WLBacking;
 
     // Theme
-    public GameObject StylePanel;
+    // public GameObject StylePanel;
     public TextMeshProUGUI themeText;
     private Image themeBacking;
+    
+    // Song
+    // public GameObject SongPanel;
+    public TextMeshProUGUI songText;
+    private Image songBacking;
     
     public GameObject CustomPanel;
     private GameObject gameController;
     private Game gc;
+    private GameStuff gs;
+    private AchievementManager am;
     
     private List<string> presetArr = new List<string>()
     {
@@ -66,44 +74,37 @@ public class Options : MonoBehaviour
         "Default", "Ocean", "Winter", "Farm", "Evil"
     };
 
+    private List<string> songArr = new List<string>()
+    {
+        "Bay", "Resolve"
+    }; 
+
     private void Awake()
     {
         gameController = GameObject.Find("GameController");
         gc = gameController.GetComponent<Game>();
+        gs = gameController.GetComponent<GameStuff>();
+        am = gameController.GetComponent<AchievementManager>();
         InitialSetup();
     }
 
     private void InitialSetup()
     {
-        presetBacking = PresetPanel.GetComponent<Image>();
-        modeBacking = ModePanel.GetComponent<Image>();
-        WLBacking = WLPanel.GetComponent<Image>();
-        themeBacking = StylePanel.GetComponent<Image>();
+        
         if (gc.letter_op == 0 && gc.song_op == 0 &&
-            gc.speed_op == 0 && gc.theme_op == 0)
+            gc.speed_op == 0 && gc.theme_op == 0 && gc.song_op == 0)
         {
-            Debug.Log("Meow");
             CustomPanel.SetActive(false);
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[0];
             modeText.GetComponent<TextMeshProUGUI>().text = modeArr[0];
             WLText.GetComponent<TextMeshProUGUI>().text = WLArr[0];
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[0];
-
-            presetBacking.color = Color.green;
-            presetText.color = Color.black;
+            songText.GetComponent<TextMeshProUGUI>().text = songArr[0];
             
-            modeBacking.color = Color.green;
-            modeText.color = Color.black;
-
-            WLBacking.color = Color.green;
-            WLText.color = Color.black;
-
-            themeBacking.color = Color.gray;
-            themeText.color = Color.black;
-
             gc.speed_op = 0;
             gc.letter_op = 0;
             gc.theme_op = 0;
+            gc.song_op = 0;
         }
         else
         {
@@ -111,6 +112,7 @@ public class Options : MonoBehaviour
             setMode();
             setWL();
             setTheme();
+            setSong();
         }
         
     }
@@ -131,6 +133,11 @@ public class Options : MonoBehaviour
         }
     }
 
+    private void setSong()
+    {
+        songText.GetComponent<TextMeshProUGUI>().text = songArr[gc.song_op];
+    }
+
     private void setMode()
     {
         changeModeColor(gc.speed_op);
@@ -145,8 +152,10 @@ public class Options : MonoBehaviour
 
     private void setTheme()
     {
-        changeThemeColor(gc.theme_op);
+        //gc.theme_op = gc.theme_op;
+        gc.setAchievementColor(gs.themeColors[gc.theme_op]);
         themeText.GetComponent<TextMeshProUGUI>().text = themeArr[gc.theme_op];
+        
     }
 
     public void onPresetNext()
@@ -159,8 +168,8 @@ public class Options : MonoBehaviour
         }
         else
         {
-            currIndex = 0;
-            presetText.GetComponent<TextMeshProUGUI>().text = presetArr[0];
+            currIndex = 3;
+            presetText.GetComponent<TextMeshProUGUI>().text = presetArr[3];
         }
 
         modeText.GetComponent<TextMeshProUGUI>().text = modeArr[currIndex];
@@ -180,8 +189,8 @@ public class Options : MonoBehaviour
         }
         else
         {
-            currIndex = 3;
-            presetText.GetComponent<TextMeshProUGUI>().text = presetArr[3];
+            currIndex = 0;
+            presetText.GetComponent<TextMeshProUGUI>().text = presetArr[0];
         }
         
         modeText.GetComponent<TextMeshProUGUI>().text = modeArr[currIndex];
@@ -192,42 +201,6 @@ public class Options : MonoBehaviour
     
     private void changePresetColor(int currIndex)
     {
-        switch (currIndex)
-        {
-            case 0:
-                presetBacking.color = Color.green;
-                presetText.color = Color.black;
-                modeBacking.color = Color.green;
-                modeText.color = Color.black;
-                WLBacking.color = Color.green;
-                WLText.color = Color.black;
-                break;
-            case 1:
-                presetBacking.color = Color.yellow;
-                presetText.color = Color.black;
-                modeBacking.color = Color.yellow;
-                modeText.color = Color.black;
-                WLBacking.color = Color.yellow;
-                WLText.color = Color.black;
-                break;
-            case 2:
-                presetBacking.color = Color.red;
-                presetText.color = Color.black;
-                modeBacking.color = Color.red;
-                modeText.color = Color.black;
-                WLBacking.color = Color.red;
-                WLText.color = Color.black;
-                break;
-            case 3:
-                presetBacking.color = Color.black;
-                presetText.color = Color.white;
-                modeBacking.color = Color.black;
-                modeText.color = Color.white;
-                WLBacking.color = Color.black;
-                WLText.color = Color.white;
-                break;
-        }
-        
         gc.speed_op = currIndex;
         gc.letter_op = currIndex;
     }
@@ -235,28 +208,11 @@ public class Options : MonoBehaviour
 
     public void onModeNext()
     {
-        CustomPanel.SetActive(true);
+        
         int currIndex = modeArr.IndexOf(modeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 3)
         {
             modeText.GetComponent<TextMeshProUGUI>().text = modeArr[++currIndex];
-        }
-        else
-        {
-            currIndex = 0;
-            modeText.GetComponent<TextMeshProUGUI>().text = modeArr[0];
-        }
-        
-        changeModeColor(currIndex);
-    }
-
-    public void onModePrev()
-    {
-        CustomPanel.SetActive(true);
-        int currIndex = modeArr.IndexOf(modeText.GetComponent<TextMeshProUGUI>().text);
-        if (currIndex > 0)
-        {
-            modeText.GetComponent<TextMeshProUGUI>().text = modeArr[--currIndex];
         }
         else
         {
@@ -267,38 +223,57 @@ public class Options : MonoBehaviour
         changeModeColor(currIndex);
     }
 
+    public void onModePrev()
+    {
+        
+        int currIndex = modeArr.IndexOf(modeText.GetComponent<TextMeshProUGUI>().text);
+        if (currIndex > 0)
+        {
+            modeText.GetComponent<TextMeshProUGUI>().text = modeArr[--currIndex];
+        }
+        else
+        {
+            currIndex = 0;
+            modeText.GetComponent<TextMeshProUGUI>().text = modeArr[0];
+        }
+        
+        changeModeColor(currIndex);
+    }
+
     private void changeModeColor(int currIndex)
     {
-        switch (currIndex)
-        {
-            case 0:
-                modeBacking.color = Color.green;
-                modeText.color = Color.black;
-                break;
-            case 1:
-                modeBacking.color = Color.yellow;
-                modeText.color = Color.black;
-                break;
-            case 2:
-                modeBacking.color = Color.red;
-                modeText.color = Color.black;
-                break;
-            case 3:
-                modeBacking.color = Color.black;
-                modeText.color = Color.white;
-                break;
-        }
-
         gc.speed_op = currIndex;
+        
+        if (gc.speed_op != gc.letter_op)
+        {
+            CustomPanel.SetActive(true);
+        }
     }
 
     public void onWLNext()
     {
-        CustomPanel.SetActive(true);
+        
         int currIndex = WLArr.IndexOf(WLText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 3)
         {
             WLText.GetComponent<TextMeshProUGUI>().text = WLArr[++currIndex];
+        }
+        else
+        {
+            currIndex = 3;
+            WLText.GetComponent<TextMeshProUGUI>().text = WLArr[3];
+        }
+        
+        changeWLColor(currIndex);
+    }
+
+    public void onWLPrev()
+    {
+        
+        int currIndex = WLArr.IndexOf(WLText.GetComponent<TextMeshProUGUI>().text);
+        if (currIndex > 0)
+        {
+            WLText.GetComponent<TextMeshProUGUI>().text = WLArr[--currIndex];
         }
         else
         {
@@ -309,45 +284,14 @@ public class Options : MonoBehaviour
         changeWLColor(currIndex);
     }
 
-    public void onWLPrev()
-    {
-        CustomPanel.SetActive(true);
-        int currIndex = WLArr.IndexOf(WLText.GetComponent<TextMeshProUGUI>().text);
-        if (currIndex > 0)
-        {
-            WLText.GetComponent<TextMeshProUGUI>().text = WLArr[--currIndex];
-        }
-        else
-        {
-            currIndex = 3;
-            WLText.GetComponent<TextMeshProUGUI>().text = WLArr[3];
-        }
-
-        changeWLColor(currIndex);
-    }
-
     private void changeWLColor(int currIndex)
     {
-        switch (currIndex)
-        {
-            case 0:
-                WLBacking.color = Color.green;
-                WLText.color = Color.black;
-                break;
-            case 1:
-                WLBacking.color = Color.yellow;
-                WLText.color = Color.black;
-                break;
-            case 2:
-                WLBacking.color = Color.red;
-                WLText.color = Color.black;
-                break;
-            case 3:
-                WLBacking.color = Color.black;
-                WLText.color = Color.white;
-                break;
-        }
         gc.letter_op = currIndex;
+        
+        if (gc.speed_op != gc.letter_op)
+        {
+            CustomPanel.SetActive(true);
+        }
     }
     
     public void onThemeNext()
@@ -363,7 +307,11 @@ public class Options : MonoBehaviour
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[0];
         }
 
-        changeThemeColor(currIndex);
+        Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
+        am.setTheme(themeText.GetComponent<TextMeshProUGUI>().text);
+        
+        gc.theme_op = currIndex;
+        gc.setAchievementColor(gs.themeColors[gc.theme_op]);
     }
 
     public void onThemePrev()
@@ -379,37 +327,42 @@ public class Options : MonoBehaviour
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[4];
         }
 
-        changeThemeColor(currIndex);
+        Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
+        am.setTheme(themeText.GetComponent<TextMeshProUGUI>().text);
+
+        gc.theme_op = currIndex;
+        gc.setAchievementColor(gs.themeColors[gc.theme_op]);
     }
 
-    private void changeThemeColor(int currIndex)
+    public void onSongNext()
     {
-        Color orange = new Color(1.0f, 0.64f, 0.0f);
-        
-        switch (currIndex)
+        int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
+        if (currIndex < 1)
         {
-            case 0:
-                themeBacking.color = Color.gray;
-                themeText.color = Color.black;
-                break;
-            case 1:
-                themeBacking.color = Color.blue;
-                themeText.color = Color.white;
-                break;
-            case 2:
-                themeBacking.color = Color.white;
-                themeText.color = Color.black;
-                break;
-            case 3:
-                themeBacking.color = orange;
-                themeText.color = Color.black;
-                break;
-            case 4:
-                themeBacking.color = Color.black;
-                themeText.color = Color.white;
-                break;
+            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[++currIndex];
         }
-        
-        gc.theme_op = currIndex;
+        else
+        {
+            currIndex = 1;
+            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[1];
+        }
+        gc.song_op = currIndex;
     }
+
+    public void onSongPrev()
+    {
+        int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
+        if (currIndex > 0)
+        {
+            songText.GetComponent<TextMeshProUGUI>().text = songArr[--currIndex];
+        }
+        else
+        {
+            currIndex = 0;
+            songText.GetComponent<TextMeshProUGUI>().text = songArr[0];
+        }
+
+        gc.song_op = currIndex;
+    }
+    
 }
