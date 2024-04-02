@@ -21,7 +21,7 @@ public class Blinker : MonoBehaviour
     // public TMP_Text startText;
     public Image startImage;
     
-    private float blinkDuration = 0.8f;
+    private float blinkDuration = 0.2f;
     private bool isBlinking = false;
     
     // Start is called before the first frame update
@@ -47,7 +47,7 @@ public class Blinker : MonoBehaviour
         isBlinking = true;
         startImage.CrossFadeAlpha(1, blinkDuration, false);
         yield return new WaitForSeconds(blinkDuration);
-        startImage.CrossFadeAlpha(0.3f, blinkDuration, false);
+        startImage.CrossFadeAlpha(0.1f, blinkDuration, false);
         yield return new WaitForSeconds(blinkDuration);
         isBlinking = false;
     }

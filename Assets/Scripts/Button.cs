@@ -36,6 +36,9 @@ public class Button : MonoBehaviour
     private TextMeshProUGUI countdownText;
     private GameObject g;
     private Game game;
+
+    public Animator OptionScreen;
+    public Animator MenuScreen;
     
     // Start is called before the first frame update
     void Awake()
@@ -60,13 +63,16 @@ public class Button : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("helo");
-            OnPlayClick();
+            //coroutine for MM transition
+            StartCoroutine("OnPlayClick");
         }
     }
 
 
     private IEnumerator LoadGame()
     {
+        OptionScreen.Play("OP_slideout");
+        yield return new WaitForSeconds(2f);
         mainMenuMusic.Stop();
         goSound.Play();
         CountDownBackground.SetActive(true);
@@ -85,12 +91,19 @@ public class Button : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void OnPlayClick()
+    public IEnumerator OnPlayClick()
     {
         // MainMenu.GetComponent<Canvas>().enabled = false;
         // Options.GetComponent<Canvas>().enabled = true;
+
+        MenuScreen.Play("MM_fadeout");
+        yield return new WaitForSeconds(1f);
         disable(MainMenu.GetComponent<Canvas>());
         enable(Options.GetComponent<Canvas>());
+        OptionScreen.Play("OP_slidein");
+        yield return new WaitForSeconds(1.2f);
+        OptionScreen.Play("OP_textscale");
+        Debug.Log("played anim");
     }
     
     public void OnBackClick()
