@@ -47,6 +47,11 @@ public class Options : MonoBehaviour
     // public GameObject SongPanel;
     public TextMeshProUGUI songText;
     private Image songBacking;
+    public bool isPlaying = false;
+    public TextMeshProUGUI playText;
+    public AudioSource bay;
+    public AudioSource resolve;
+    public AudioSource mainMenuMusic;
     
     public GameObject CustomPanel;
     private GameObject gameController;
@@ -346,6 +351,10 @@ public class Options : MonoBehaviour
             currIndex = 1;
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[1];
         }
+        if(isPlaying){
+            Debug.Log("stoping preview");
+            onSongPreviewClick();
+        }        
         gc.song_op = currIndex;
     }
 
@@ -361,8 +370,31 @@ public class Options : MonoBehaviour
             currIndex = 0;
             songText.GetComponent<TextMeshProUGUI>().text = songArr[0];
         }
-
+        if(isPlaying){
+            Debug.Log("stoping preview");
+            onSongPreviewClick();
+        }
         gc.song_op = currIndex;
+    }
+
+    public void onSongPreviewClick(){
+        if(isPlaying){
+            mainMenuMusic.Play();
+            bay.Stop();
+            resolve.Stop();
+            playText.GetComponent<TextMeshProUGUI>().text = "Play";
+            isPlaying = false;
+        }else{
+            if(gc.song_op == 1){
+                resolve.Play();
+            }else{
+                bay.Play();
+            }
+            mainMenuMusic.Stop();
+            playText.GetComponent<TextMeshProUGUI>().text = "Stop";
+            isPlaying = true;
+        }
+        
     }
     
 }

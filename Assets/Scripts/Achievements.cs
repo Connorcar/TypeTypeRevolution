@@ -66,10 +66,14 @@ public class Achievements : MonoBehaviour
 
     public void clearAchievements()
     {
+        Debug.Log("Clearing all achievements");
         PlayerPrefs.DeleteAll();
         foreach (Image achievementIcon in achievementIcons)
         {
-            achievementIcon.color = new Color(255, 255, 255, 0);
+            if(achievementIcon.color.a == 255){
+                Debug.Log("Clearing an achievement");
+                achievementIcon.color = new Color(255, 255, 255, 0);
+            }
         }
         foreach (TextMeshProUGUI achievementTitle in achievementTitles)
         {
