@@ -157,5 +157,12 @@ public class Button : MonoBehaviour
         canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().interactable = false;
         canvas.GetComponent<Canvas>().GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
+
+    public void onQuitClick()
+    {
+        Application.Quit();
+    }
+
+
 }
 
