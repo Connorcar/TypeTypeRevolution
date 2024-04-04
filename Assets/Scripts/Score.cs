@@ -27,9 +27,12 @@ public class Score : MonoBehaviour
     private GameObject gc;
     private Game game;
     private AchievementManager achievements;
+    public Animator ResultScreen;
+    public GameObject Result;
 
     void Start()
     {
+
         gc = GameObject.Find("GameController");
         game = gc.GetComponent<Game>();
         achievements = gc.GetComponent<AchievementManager>();
@@ -38,34 +41,26 @@ public class Score : MonoBehaviour
 
         if (game.score < 60f)
         {
-            fail.SetActive(true);
-            golden.SetActive(false);
-            okay.SetActive(false);
-            perfect.SetActive(false);
+            /* fail.SetActive(true);
+             golden.SetActive(false);
+             okay.SetActive(false);
+             perfect.SetActive(false);*/
+            Result.GetComponent<Image>().sprite.name = "R_fail";
             achievements.UnlockAchievement("fail");
         } 
         else if (game.score < 90f)
         {
-            fail.SetActive(false);
-            golden.SetActive(false);
-            okay.SetActive(true);
-            perfect.SetActive(false);
+            Result.GetComponent<Image>().sprite.name = "R_okay";
             achievements.UnlockAchievement("okay");
         } 
         else if (game.score < 100f)
         {
-            fail.SetActive(false);
-            golden.SetActive(true);
-            okay.SetActive(false);
-            perfect.SetActive(false);
+            Result.GetComponent<Image>().sprite.name = "R_golden";
             achievements.UnlockAchievement("golden");
         }
         else
         {
-            fail.SetActive(false);
-            golden.SetActive(false);
-            okay.SetActive(false);
-            perfect.SetActive(true);
+            Result.GetComponent<Image>().sprite.name = "R_perfect";
             achievements.UnlockAchievement("perfect");
         }
 
@@ -75,7 +70,14 @@ public class Score : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene("MainMenu");
+            StartCoroutine(ReturnToMenu());
         }
+    }
+
+    IEnumerator ReturnToMenu()
+    {
+        ResultScreen.Play("R_fadeout");
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("MainMenu");
     }
 }
