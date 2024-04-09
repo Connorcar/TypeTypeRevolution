@@ -16,13 +16,26 @@ using UnityEngine;
 using TMPro;
 using Unity.Properties;
 using UnityEditor;
+using UnityEditor.Presets;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
 
 public class Options : MonoBehaviour
 {
-    
+    // Preserving UI
+    public GameObject presetPage;
+    public GameObject speedPage;
+    public GameObject WLPage;
+    public GameObject SongPage;
+    public GameObject SkinPage;
+
+    public GameObject presetSV;
+    public GameObject speedSV;
+    public GameObject WLSV;
+    public GameObject songSV;
+    public GameObject skinSV;
+
     // Difficulty Presets
     // public GameObject PresetPanel;
     public TextMeshProUGUI presetText;
@@ -71,7 +84,7 @@ public class Options : MonoBehaviour
     
     private List<string> themeArr = new List<string>()
     {
-        "Default", "Ocean", "Winter", "Farm", "Evil"
+        "Default", "Farm", "Ocean", "Winter", "Evil"
     };
 
     private List<string> songArr = new List<string>()
@@ -81,6 +94,7 @@ public class Options : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("AWAKE AWAKE AWAKE AWAKE AWAKE AWAKE AWAKE");
         gameController = GameObject.Find("GameController");
         gc = gameController.GetComponent<Game>();
         gs = gameController.GetComponent<GameStuff>();
@@ -108,14 +122,16 @@ public class Options : MonoBehaviour
         }
         else
         {
+            // preserve settings
             setPreset();
             setMode();
             setWL();
             setTheme();
             setSong();
+            // setSkin();
         }
-        
     }
+    
 
     private void setPreset()
     {
@@ -124,6 +140,8 @@ public class Options : MonoBehaviour
             CustomPanel.SetActive(false);
             changePresetColor(gc.speed_op);
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[gc.speed_op];
+            presetSV.GetComponent<SwipeController>().currPage = gc.speed_op + 1;
+            Debug.Log("HELLLLLLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOOOO currpage is: " + presetSV.GetComponent<SwipeController>().currPage);
         }
         else
         {
@@ -131,23 +149,33 @@ public class Options : MonoBehaviour
             presetBacking.color = Color.green;
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[0];
         }
+
+        Debug.Log("PRESET POS: " + gc.presetPos);
+        presetPage.GetComponent<RectTransform>().anchoredPosition = gc.presetPos;
     }
 
     private void setSong()
     {
         songText.GetComponent<TextMeshProUGUI>().text = songArr[gc.song_op];
+        SongPage.GetComponent<RectTransform>().anchoredPosition = gc.songPos;
+        songSV.GetComponent<SwipeController>().currPage = gc.song_op + 1;
     }
 
     private void setMode()
     {
         changeModeColor(gc.speed_op);
         modeText.GetComponent<TextMeshProUGUI>().text = modeArr[gc.speed_op];
+        speedPage.GetComponent<RectTransform>().anchoredPosition = gc.speedPos;
+        speedSV.GetComponent<SwipeController>().currPage = gc.speed_op + 1;
     }
 
     private void setWL()
     {
         changeWLColor(gc.letter_op);
         WLText.GetComponent<TextMeshProUGUI>().text = WLArr[gc.letter_op];
+        WLPage.GetComponent<RectTransform>().anchoredPosition = gc.WLPos;
+        WLSV.GetComponent<SwipeController>().currPage = gc.letter_op + 1;
+        Debug.Log("WWWWWWWWOOOOOOOOOOOOOOOOOOORRRRRRRRDDDDDDDD LENGTH CURR PAGE: " + WLSV.GetComponent<SwipeController>().currPage);
     }
 
     private void setTheme()
@@ -155,7 +183,6 @@ public class Options : MonoBehaviour
         //gc.theme_op = gc.theme_op;
         gc.setAchievementColor(gs.themeColors[gc.theme_op]);
         themeText.GetComponent<TextMeshProUGUI>().text = themeArr[gc.theme_op];
-        
     }
 
     public void onPresetNext()
@@ -176,6 +203,8 @@ public class Options : MonoBehaviour
         WLText.GetComponent<TextMeshProUGUI>().text = WLArr[currIndex];
 
         changePresetColor(currIndex);
+        gc.invokeSlideSave();
+
     }
     
 
@@ -197,6 +226,8 @@ public class Options : MonoBehaviour
         WLText.GetComponent<TextMeshProUGUI>().text = WLArr[currIndex];
         
         changePresetColor(currIndex);
+        gc.invokeSlideSave();
+
     }
     
     private void changePresetColor(int currIndex)
@@ -221,6 +252,8 @@ public class Options : MonoBehaviour
         }
         
         changeModeColor(currIndex);
+        gc.invokeSlideSave();
+
     }
 
     public void onModePrev()
@@ -238,6 +271,7 @@ public class Options : MonoBehaviour
         }
         
         changeModeColor(currIndex);
+        gc.invokeSlideSave();
     }
 
     private void changeModeColor(int currIndex)
@@ -265,6 +299,7 @@ public class Options : MonoBehaviour
         }
         
         changeWLColor(currIndex);
+        gc.invokeSlideSave();
     }
 
     public void onWLPrev()
@@ -282,6 +317,8 @@ public class Options : MonoBehaviour
         }
 
         changeWLColor(currIndex);
+        gc.invokeSlideSave();
+
     }
 
     private void changeWLColor(int currIndex)
@@ -303,8 +340,8 @@ public class Options : MonoBehaviour
         }
         else
         {
-            currIndex = 0;
-            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[0];
+            currIndex = 4;
+            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[4];
         }
 
         Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
@@ -312,6 +349,7 @@ public class Options : MonoBehaviour
         
         gc.theme_op = currIndex;
         gc.setAchievementColor(gs.themeColors[gc.theme_op]);
+        gc.invokeSlideSave();
     }
 
     public void onThemePrev()
@@ -323,8 +361,8 @@ public class Options : MonoBehaviour
         }
         else
         {
-            currIndex = 4;
-            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[4];
+            currIndex = 0;
+            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[0];
         }
 
         Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
@@ -332,6 +370,7 @@ public class Options : MonoBehaviour
 
         gc.theme_op = currIndex;
         gc.setAchievementColor(gs.themeColors[gc.theme_op]);
+        gc.invokeSlideSave();
     }
 
     public void onSongNext()
@@ -347,6 +386,7 @@ public class Options : MonoBehaviour
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[1];
         }
         gc.song_op = currIndex;
+        gc.invokeSlideSave();
     }
 
     public void onSongPrev()
@@ -363,6 +403,8 @@ public class Options : MonoBehaviour
         }
 
         gc.song_op = currIndex;
+        gc.invokeSlideSave();
     }
+
     
 }

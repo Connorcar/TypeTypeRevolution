@@ -12,16 +12,18 @@ Contains methods that configure the game's sky based on chosen theme
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class SkyChange : MonoBehaviour
 {
-    public Material defaultSky;
-    public Material oceanSky;
-    public Material winterSky;
-    public Material farmSky;
-    public Material evilSky;
+    public VideoClip defaultSky;
+    public VideoClip oceanSky;
+    public VideoClip winterSky;
+    public VideoClip farmSky;
+    public VideoClip evilSky;
+    public VideoPlayer sky;
 
-    private List<Material> skyList = new List<Material>();
+    private List<VideoClip> skyList = new List<VideoClip>();
 
     private GameObject gameController;
     private Game gc;
@@ -32,11 +34,15 @@ public class SkyChange : MonoBehaviour
         gameController = GameObject.Find("GameController");
         gc = gameController.GetComponent<Game>();
         skyList.Add(defaultSky);
+        skyList.Add(farmSky);
         skyList.Add(oceanSky);
         skyList.Add(winterSky);
-        skyList.Add(farmSky);
         skyList.Add(evilSky);
-
-        RenderSettings.skybox = skyList[gc.theme_op];
+        
+        sky.clip = skyList[gc.theme_op];
+        if (gc.theme_op == 1)
+        {
+            sky.playbackSpeed = 0.5f;
+        } 
     }
 }

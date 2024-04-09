@@ -31,7 +31,6 @@ public class Button : MonoBehaviour
     public AudioSource mainMenuMusic;
     public SwipeController CDswipeController;
     
-    
     private GameObject Countdown;
     private TextMeshProUGUI countdownText;
     private GameObject g;
@@ -53,13 +52,13 @@ public class Button : MonoBehaviour
         // countdownText.enabled = false;
         g = GameObject.Find("GameController");
         game = g.GetComponent<Game>();
+        game.MainMenuReload();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("helo");
             OnPlayClick();
         }
     }

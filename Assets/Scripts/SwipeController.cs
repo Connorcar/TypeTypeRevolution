@@ -6,10 +6,9 @@ using UnityEngine.EventSystems;
 
 public class SwipeController : MonoBehaviour, IEndDragHandler
 {
-
     [SerializeField] private int maxPage;
 
-    private int currPage;
+    public int currPage = 1;
     private Vector3 targetPos;
     private float dragThreshold;
 
@@ -21,7 +20,6 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
 
     private void Awake()
     {
-        currPage = 1;
         targetPos = pagesRect.localPosition;
         dragThreshold = Screen.width / 15;
     }
@@ -46,7 +44,7 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
         }
     }
 
-    void MovePage()
+    public void MovePage()
     {
         pagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
     }

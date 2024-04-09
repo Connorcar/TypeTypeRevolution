@@ -75,6 +75,7 @@ public class Score : MonoBehaviour
     {
         if (Input.anyKey)
         {
+            game.ResetGame();
             SceneManager.LoadScene("MainMenu");
         }
     }

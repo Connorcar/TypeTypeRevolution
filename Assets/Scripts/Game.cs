@@ -31,6 +31,9 @@ public class Game : MonoBehaviour
     
     public GameObject GoodHitStatus;
     public GameObject PerfectHitStatus;
+    public GameObject MissHitStatus;
+    public GameObject optionsGod;
+    private Options optionsOG;
 
     // Game Control Unit
     public int speed_op;
@@ -47,12 +50,14 @@ public class Game : MonoBehaviour
     public Transform canvasTransform;
     public Color achievementColor;
     public GameObject achievementPanel;
-    // public Color defaultColor;
-    // public Color farmColor;
-    // public Color oceanColor;
-    // public Color winterColor;
-    // public Color evilColor;
-
+    
+    // Preserve Slider Settings
+    [HideInInspector] public Vector2 presetPos;
+    [HideInInspector] public Vector2 speedPos;
+    [HideInInspector] public Vector2 WLPos;
+    [HideInInspector] public Vector2 songPos;
+    [HideInInspector] public Vector2 skinPos;
+    
     // Combo & Accuracy Stuff
     public int currentCombo = 0;
     public int highestCombo;
@@ -82,7 +87,7 @@ public class Game : MonoBehaviour
 
         DontDestroyOnLoad(achievementsPopup);
         DontDestroyOnLoad(gameObject);
-  
+
 
         if (achievementsPopup != null)
         {
@@ -106,6 +111,12 @@ public class Game : MonoBehaviour
         
     }
 
+    public void MainMenuReload()
+    {
+        optionsGod = GameObject.Find("ButtonGod");
+        optionsOG = optionsGod.GetComponent<Options>();
+    }
+
     public void GameSceneSetup()
     {
         Debug.Log("Game Scene Setup");
@@ -117,8 +128,10 @@ public class Game : MonoBehaviour
         accuracyText = AT.GetComponent<TextMeshProUGUI>();
         GoodHitStatus = GameObject.Find("GoodHitStatus");
         PerfectHitStatus = GameObject.Find("PerfectHitStatus");
+        MissHitStatus = GameObject.Find("MissHitStatus");
         GoodHitStatus.SetActive(false);
         PerfectHitStatus.SetActive(false);
+        MissHitStatus.SetActive(false);
         currentCombo = 0;
         currentScore = 0;
         currentAcc = 100;
@@ -211,12 +224,15 @@ public class Game : MonoBehaviour
 
     public void NoteMiss()
     {
+        Instantiate(MissHitStatus, transform.position, Quaternion.identity);
         highestCombo = currentCombo;
         Debug.Log("Highest Combo: " + highestCombo);
         currentCombo = 0;
         numMissed++;
         currentAcc -= 100 * 1 / possibleHits;
         comboText.text = "Combo: " + currentCombo;
+        accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
+        StartCoroutine(HitStatus(MissHitStatus));
     }
 
     public void setAchievementColor(Color theme)
@@ -231,7 +247,19 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(1);
         status.SetActive(false);
     }
-    
-    
-    
+
+    public void invokeSlideSave()
+    {
+        Invoke("saveSlideSettings", 0.3f);
+    }
+
+    public void saveSlideSettings()
+    {
+        presetPos = optionsOG.presetPage.GetComponent<RectTransform>().anchoredPosition;
+        Debug.Log("PRESET POS: " + presetPos);
+        speedPos = optionsOG.speedPage.GetComponent<RectTransform>().anchoredPosition;
+        WLPos = optionsOG.WLPage.GetComponent<RectTransform>().anchoredPosition;
+        songPos = optionsOG.SongPage.GetComponent<RectTransform>().anchoredPosition;
+        skinPos = optionsOG.SkinPage.GetComponent<RectTransform>().anchoredPosition;
+    }
 }

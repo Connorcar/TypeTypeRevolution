@@ -30,12 +30,12 @@ public class GameStuff : MonoBehaviour
     // Speed of Spawning Config
     public List<float> spawnTimes = new List<float>()
     {
-        2.5f, 2, 1.5f, 1f
+        2.5f, 2, 1.5f, 1.5f
     };
     
     private List<List<string>> defaultWords = new List<List<string>>(4);
-    private List<List<string>> oceanWords = new List<List<string>>(4);
     private List<List<string>> farmWords = new List<List<string>>(4);
+    private List<List<string>> oceanWords = new List<List<string>>(4);
     private List<List<string>> winterWords = new List<List<string>>(4);
     private List<List<string>> evilWords = new List<List<string>>(4);
     
@@ -266,9 +266,9 @@ public class GameStuff : MonoBehaviour
         levelArrows.Add(songThree);
 
         themedWords.Add(defaultWords);
+        themedWords.Add(farmWords);
         themedWords.Add(oceanWords);
         themedWords.Add(winterWords);
-        themedWords.Add(farmWords);
         themedWords.Add(evilWords);
     }
 }
