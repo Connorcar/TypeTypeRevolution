@@ -24,6 +24,9 @@ public class Arrow : MonoBehaviour
     public TMPro.TextMeshPro wordoutput;
     public int Num;
 
+    public Sprite[] arrowSprites;
+    private SpriteRenderer sr;
+
     public Canvas pauseMenu;
     
     private Game game;
@@ -46,6 +49,7 @@ public class Arrow : MonoBehaviour
         gs = Sound.GetComponent<GameSounds>();
         arrowSpawner = AS.GetComponent<ArrowSpawner>();
         game = g.GetComponent<Game>();
+        sr = this.GetComponent<SpriteRenderer>();
         wordBank = wb.GetComponent<WordBank>();
         wordoutput = GameObject.Find("Output").GetComponent<TMPro.TextMeshPro>();
         pauseMenu = GameObject.Find("Canvas-PauseMenu").GetComponent<Canvas>();
@@ -78,21 +82,29 @@ public class Arrow : MonoBehaviour
                 {
                     case KeyCode.Alpha1:
                         gs.playOne();
+                        sr.sprite = arrowSprites[0];
+                        arrowSpawner.playParticleEffect(1);
                         break;
                     case KeyCode.Alpha2:
                         gs.playTwo();
+                        sr.sprite = arrowSprites[1];
+                        arrowSpawner.playParticleEffect(2);
                         break;
                     case KeyCode.Alpha3:
                         gs.playThree();
+                        sr.sprite = arrowSprites[2];
+                        arrowSpawner.playParticleEffect(3);
                         break;
                     case KeyCode.Alpha4:
                         gs.playFour();
+                        sr.sprite = arrowSprites[3];
+                        arrowSpawner.playParticleEffect(4);
                         break;
                 }
-                
-                Destroy(gameObject);
-                arrowSpawner.removeArrow();
-                
+
+                // Destroy(gameObject);
+                // arrowSpawner.removeArrow(); 
+                StartCoroutine(DestroyDelay());         
 
                 if (Mathf.Abs(transform.position.y - 5.55f) < 1 &&
                     Mathf.Abs(transform.position.y - 5.55f) > 0.35)
@@ -128,5 +140,12 @@ public class Arrow : MonoBehaviour
         {
             canBePressed = true;
         }
+    }
+
+    public IEnumerator DestroyDelay()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
+        arrowSpawner.removeArrow();
     }
 }

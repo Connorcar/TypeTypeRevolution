@@ -104,6 +104,11 @@ MonoBehaviour:
   canBePressed: 0
   wordoutput: {fileID: 5017307949996545717}
   Num: 2
+  arrowSprites:
+  - {fileID: 21300000, guid: 7acffda9f705c7c49a0e67cce1377c48, type: 3}
+  - {fileID: 21300000, guid: 426edb71d3d424e479fc8dcc78a161c6, type: 3}
+  - {fileID: 21300000, guid: 114f79ce89ee90347ac530ca7bdc6ecf, type: 3}
+  - {fileID: 21300000, guid: 02f93a9ce8111b044b51087a4819d783, type: 3}
   pauseMenu: {fileID: 0}
 --- !u!58 &3015344155845793410
 CircleCollider2D:

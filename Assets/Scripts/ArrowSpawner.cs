@@ -35,6 +35,11 @@ public class ArrowSpawner : MonoBehaviour
     private float spawnTime;
     private int count = 0;
 
+    public ParticleSystem particleEffect1;
+    public ParticleSystem particleEffect2;
+    public ParticleSystem particleEffect3;
+    public ParticleSystem particleEffect4;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +53,7 @@ public class ArrowSpawner : MonoBehaviour
         spawnTime = game.gameStuff.spawnTimes[game.speed_op];
         game.isOver = false;
         game.GameSceneSetup();
+        //particleEffect4.Play();
         StartCoroutine("RepeatSpawnArrows");
     }
     
@@ -99,5 +105,25 @@ public class ArrowSpawner : MonoBehaviour
         onScreenArrows.Dequeue();
         words.ResetCurrentWord();
         print("Removing arrow");
+    }
+
+    public void playParticleEffect(int n)
+    {
+        switch (n)
+        {
+            case 1:
+                particleEffect1.Play();
+                break;
+            case 2:
+                particleEffect2.Play();
+                break;
+            case 3:
+                particleEffect3.Play();
+                break;
+            case 4:
+                particleEffect4.Play();                
+                break;
+        }
+        particleEffect4.Play();
     }
 }
