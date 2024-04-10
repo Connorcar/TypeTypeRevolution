@@ -70,6 +70,7 @@ public class Score : MonoBehaviour
     {
         if (Input.anyKey)
         {
+            game.ResetGame();
             StartCoroutine(ReturnToMenu());
         }
     }

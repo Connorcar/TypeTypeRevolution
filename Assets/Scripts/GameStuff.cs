@@ -34,8 +34,8 @@ public class GameStuff : MonoBehaviour
     };
     
     private List<List<string>> defaultWords = new List<List<string>>(4);
-    private List<List<string>> oceanWords = new List<List<string>>(4);
     private List<List<string>> farmWords = new List<List<string>>(4);
+    private List<List<string>> oceanWords = new List<List<string>>(4);
     private List<List<string>> winterWords = new List<List<string>>(4);
     private List<List<string>> evilWords = new List<List<string>>(4);
     
@@ -266,9 +266,9 @@ public class GameStuff : MonoBehaviour
         levelArrows.Add(songThree);
 
         themedWords.Add(defaultWords);
+        themedWords.Add(farmWords);
         themedWords.Add(oceanWords);
         themedWords.Add(winterWords);
-        themedWords.Add(farmWords);
         themedWords.Add(evilWords);
     }
 }

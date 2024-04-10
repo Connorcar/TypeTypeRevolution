@@ -31,6 +31,7 @@ public class Game : MonoBehaviour
     
     public GameObject GoodHitStatus;
     public GameObject PerfectHitStatus;
+    public GameObject MissHitStatus;
 
     // Game Control Unit
     public int speed_op;
@@ -117,8 +118,10 @@ public class Game : MonoBehaviour
         accuracyText = AT.GetComponent<TextMeshProUGUI>();
         GoodHitStatus = GameObject.Find("GoodHitStatus");
         PerfectHitStatus = GameObject.Find("PerfectHitStatus");
+        MissHitStatus = GameObject.Find("MissHitStatus");
         GoodHitStatus.SetActive(false);
         PerfectHitStatus.SetActive(false);
+        MissHitStatus.SetActive(false);
         currentCombo = 0;
         currentScore = 0;
         currentAcc = 100;
@@ -211,12 +214,15 @@ public class Game : MonoBehaviour
 
     public void NoteMiss()
     {
+        Instantiate(MissHitStatus, transform.position, Quaternion.identity);
         highestCombo = currentCombo;
         Debug.Log("Highest Combo: " + highestCombo);
         currentCombo = 0;
         numMissed++;
         currentAcc -= 100 * 1 / possibleHits;
+        StartCoroutine(HitStatus(MissHitStatus));
         comboText.text = "Combo: " + currentCombo;
+        accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
     }
 
     public void setAchievementColor(Color theme)
