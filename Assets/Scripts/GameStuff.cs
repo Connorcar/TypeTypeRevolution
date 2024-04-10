@@ -223,9 +223,9 @@ public class GameStuff : MonoBehaviour
     };
     private List<string> songTwo = new List<string>(24)
     {
-        "Left", "Left", "Right", "Right", "Up", "Down", "Left", "Right",
-        "Up", "Down", "Up", "Down", "Left", "Right", "Left", "Right",
-        "Up", "Left", "Down", "Right", "Up", "Right", "Down", "Left"
+        "Left", "Right", "Up", "Down", "Up", "Left", "Up", "Right", 
+        "Down", "Down", "Left", "Right", "Left", "Down", "Right", "Up",
+        "Up", "Down", "Left", "Left", "Up", "Down", "Right", "Right"
     };
     private List<string> songThree = new List<string>(24)
     {

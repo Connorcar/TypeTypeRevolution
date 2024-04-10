@@ -238,6 +238,12 @@ public class Game : MonoBehaviour
         status.SetActive(false);
     }
     
-    
+    public void ResetOptions()
+    {
+        speed_op = 0;
+        letter_op = 0;
+        theme_op = 0;
+        song_op = 0;
+    }
     
 }
