@@ -13622,7 +13622,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 710038838}
   m_Direction: 2
   m_Value: -0.0000008138021
-  m_Size: 0.30745512
+  m_Size: 0.30769232
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16658,7 +16658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &1248156138
 CanvasGroup:
   m_ObjectHideFlags: 0
