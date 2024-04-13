@@ -28,6 +28,9 @@ public class Game : MonoBehaviour
     public double score;
     public bool isScoreScene = false;
     public bool isOver;
+    public int maximum = 100;
+    public int current;
+    public Image Mask;
     
     public GameObject GoodHitStatus;
     public GameObject PerfectHitStatus;
@@ -60,12 +63,11 @@ public class Game : MonoBehaviour
     // public double currentAcc = 100;
     private double scorePerGoodNote = 1;
     private double scorePerPerfectNote = 1.25;
-    private GameObject ST;
     private GameObject MT;
     private GameObject AT;
-    private TextMeshProUGUI scoreText;
     private TextMeshProUGUI comboText;
-    private TextMeshProUGUI accuracyText;
+    
+    // private TextMeshProUGUI accuracyText;
 
     private void Awake()
     {
@@ -91,6 +93,7 @@ public class Game : MonoBehaviour
 
     void Update()
     {
+        getCurrentFill();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
@@ -107,15 +110,14 @@ public class Game : MonoBehaviour
     {
         Debug.Log("Game Scene Setup");
         Combo = GameObject.Find("Combo");
-        ST = GameObject.Find("ScoreText");
         MT = GameObject.Find("ComboText");
         // AT = GameObject.Find("AccuracyText");
-        scoreText = ST.GetComponent<TextMeshProUGUI>();
         comboText = MT.GetComponent<TextMeshProUGUI>();
         // accuracyText = AT.GetComponent<TextMeshProUGUI>();
         GoodHitStatus = GameObject.Find("GoodHitStatus");
         PerfectHitStatus = GameObject.Find("PerfectHitStatus");
         MissHitStatus = GameObject.Find("MissHitStatus");
+        Mask = GameObject.Find("Mask").GetComponent<Image>();
         GoodHitStatus.SetActive(false);
         PerfectHitStatus.SetActive(false);
         MissHitStatus.SetActive(false);
@@ -149,6 +151,7 @@ public class Game : MonoBehaviour
         numMissed = 0;
         currentCombo = 0;
         currentScore = 0;
+        current = 0;
         // currentAcc = 100;
     }
 
@@ -183,8 +186,10 @@ public class Game : MonoBehaviour
         {
             highestCombo = currentCombo;
         }
+
+        current = (int)currentScore;
         currentScore = 100 * hits / (possibleHits * scorePerPerfectNote);
-        scoreText.text = "Score: " + Math.Round(currentScore,2) + "%";
+        // scoreText.text = "Score: " + Math.Round(currentScore,2) + "%";
         comboText.text = currentCombo.ToString();
         // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
         if (currentCombo > 2)
@@ -252,6 +257,12 @@ public class Game : MonoBehaviour
         letter_op = 0;
         theme_op = 0;
         song_op = 0;
+    }
+
+    void getCurrentFill()
+    {
+        float fillAmount = (float)current / (float)maximum;
+        Mask.fillAmount = fillAmount;
     }
     
 }
