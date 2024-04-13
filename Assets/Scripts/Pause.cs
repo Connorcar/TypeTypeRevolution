@@ -69,6 +69,7 @@ public class Pause : MonoBehaviour
 
     public void onHomeClick()
     {
+        game.ResetOptions();
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }

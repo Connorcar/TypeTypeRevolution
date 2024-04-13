@@ -27,6 +27,7 @@ public class Button : MonoBehaviour
     public Canvas Options;
     // public Canvas TrophyCase;
     public GameObject CountDownBackground;
+    public AudioSource titleSound;
     public AudioSource goSound;
     public AudioSource mainMenuMusic;
     public SwipeController CDswipeController;
@@ -39,6 +40,8 @@ public class Button : MonoBehaviour
 
     public Animator OptionScreen;
     public Animator MenuScreen;
+
+    private bool gameLoaded;
     
     // Start is called before the first frame update
     void Awake()
@@ -56,11 +59,13 @@ public class Button : MonoBehaviour
         // countdownText.enabled = false;
         g = GameObject.Find("GameController");
         game = g.GetComponent<Game>();
+
+        gameLoaded = false;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !gameLoaded)
         {
             Debug.Log("helo");
             //coroutine for MM transition
@@ -96,6 +101,9 @@ public class Button : MonoBehaviour
     {
         // MainMenu.GetComponent<Canvas>().enabled = false;
         // Options.GetComponent<Canvas>().enabled = true;
+
+        titleSound.Play();
+        gameLoaded = true;
 
         MenuScreen.Play("MM_fadeout");
         yield return new WaitForSeconds(1f);
