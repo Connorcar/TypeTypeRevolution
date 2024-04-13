@@ -48,11 +48,7 @@ public class Game : MonoBehaviour
     public Transform canvasTransform;
     public Color achievementColor;
     public GameObject achievementPanel;
-    // public Color defaultColor;
-    // public Color farmColor;
-    // public Color oceanColor;
-    // public Color winterColor;
-    // public Color evilColor;
+    public GameObject Combo;
 
     // Combo & Accuracy Stuff
     public int currentCombo = 0;
@@ -61,7 +57,7 @@ public class Game : MonoBehaviour
     public int numPerfect;
     public int numMissed;
     public double currentScore = 0;
-    public double currentAcc = 100;
+    // public double currentAcc = 100;
     private double scorePerGoodNote = 1;
     private double scorePerPerfectNote = 1.25;
     private GameObject ST;
@@ -110,21 +106,23 @@ public class Game : MonoBehaviour
     public void GameSceneSetup()
     {
         Debug.Log("Game Scene Setup");
+        Combo = GameObject.Find("Combo");
         ST = GameObject.Find("ScoreText");
         MT = GameObject.Find("ComboText");
-        AT = GameObject.Find("AccuracyText");
+        // AT = GameObject.Find("AccuracyText");
         scoreText = ST.GetComponent<TextMeshProUGUI>();
         comboText = MT.GetComponent<TextMeshProUGUI>();
-        accuracyText = AT.GetComponent<TextMeshProUGUI>();
+        // accuracyText = AT.GetComponent<TextMeshProUGUI>();
         GoodHitStatus = GameObject.Find("GoodHitStatus");
         PerfectHitStatus = GameObject.Find("PerfectHitStatus");
         MissHitStatus = GameObject.Find("MissHitStatus");
         GoodHitStatus.SetActive(false);
         PerfectHitStatus.SetActive(false);
         MissHitStatus.SetActive(false);
+        Combo.SetActive(false);
         currentCombo = 0;
         currentScore = 0;
-        currentAcc = 100;
+        // currentAcc = 100;
     }
     
     // Loads score scene and calculates the score
@@ -151,7 +149,7 @@ public class Game : MonoBehaviour
         numMissed = 0;
         currentCombo = 0;
         currentScore = 0;
-        currentAcc = 100;
+        // currentAcc = 100;
     }
 
     public void AchievementsPopup(Image currAchievementIcon, string currAchievementTitle)
@@ -181,11 +179,18 @@ public class Game : MonoBehaviour
 
     public void NoteHit()
     {
+        if (currentCombo > highestCombo)
+        {
+            highestCombo = currentCombo;
+        }
         currentScore = 100 * hits / (possibleHits * scorePerPerfectNote);
         scoreText.text = "Score: " + Math.Round(currentScore,2) + "%";
-        comboText.text = "Combo: " + currentCombo;
-        accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
-
+        comboText.text = currentCombo.ToString();
+        // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
+        if (currentCombo > 2)
+        {
+            StartCoroutine(HitStatus(Combo));
+        }
     }
 
     public void GoodHit()
@@ -194,7 +199,7 @@ public class Game : MonoBehaviour
         hits += scorePerGoodNote;
         currentCombo++;
         numGood++;
-        currentAcc -= 100 * 0.25 / possibleHits;
+        // currentAcc -= 100 * 0.25 / possibleHits;
         StartCoroutine(HitStatus(GoodHitStatus));
         NoteHit();
     }
@@ -215,14 +220,17 @@ public class Game : MonoBehaviour
     public void NoteMiss()
     {
         Instantiate(MissHitStatus, transform.position, Quaternion.identity);
-        highestCombo = currentCombo;
+        if (currentCombo > highestCombo)
+        {
+            highestCombo = currentCombo;
+        }
         Debug.Log("Highest Combo: " + highestCombo);
         currentCombo = 0;
         numMissed++;
-        currentAcc -= 100 * 1 / possibleHits;
+        // currentAcc -= 100 * 1 / possibleHits;
         StartCoroutine(HitStatus(MissHitStatus));
-        comboText.text = "Combo: " + currentCombo;
-        accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
+        comboText.text = currentCombo.ToString();
+        // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
     }
 
     public void setAchievementColor(Color theme)
@@ -237,7 +245,4 @@ public class Game : MonoBehaviour
         yield return new WaitForSeconds(1);
         status.SetActive(false);
     }
-    
-    
-    
 }

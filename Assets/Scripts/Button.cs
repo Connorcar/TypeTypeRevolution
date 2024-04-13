@@ -71,6 +71,7 @@ public class Button : MonoBehaviour
 
     private IEnumerator LoadGame()
     {
+        Cursor.visible = false;
         OptionScreen.Play("OP_slideout");
         yield return new WaitForSeconds(2f);
         mainMenuMusic.Stop();

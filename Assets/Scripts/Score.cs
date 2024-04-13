@@ -13,17 +13,24 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
+    [SerializeField] private Sprite RS_fail;
+    [SerializeField] private Sprite RS_okay;
+    [SerializeField] private Sprite RS_golden;
+    [SerializeField] private Sprite RS_perfect;
+    
     public TextMeshProUGUI totalScore;
-    public GameObject fail;
-    public GameObject okay;
-    public GameObject golden;
-    public GameObject perfect;
+    public TextMeshProUGUI missNum;
+    public TextMeshProUGUI goodNum;
+    public TextMeshProUGUI perfectNum;
+    public TextMeshProUGUI highestCombo;
+    
     private GameObject gc;
     private Game game;
     private AchievementManager achievements;
@@ -32,35 +39,36 @@ public class Score : MonoBehaviour
 
     void Start()
     {
-
+        Cursor.visible = true;
         gc = GameObject.Find("GameController");
         game = gc.GetComponent<Game>();
         achievements = gc.GetComponent<AchievementManager>();
         
         totalScore.text = game.score.ToString() + "%";
+        goodNum.text = game.numGood.ToString();
+        perfectNum.text = game.numPerfect.ToString();
+        missNum.text = game.numMissed.ToString();
+        highestCombo.text = game.highestCombo.ToString();
+        
 
         if (game.score < 60f)
         {
-            /* fail.SetActive(true);
-             golden.SetActive(false);
-             okay.SetActive(false);
-             perfect.SetActive(false);*/
-            Result.GetComponent<Image>().sprite.name = "R_fail";
+            Result.GetComponent<Image>().sprite = RS_fail;
             achievements.UnlockAchievement("fail");
         } 
-        else if (game.score < 90f)
+        else if (game.score < 85f)
         {
-            Result.GetComponent<Image>().sprite.name = "R_okay";
+            Result.GetComponent<Image>().sprite = RS_okay;
             achievements.UnlockAchievement("okay");
         } 
         else if (game.score < 100f)
         {
-            Result.GetComponent<Image>().sprite.name = "R_golden";
+            Result.GetComponent<Image>().sprite = RS_golden;
             achievements.UnlockAchievement("golden");
         }
         else
         {
-            Result.GetComponent<Image>().sprite.name = "R_perfect";
+            Result.GetComponent<Image>().sprite = RS_perfect;
             achievements.UnlockAchievement("perfect");
         }
 

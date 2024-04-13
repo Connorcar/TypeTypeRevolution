@@ -102,9 +102,9 @@ public class Arrow : MonoBehaviour
                         break;
                 }
 
-                // Destroy(gameObject);
-                // arrowSpawner.removeArrow(); 
-                StartCoroutine(DestroyDelay());         
+                Destroy(gameObject);
+                arrowSpawner.removeArrow(); 
+                // StartCoroutine(DestroyDelay());         
 
                 if (Mathf.Abs(transform.position.y - 5.55f) < 1 &&
                     Mathf.Abs(transform.position.y - 5.55f) > 0.35)
