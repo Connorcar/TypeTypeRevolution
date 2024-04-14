@@ -18,6 +18,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Transactions;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 
 public class Game : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Game : MonoBehaviour
     public GameObject GoodHitStatus;
     public GameObject PerfectHitStatus;
     public GameObject MissHitStatus;
+
+    public GameObject HitStatusParent;
 
     // Game Control Unit
     public int speed_op;
@@ -60,6 +63,8 @@ public class Game : MonoBehaviour
     public int numPerfect;
     public int numMissed;
     public double currentScore = 0;
+    public Color32 lowComboColor; //= new Color32(153, 51, 153, 1);
+    public Color32 highComboColor; //= new Color32(255,255,204,1);
     // public double currentAcc = 100;
     private double scorePerGoodNote = 1;
     private double scorePerPerfectNote = 1.25;
@@ -117,11 +122,14 @@ public class Game : MonoBehaviour
         GoodHitStatus = GameObject.Find("GoodHitStatus");
         PerfectHitStatus = GameObject.Find("PerfectHitStatus");
         MissHitStatus = GameObject.Find("MissHitStatus");
+        HitStatusParent = GameObject.Find("HitStatusParent");
         Mask = GameObject.Find("Mask").GetComponent<Image>();
         GoodHitStatus.SetActive(false);
         PerfectHitStatus.SetActive(false);
         MissHitStatus.SetActive(false);
-        Combo.SetActive(false);
+        Combo.SetActive(true);
+        comboText.fontSize = 130;
+        comboText.color = lowComboColor;
         currentCombo = 0;
         currentScore = 0;
         // currentAcc = 100;
@@ -192,8 +200,16 @@ public class Game : MonoBehaviour
         // scoreText.text = "Score: " + Math.Round(currentScore,2) + "%";
         comboText.text = currentCombo.ToString();
         // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
+        /*if (currentCombo == 0)
+        {
+            comboText.color = lowComboColor;
+            Combo.SetActive(true);
+        }*/
+
         if (currentCombo > 2)
         {
+            comboText.color = highComboColor;
+            comboText.fontSize = 170;
             Combo.SetActive(true);
         }
     }
@@ -206,6 +222,7 @@ public class Game : MonoBehaviour
         numGood++;
         // currentAcc -= 100 * 0.25 / possibleHits;
         StartCoroutine(HitStatus(GoodHitStatus));
+        HitStatusParent.GetComponent<Animator>().Play("G_goodhit");
         NoteHit();
     }
     
@@ -219,12 +236,13 @@ public class Game : MonoBehaviour
         currentCombo++;
         numPerfect++;
         StartCoroutine(HitStatus(PerfectHitStatus));
+        HitStatusParent.GetComponent<Animator>().Play("G_perfecthit");
         NoteHit();
     }
 
     public void NoteMiss()
     {
-        Combo.SetActive(false);
+        //Combo.SetActive(false);
         Instantiate(MissHitStatus, transform.position, Quaternion.identity);
         if (currentCombo > highestCombo)
         {
@@ -232,9 +250,12 @@ public class Game : MonoBehaviour
         }
         Debug.Log("Highest Combo: " + highestCombo);
         currentCombo = 0;
+        comboText.color = lowComboColor;
+        comboText.fontSize = 130;
         numMissed++;
         // currentAcc -= 100 * 1 / possibleHits;
         StartCoroutine(HitStatus(MissHitStatus));
+        HitStatusParent.GetComponent<Animator>().Play("G_misshit");
         comboText.text = currentCombo.ToString();
         // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
     }
