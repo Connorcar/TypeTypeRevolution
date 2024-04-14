@@ -76,7 +76,7 @@ public class Options : MonoBehaviour
     
     private List<string> themeArr = new List<string>()
     {
-        "Default", "Ocean", "Winter", "Farm", "Evil"
+        "Default", "Farm", "Ocean", "Winter", "Evil"
     };
 
     private List<string> songArr = new List<string>()
@@ -308,8 +308,8 @@ public class Options : MonoBehaviour
         }
         else
         {
-            currIndex = 0;
-            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[0];
+            currIndex = 4;
+            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[4];
         }
 
         Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);
@@ -328,8 +328,8 @@ public class Options : MonoBehaviour
         }
         else
         {
-            currIndex = 4;
-            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[4];
+            currIndex = 0;
+            themeText.GetComponent<TextMeshProUGUI>().text = themeArr[0];
         }
 
         Debug.Log("current theme is " + themeText.GetComponent<TextMeshProUGUI>().text);

@@ -37,10 +37,12 @@ public class Pause : MonoBehaviour
         {
             if (PauseMenu.enabled == false)
             {
+                Cursor.visible = true;
                 PauseGame();
             }
             else
             {
+                Cursor.visible = false;
                 ResumeGame();
             }
         }
@@ -69,6 +71,7 @@ public class Pause : MonoBehaviour
 
     public void onHomeClick()
     {
+        game.ResetOptions();
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }
