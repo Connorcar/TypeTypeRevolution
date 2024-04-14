@@ -194,7 +194,7 @@ public class Game : MonoBehaviour
         // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
         if (currentCombo > 2)
         {
-            StartCoroutine(HitStatus(Combo));
+            Combo.SetActive(true);
         }
     }
 
@@ -224,6 +224,7 @@ public class Game : MonoBehaviour
 
     public void NoteMiss()
     {
+        Combo.SetActive(false);
         Instantiate(MissHitStatus, transform.position, Quaternion.identity);
         if (currentCombo > highestCombo)
         {
