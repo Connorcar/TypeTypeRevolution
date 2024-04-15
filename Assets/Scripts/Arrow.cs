@@ -84,25 +84,21 @@ public class Arrow : MonoBehaviour
                         gs.playOne();
                         sr.sprite = arrowSprites[0];
                         arrowSpawner.playParticleEffect(1);
-                        arrowSpawner.playParticleEffect(5);
                         break;
                     case KeyCode.Alpha2:
                         gs.playTwo();
                         sr.sprite = arrowSprites[1];
                         arrowSpawner.playParticleEffect(2);
-                        arrowSpawner.playParticleEffect(6);
                         break;
                     case KeyCode.Alpha3:
                         gs.playThree();
                         sr.sprite = arrowSprites[2];
                         arrowSpawner.playParticleEffect(3);
-                        arrowSpawner.playParticleEffect(7);
                         break;
                     case KeyCode.Alpha4:
                         gs.playFour();
                         sr.sprite = arrowSprites[3];
                         arrowSpawner.playParticleEffect(4);
-                        arrowSpawner.playParticleEffect(8);
                         break;
                 }
 
