@@ -51,11 +51,11 @@ public class AchievementManager : MonoBehaviour
         achievements.Add("perfectevil", false);
         achievements.Add("playedevil", false);
 
-        achievements.Add("allPerfect", false);
-        achievements.Add("allThemes", false);
-        achievements.Add("allDifficulties", false);
-        achievements.Add("allSongs", false);
-        achievements.Add("allAchievements", false);
+        achievements.Add("allperfect", false);
+        achievements.Add("allthemes", false);
+        achievements.Add("alldifficulties", false);
+        achievements.Add("allsongs", false);
+        achievements.Add("allachievements", false);
 
         //this list is for internal use only, controls unlockables
         achievements.Add("playedEasyInternal", false);
@@ -90,6 +90,8 @@ public class AchievementManager : MonoBehaviour
                 if(achievement.Contains("Internal") == false){
                     game.AchievementsPopup(achievementIcon, achievementName);
                     numAchievements++;
+                    PlayerPrefs.SetInt(achievementName, 1);
+                    PlayerPrefs.Save();
                 }        
             }
             checkIfPlayed(theme);
@@ -118,9 +120,6 @@ public class AchievementManager : MonoBehaviour
             }else if(difficulty == "demon"){
                 UnlockAchievement("playedDemonInternal");
             }
-
-            PlayerPrefs.SetInt(achievementName, 1);
-            PlayerPrefs.Save();
         }else{
             Debug.Log("Achievement not found");
             printAchievements();
@@ -129,10 +128,27 @@ public class AchievementManager : MonoBehaviour
 
     public void checkAllThemes()
     {
+        Debug.Log("checking all themes");
         if(achievements["playeddefault"] == true && achievements["playedocean"] == true && achievements["playedfarm"] == true && achievements["playedwinter"] == true && achievements["playedevil"] == true)
         {
+            Debug.Log("all themes played");
             UnlockAchievement("allThemes" );
         }
+        // if(achievements["playeddefault"] == false){
+        //     Debug.Log("default not played");
+        // }
+        // if(achievements["playedocean"] == false){
+        //     Debug.Log("ocean not played");
+        // }
+        // if(achievements["playedfarm"] == false){
+        //     Debug.Log("farm not played");
+        // }
+        // if(achievements["playedwinter"] == false){
+        //     Debug.Log("winter not played");
+        // }
+        // if(achievements["playedevil"] == false){
+        //     Debug.Log("evil not played");
+        // }
     }
     public void checkAllPerfect(){
         if(achievements["perfectdefault"] == true && achievements["perfectocean"] == true && achievements["perfectfarm"] == true && achievements["perfectwinter"] == true && achievements["perfectevil"] == true)
