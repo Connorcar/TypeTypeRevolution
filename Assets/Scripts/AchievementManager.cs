@@ -58,12 +58,12 @@ public class AchievementManager : MonoBehaviour
         achievements.Add("allAchievements", false);
 
         //this list is for internal use only, controls unlockables
-        achievements.Add("playedEasy", false);
-        achievements.Add("playedNormal", false);
-        achievements.Add("playedHard", false);
-        achievements.Add("playedDemon", false);
-        achievements.Add("playedBay", false);
-        achievements.Add("playedResolve", false);
+        achievements.Add("playedEasyInternal", false);
+        achievements.Add("playedNormalInternal", false);
+        achievements.Add("playedHardInternal", false);
+        achievements.Add("playedDemonInternal", false);
+        achievements.Add("playedBayInternal", false);
+        achievements.Add("playedResolveInternal", false);
 
         achievementIcon.sprite = achievementSprite;   
     }
@@ -87,10 +87,10 @@ public class AchievementManager : MonoBehaviour
             }else{
                 achievements[achievementName] = true; 
                 Debug.Log("unlocking achievement " + achievementName);
-                //if(!(achievement.Contains("all") && achievement.Contains("played"))){ // no popup for all themes or played
+                if(achievement.Contains("Internal") == false){
                     game.AchievementsPopup(achievementIcon, achievementName);
-                //}
-                numAchievements++;        
+                    numAchievements++;
+                }        
             }
             checkIfPlayed(theme);
             if(PartialMatch("played")){
@@ -104,19 +104,19 @@ public class AchievementManager : MonoBehaviour
             }
 
             if(song == "bay"){
-                UnlockAchievement("playedBay");
+                UnlockAchievement("playedBayInternal");
             }else{
-                UnlockAchievement("playedResolve");
+                UnlockAchievement("playedResolveInternal");
             }
 
             if(difficulty == "easy"){
-                UnlockAchievement("playedEasy");
+                UnlockAchievement("playedEasyInternal");
             }else if(difficulty == "norm"){
-                UnlockAchievement("playedNormal");
+                UnlockAchievement("playedNormalInternal");
             }else if(difficulty == "hard"){
-                UnlockAchievement("playedHard");
+                UnlockAchievement("playedHardInternal");
             }else if(difficulty == "demon"){
-                UnlockAchievement("playedDemon");
+                UnlockAchievement("playedDemonInternal");
             }
 
             PlayerPrefs.SetInt(achievementName, 1);
@@ -141,13 +141,13 @@ public class AchievementManager : MonoBehaviour
         }
     }
     public void checkAllDifficulties(){
-        if(achievements["playedEasy"] == true && achievements["playedNormal"] == true && achievements["playedHard"] == true && achievements["playedDemon"] == true)
+        if(achievements["playedEasyInternal"] == true && achievements["playedNormalInternal"] == true && achievements["playedHardInternal"] == true && achievements["playedDemonInternal"] == true)
         {
             UnlockAchievement("allDifficulties");
         }
     }
     public void checkAllSongs(){
-        if(achievements["playedBay"] == true && achievements["playedResolve"] == true)
+        if(achievements["playedBayInternal"] == true && achievements["playedResolveInternal"] == true)
         {
             UnlockAchievement("allSongs");
         }

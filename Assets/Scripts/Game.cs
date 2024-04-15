@@ -52,6 +52,10 @@ public class Game : MonoBehaviour
     public Color achievementColor;
     public GameObject achievementPanel;
     public GameObject Combo;
+    private Queue<Color> achievementColorQueue = new Queue<Color>();
+    private Queue<string> achievementTitleQueue = new Queue<string>();
+    private Queue<Image> achievementIconQueue = new Queue<Image>();
+    private bool isAchievementPopupOpen = false;
 
     // Combo & Accuracy Stuff
     public int currentCombo = 0;
@@ -162,17 +166,27 @@ public class Game : MonoBehaviour
             instance.StartCoroutine(WaitForPopup());
         } 
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 1;
-        Debug.Log("Achievement Unlocked: " + currAchievementTitle);    
-        achievementIcon = currAchievementIcon;
-        achievementTitle.text = currAchievementTitle;
-        achievementPanel.GetComponent<Image>().color = achievementColor;
-        instance.StartCoroutine(CloseAchievementsPopup());      
+        Debug.Log("Achievement Unlocked: " + currAchievementTitle);   
+        achievementColorQueue.Enqueue(achievementColor);
+        achievementTitleQueue.Enqueue(currAchievementTitle);
+        achievementIconQueue.Enqueue(currAchievementIcon);
+        if(!isAchievementPopupOpen){
+            instance.StartCoroutine(CloseAchievementsPopup());  
+        }    
     }
 
     public IEnumerator CloseAchievementsPopup()
     {
-        yield return new WaitForSeconds(3);
+        while(achievementColorQueue.Count > 0)
+        {
+            isAchievementPopupOpen = true;
+            achievementPanel.GetComponent<Image>().color = achievementColorQueue.Dequeue();
+            achievementTitle.text = achievementTitleQueue.Dequeue();
+            achievementIcon.sprite = achievementIconQueue.Dequeue().sprite;
+            yield return new WaitForSeconds(3);
+        }
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 0;
+        isAchievementPopupOpen = false;
     }
 
     public IEnumerator WaitForPopup()
@@ -263,7 +277,7 @@ public class Game : MonoBehaviour
     void getCurrentFill()
     {
         float fillAmount = (float)current / (float)maximum;
-        //Mask.fillAmount = fillAmount;
+        Mask.fillAmount = fillAmount;
     }
     
 }
