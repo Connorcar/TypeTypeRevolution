@@ -132,6 +132,5 @@ public class ArrowSpawner : MonoBehaviour
                 particleEffect8.Play();              
                 break;
         }
-        particleEffect4.Play();
     }
 }
