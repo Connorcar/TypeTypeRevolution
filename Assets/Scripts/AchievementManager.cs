@@ -8,8 +8,11 @@ public class AchievementManager : MonoBehaviour
 {
     public Game game;
     public string theme = "default"; 
+    public string difficulty = "easy";
+    public string song = "bay";
     
-    static public int numAchievements = 27;
+    static public int numAchievements = 30;
+    private int achievementsUnlocked = 0;
     //public bool[] achievements = new bool[numAchievements];
     public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
     public Sprite achievementSprite;
@@ -50,15 +53,27 @@ public class AchievementManager : MonoBehaviour
 
         achievements.Add("allPerfect", false);
         achievements.Add("allThemes", false);
+        achievements.Add("allDifficulties", false);
+        achievements.Add("allSongs", false);
+        achievements.Add("allAchievements", false);
+
+        //this list is for internal use only, controls unlockables
+        achievements.Add("playedEasy", false);
+        achievements.Add("playedNormal", false);
+        achievements.Add("playedHard", false);
+        achievements.Add("playedDemon", false);
+        achievements.Add("playedBay", false);
+        achievements.Add("playedResolve", false);
 
         achievementIcon.sprite = achievementSprite;   
     }
 
-    public void UnlockAchievement(string score)
+    public void UnlockAchievement(string achievement)
     {
-        string achievementName = score;
-        if(score.Contains("all") == false && score.Contains("played") == false){
-            achievementName = score + theme;
+        string achievementName = achievement;
+        //check if it is a score related achievement
+        if(achievement.Contains("all") == false && achievement.Contains("played") == false){
+            achievementName = achievement + theme;
         }
         
         Debug.Log("checking for " + achievementName);
@@ -72,17 +87,38 @@ public class AchievementManager : MonoBehaviour
             }else{
                 achievements[achievementName] = true; 
                 Debug.Log("unlocking achievement " + achievementName);
-                //if(!(score.Contains("all") && score.Contains("played"))){ // no popup for all themes or played
+                //if(!(achievement.Contains("all") && achievement.Contains("played"))){ // no popup for all themes or played
                     game.AchievementsPopup(achievementIcon, achievementName);
-                //}           
+                //}
+                numAchievements++;        
             }
             checkIfPlayed(theme);
             if(PartialMatch("played")){
                 checkAllThemes();
+                checkAllAchievements();
+                checkAllDifficulties();
+                checkAllSongs();
             }
             if(PartialMatch("perfect")){
                 checkAllPerfect();
             }
+
+            if(song == "bay"){
+                UnlockAchievement("playedBay");
+            }else{
+                UnlockAchievement("playedResolve");
+            }
+
+            if(difficulty == "easy"){
+                UnlockAchievement("playedEasy");
+            }else if(difficulty == "norm"){
+                UnlockAchievement("playedNormal");
+            }else if(difficulty == "hard"){
+                UnlockAchievement("playedHard");
+            }else if(difficulty == "demon"){
+                UnlockAchievement("playedDemon");
+            }
+
             PlayerPrefs.SetInt(achievementName, 1);
             PlayerPrefs.Save();
         }else{
@@ -90,6 +126,7 @@ public class AchievementManager : MonoBehaviour
             printAchievements();
         }
     }
+
     public void checkAllThemes()
     {
         if(achievements["playeddefault"] == true && achievements["playedocean"] == true && achievements["playedfarm"] == true && achievements["playedwinter"] == true && achievements["playedevil"] == true)
@@ -101,6 +138,24 @@ public class AchievementManager : MonoBehaviour
         if(achievements["perfectdefault"] == true && achievements["perfectocean"] == true && achievements["perfectfarm"] == true && achievements["perfectwinter"] == true && achievements["perfectevil"] == true)
         {
             UnlockAchievement("allPerfect" );
+        }
+    }
+    public void checkAllDifficulties(){
+        if(achievements["playedEasy"] == true && achievements["playedNormal"] == true && achievements["playedHard"] == true && achievements["playedDemon"] == true)
+        {
+            UnlockAchievement("allDifficulties");
+        }
+    }
+    public void checkAllSongs(){
+        if(achievements["playedBay"] == true && achievements["playedResolve"] == true)
+        {
+            UnlockAchievement("allSongs");
+        }
+    }
+    public void checkAllAchievements(){
+        if(numAchievements == 30)
+        {
+            UnlockAchievement("allAchievements");
         }
     }
     public void checkIfPlayed(string theme){
@@ -145,6 +200,18 @@ public class AchievementManager : MonoBehaviour
     public void setTheme(string newTheme){
         theme = newTheme.ToLower();
         Debug.Log("current theme is " + theme);
+    }
+    public void setDifficulty(string newDifficulty){
+        difficulty = newDifficulty.ToLower();
+        Debug.Log("current difficulty is " + difficulty);
+    }
+    public void setSong(int newSong){
+        if(newSong == 0){
+            song = "bay";
+        }else{
+            song = "resolve";
+        }
+        Debug.Log("current song is " + song);
     }
 
     public void printAchievements(){
