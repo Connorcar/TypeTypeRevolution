@@ -157,7 +157,7 @@ public class Options : MonoBehaviour
 
     private void setTheme()
     {
-        //gc.theme_op = gc.theme_op;
+        gc.theme_op = 0;
         gc.setAchievementColor(gs.themeColors[gc.theme_op]);
         themeText.GetComponent<TextMeshProUGUI>().text = themeArr[gc.theme_op];
         
@@ -181,6 +181,8 @@ public class Options : MonoBehaviour
         WLText.GetComponent<TextMeshProUGUI>().text = WLArr[currIndex];
 
         changePresetColor(currIndex);
+
+        am.setDifficulty(presetText.GetComponent<TextMeshProUGUI>().text);
     }
     
 
@@ -202,6 +204,8 @@ public class Options : MonoBehaviour
         WLText.GetComponent<TextMeshProUGUI>().text = WLArr[currIndex];
         
         changePresetColor(currIndex);
+
+        am.setDifficulty(presetText.GetComponent<TextMeshProUGUI>().text);
     }
     
     private void changePresetColor(int currIndex)
@@ -356,6 +360,8 @@ public class Options : MonoBehaviour
             onSongPreviewClick();
         }        
         gc.song_op = currIndex;
+
+        am.setSong(gc.song_op);
     }
 
     public void onSongPrev()
@@ -375,6 +381,8 @@ public class Options : MonoBehaviour
             onSongPreviewClick();
         }
         gc.song_op = currIndex;
+
+        am.setSong(gc.song_op);
     }
 
     public void onSongPreviewClick(){
