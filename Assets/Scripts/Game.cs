@@ -277,7 +277,7 @@ public class Game : MonoBehaviour
     void getCurrentFill()
     {
         float fillAmount = (float)current / (float)maximum;
-        Mask.fillAmount = fillAmount;
+        //Mask.fillAmount = fillAmount;
     }
     
 }

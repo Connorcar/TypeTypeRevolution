@@ -12,6 +12,9 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
     private int currPage;
     private Vector3 targetPos;
     private float dragThreshold;
+    public bool isControllingSkins;
+    [SerializeField]  public AchievementManager am;
+
 
     [SerializeField] private Vector3 pageStep;
 
@@ -30,6 +33,13 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
     {
         if (currPage < maxPage)
         {
+            //cannot go past certain skin if it has not been unlocked yet
+            if(isControllingSkins){
+                if(currPage >= am.getNumSkinsUnlocked()){
+                    return;
+                }
+            }
+
             currPage++;
             targetPos += pageStep;
             MovePage();
