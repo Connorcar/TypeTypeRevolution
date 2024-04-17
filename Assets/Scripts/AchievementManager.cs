@@ -13,6 +13,7 @@ public class AchievementManager : MonoBehaviour
     
     static public int numAchievements = 30;
     private int achievementsUnlocked = 0;
+    public int numSkinsUnlocked = 0;
     //public bool[] achievements = new bool[numAchievements];
     public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
     public Sprite achievementSprite;
@@ -51,11 +52,11 @@ public class AchievementManager : MonoBehaviour
         achievements.Add("perfectevil", false);
         achievements.Add("playedevil", false);
 
-        achievements.Add("allPerfect", false);
-        achievements.Add("allThemes", false);
-        achievements.Add("allDifficulties", false);
-        achievements.Add("allSongs", false);
-        achievements.Add("allAchievements", false);
+        achievements.Add("allperfect", false);
+        achievements.Add("allthemes", false);
+        achievements.Add("alldifficulties", false);
+        achievements.Add("allsongs", false);
+        achievements.Add("allachievements", false);
 
         //this list is for internal use only, controls unlockables
         achievements.Add("playedEasyInternal", false);
@@ -83,44 +84,21 @@ public class AchievementManager : MonoBehaviour
             if(achievements[achievementName] == true)
             {
                 Debug.Log("already unlocked");
+                if(achievement.Contains("all") == false && achievement.Contains("played") == false){
+                    checkNonScoreAchievements();
+                }
                 return;
             }else{
                 achievements[achievementName] = true; 
                 Debug.Log("unlocking achievement " + achievementName);
                 if(achievement.Contains("Internal") == false){
                     game.AchievementsPopup(achievementIcon, achievementName);
-                    numAchievements++;
-                }        
-            }
-            checkIfPlayed(theme);
-            if(PartialMatch("played")){
-                checkAllThemes();
-                checkAllAchievements();
-                checkAllDifficulties();
-                checkAllSongs();
-            }
-            if(PartialMatch("perfect")){
-                checkAllPerfect();
-            }
-
-            if(song == "bay"){
-                UnlockAchievement("playedBayInternal");
-            }else{
-                UnlockAchievement("playedResolveInternal");
-            }
-
-            if(difficulty == "easy"){
-                UnlockAchievement("playedEasyInternal");
-            }else if(difficulty == "norm"){
-                UnlockAchievement("playedNormalInternal");
-            }else if(difficulty == "hard"){
-                UnlockAchievement("playedHardInternal");
-            }else if(difficulty == "demon"){
-                UnlockAchievement("playedDemonInternal");
-            }
-
-            PlayerPrefs.SetInt(achievementName, 1);
-            PlayerPrefs.Save();
+                    achievementsUnlocked++;
+                } 
+                PlayerPrefs.SetInt(achievementName, 1);
+                PlayerPrefs.Save();
+                checkNonScoreAchievements();       
+            }            
         }else{
             Debug.Log("Achievement not found");
             printAchievements();
@@ -129,33 +107,94 @@ public class AchievementManager : MonoBehaviour
 
     public void checkAllThemes()
     {
-        if(achievements["playeddefault"] == true && achievements["playedocean"] == true && achievements["playedfarm"] == true && achievements["playedwinter"] == true && achievements["playedevil"] == true)
+        Debug.Log("checking all themes");
+        
+        if(achievements["playeddefault"] == true && achievements["playedocean"] == true && achievements["playedfarm"] == true && achievements["playedwinter"] == true && achievements["playedevil"] == true && achievements["allthemes"] == false)
         {
-            UnlockAchievement("allThemes" );
+            Debug.Log("all themes played");
+            UnlockAchievement("allthemes" );
+            unlockSkin();
+        }else{
+            if(achievements["playeddefault"] == false){
+            Debug.Log("default not played");
+            }
+            if(achievements["playedocean"] == false){
+                Debug.Log("ocean not played");
+            }
+            if(achievements["playedfarm"] == false){
+                Debug.Log("farm not played");
+            }
+            if(achievements["playedwinter"] == false){
+                Debug.Log("winter not played");
+            }
+            if(achievements["playedevil"] == false){
+                Debug.Log("evil not played");
+            }
         }
     }
     public void checkAllPerfect(){
-        if(achievements["perfectdefault"] == true && achievements["perfectocean"] == true && achievements["perfectfarm"] == true && achievements["perfectwinter"] == true && achievements["perfectevil"] == true)
+        if(achievements["perfectdefault"] == true && achievements["perfectocean"] == true && achievements["perfectfarm"] == true && achievements["perfectwinter"] == true && achievements["perfectevil"] == true && achievements["allperfect"] == false)
         {
-            UnlockAchievement("allPerfect" );
+            UnlockAchievement("allperfect" );
+            unlockSkin();
+        }else{
+            if(achievements["perfectdefault"] == false){
+            Debug.Log("default not perfect");
+            }
+            if(achievements["perfectocean"] == false){
+                Debug.Log("ocean not perfect");
+            }
+            if(achievements["perfectfarm"] == false){
+                Debug.Log("farm not perfect");
+            }
+            if(achievements["perfectwinter"] == false){
+                Debug.Log("winter not perfect");
+            }
+            if(achievements["perfectevil"] == false){
+                Debug.Log("evil not perfect");
+            }
         }
     }
     public void checkAllDifficulties(){
-        if(achievements["playedEasyInternal"] == true && achievements["playedNormalInternal"] == true && achievements["playedHardInternal"] == true && achievements["playedDemonInternal"] == true)
+        
+        if(achievements["playedEasyInternal"] == true && achievements["playedNormalInternal"] == true && achievements["playedHardInternal"] == true && achievements["playedDemonInternal"] == true && achievements["alldifficulties"] == false)
         {
-            UnlockAchievement("allDifficulties");
+            UnlockAchievement("alldifficulties");
+            unlockSkin();
+        }else{
+            if(achievements["playedEasyInternal"] == false){
+            Debug.Log("easy not played");
+            }
+            if(achievements["playedNormalInternal"] == false){
+                Debug.Log("normal not played");
+            }
+            if(achievements["playedHardInternal"] == false){
+                Debug.Log("hard not played");
+            }
+            if(achievements["playedDemonInternal"] == false){
+                Debug.Log("demon not played");
+            }
         }
     }
     public void checkAllSongs(){
-        if(achievements["playedBayInternal"] == true && achievements["playedResolveInternal"] == true)
+        if(achievements["playedBayInternal"] == true && achievements["playedResolveInternal"] == true && achievements["allsongs"] == false)
         {
-            UnlockAchievement("allSongs");
+            UnlockAchievement("allsongs");
+            unlockSkin();
+        }else{
+            if(achievements["playedBayInternal"] == false){
+            Debug.Log("bay not played");
+            }
+            if(achievements["playedResolveInternal"] == false){
+                Debug.Log("resolve not played");
+            }
         }
     }
     public void checkAllAchievements(){
-        if(numAchievements == 30)
+        if(achievementsUnlocked == numAchievements && achievements["allachievements"] == false)
         {
-            UnlockAchievement("allAchievements");
+            UnlockAchievement("allachievements");
+            unlockSkin();
         }
     }
     public void checkIfPlayed(string theme){
@@ -219,6 +258,45 @@ public class AchievementManager : MonoBehaviour
         {
             Debug.Log("Key = " + kvp.Key + ", Value = " + kvp.Value);
         }
+    }
+
+    public int getNumSkinsUnlocked(){
+        return numSkinsUnlocked;
+    }
+
+    public void unlockSkin(){
+        numSkinsUnlocked++;
+        Debug.Log("skins unlocked: " + numSkinsUnlocked);
+    }
+
+    public void checkNonScoreAchievements(){
+        checkIfPlayed(theme);
+            if(PartialMatch("perfect")){
+                checkAllPerfect();
+            }
+
+            if(song == "bay"){
+                UnlockAchievement("playedBayInternal");
+            }else{
+                UnlockAchievement("playedResolveInternal");
+            }
+
+            if(difficulty == "easy"){
+                UnlockAchievement("playedEasyInternal");
+            }else if(difficulty == "norm"){
+                UnlockAchievement("playedNormalInternal");
+            }else if(difficulty == "hard"){
+                UnlockAchievement("playedHardInternal");
+            }else if(difficulty == "demon"){
+                UnlockAchievement("playedDemonInternal");
+            }
+
+            if(PartialMatch("played")){
+                checkAllThemes();
+                checkAllAchievements();
+                checkAllDifficulties();
+                checkAllSongs();
+            }
     }
 
 }
