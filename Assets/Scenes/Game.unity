@@ -6178,7 +6178,7 @@ MonoBehaviour:
   ocean_hit: {fileID: 8300000, guid: 9f55b46ea2a53c04d97d7ed24883fc91, type: 3}
   farm_type: {fileID: 8300000, guid: 9d83578815fefca449bec4889586b2f6, type: 3}
   farm_hit: {fileID: 8300000, guid: dbf4bbd25d29bdc45a11276b78087396, type: 3}
-  evil_type: {fileID: 8300000, guid: 434c0953a521cff4393b8084ae1d9fbb, type: 3}
+  evil_type: {fileID: 8300000, guid: 20f2b0c1bc6d239479b03bba918e8eb3, type: 3}
   evil_hit: {fileID: 8300000, guid: 8195a39f3bf52194c80555b42577521f, type: 3}
 --- !u!4 &712235848
 Transform:

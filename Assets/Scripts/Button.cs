@@ -78,6 +78,7 @@ public class Button : MonoBehaviour
     {
         Cursor.visible = false;
         OptionScreen.Play("OP_slideout");
+
         yield return new WaitForSeconds(2f);
         mainMenuMusic.Stop();
         goSound.Play();
