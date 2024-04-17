@@ -5922,9 +5922,9 @@ RectTransform:
   - {fileID: 586941215}
   m_Father: {fileID: 1248156142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 320, y: 170}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1280, y: 0}
   m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &459259309
@@ -12385,10 +12385,16 @@ MonoBehaviour:
   achievementsPopup: {fileID: 1248156141}
   achievementIcon: {fileID: 674564181}
   achievementTitle: {fileID: 586941216}
-  canvasTransform: {fileID: 1248156142}
+  canvasTransform: {fileID: 459259308}
   achievementColor: {r: 1, g: 1, b: 1, a: 1}
   achievementPanel: {fileID: 459259307}
   Combo: {fileID: 0}
+  panelRectTransform: {fileID: 459259308}
+  slideSpeed: 3000
+  waitTime: 1
+  leftStartPos: {x: -1280, y: 0}
+  centerPos: {x: 0, y: 0}
+  rightTargetPos: {x: 1280, y: 0}
   currentCombo: 0
   highestCombo: 0
   numGood: 0
@@ -14492,8 +14498,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 710038839}
   m_HandleRect: {fileID: 710038838}
   m_Direction: 2
-  m_Value: 1.0000004
-  m_Size: 0.30769232
+  m_Value: 1.0000002
+  m_Size: 0.22222222
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18059,6 +18065,7 @@ GameObject:
   - component: {fileID: 1248156140}
   - component: {fileID: 1248156139}
   - component: {fileID: 1248156138}
+  - component: {fileID: 1248156143}
   m_Layer: 0
   m_Name: CanvasPopup
   m_TagString: Untagged
@@ -18074,7 +18081,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248156137}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -18161,6 +18168,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1248156143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248156137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbe86c1799765c40973d242f394d938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelRectTransform: {fileID: 459259308}
+  slideSpeed: 1000
+  waitTime: 2
+  leftStartPos: {x: -1280, y: 0}
+  centerPos: {x: 0, y: 0}
+  rightTargetPos: {x: 1280, y: 0}
 --- !u!1 &1265021632
 GameObject:
   m_ObjectHideFlags: 0
@@ -30950,7 +30975,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -12, y: -0.00038352574}
-  m_SizeDelta: {x: 0, y: 1300}
+  m_SizeDelta: {x: 0, y: 1800}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2113160234
 GameObject:

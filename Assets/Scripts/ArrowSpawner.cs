@@ -108,7 +108,7 @@ public class ArrowSpawner : MonoBehaviour
         // if the arrow is dequeued already 
         onScreenArrows.Dequeue();
         words.ResetCurrentWord();
-        print("Removing arrow");
+        //print("Removing arrow");
     }
 
     public void playParticleEffect(int n)

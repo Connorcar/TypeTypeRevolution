@@ -56,6 +56,13 @@ public class Game : MonoBehaviour
     private Queue<string> achievementTitleQueue = new Queue<string>();
     private Queue<Image> achievementIconQueue = new Queue<Image>();
     private bool isAchievementPopupOpen = false;
+    
+    public RectTransform panelRectTransform;
+    public float slideSpeed = 1.0f;
+    public float waitTime = 2.0f;
+    public Vector2 leftStartPos;
+    public Vector2 centerPos;
+    public Vector2 rightTargetPos;
 
     // Combo & Accuracy Stuff
     public int currentCombo = 0;
@@ -162,8 +169,11 @@ public class Game : MonoBehaviour
     public void AchievementsPopup(Image currAchievementIcon, string currAchievementTitle)
     {
         if(achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha == 1){ 
-            Debug.Log("Achievement Popup already open");
+           // Debug.Log("Achievement Popup already open");
             instance.StartCoroutine(WaitForPopup());
+        }
+        if(currAchievementTitle.Contains("all")){
+            achievementColor = new Color(253, 206, 11, 255);
         } 
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 1;
         Debug.Log("Achievement Unlocked: " + currAchievementTitle);   
@@ -183,7 +193,22 @@ public class Game : MonoBehaviour
             achievementPanel.GetComponent<Image>().color = achievementColorQueue.Dequeue();
             achievementTitle.text = achievementTitleQueue.Dequeue();
             achievementIcon.sprite = achievementIconQueue.Dequeue().sprite;
-            yield return new WaitForSeconds(3);
+            while (panelRectTransform.anchoredPosition.x < centerPos.x)
+            {
+                panelRectTransform.anchoredPosition += new Vector2(slideSpeed * Time.deltaTime, 0);
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(waitTime);
+
+            while (panelRectTransform.anchoredPosition.x < rightTargetPos.x)
+            {
+                panelRectTransform.anchoredPosition += new Vector2(slideSpeed * Time.deltaTime, 0);
+                yield return null;
+            }
+
+            Debug.Log("moving back left");
+            panelRectTransform.anchoredPosition = leftStartPos;
         }
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 0;
         isAchievementPopupOpen = false;
@@ -244,7 +269,7 @@ public class Game : MonoBehaviour
         {
             highestCombo = currentCombo;
         }
-        Debug.Log("Highest Combo: " + highestCombo);
+        //Debug.Log("Highest Combo: " + highestCombo);
         currentCombo = 0;
         numMissed++;
         // currentAcc -= 100 * 1 / possibleHits;
