@@ -160,6 +160,7 @@ public class Game : MonoBehaviour
         currentCombo = 0;
         currentScore = 0;
         current = 0;
+        highestCombo = 0;
         // currentAcc = 100;
     }
 
