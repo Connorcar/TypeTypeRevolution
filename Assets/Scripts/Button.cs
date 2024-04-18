@@ -67,7 +67,7 @@ public class Button : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && !gameLoaded)
         {
-            //Debug.Log("helo");
+            Debug.Log("helo");
             //coroutine for MM transition
             StartCoroutine("OnPlayClick");
         }
@@ -112,7 +112,7 @@ public class Button : MonoBehaviour
         OptionScreen.Play("OP_slidein");
         yield return new WaitForSeconds(1.2f);
         OptionScreen.Play("OP_textscale");
-        //Debug.Log("played anim");
+        Debug.Log("played anim");
     }
     
     public void OnBackClick()

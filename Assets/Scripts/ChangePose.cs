@@ -26,17 +26,17 @@ public class ChangePose : MonoBehaviour
 
         if (currentScene.name == "MainMenu")
         {
-            //Debug.Log("main menu pose");
+            Debug.Log("main menu pose");
             ChangeClip("SELECT");
         }
         if(currentScene.name == "Game")
         {
-            //Debug.Log("game pose");
+            Debug.Log("game pose");
             ChangeClip("IDLE");
         }
         if (currentScene.name == "Score")
         {
-            //Debug.Log("result pose");
+            Debug.Log("result pose");
             ChangeClip("RESULT");
         }
     }
@@ -95,7 +95,7 @@ public class ChangePose : MonoBehaviour
             }
             else
             {
-                //Debug.LogError("Animator component or new animation clip is not assigned!");
+                Debug.LogError("Animator component or new animation clip is not assigned!");
             }
         }
 
