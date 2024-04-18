@@ -79,6 +79,7 @@ public class Score : MonoBehaviour
         if (Input.anyKey)
         {
             game.ResetGame();
+            game.ResetOptions();
             StartCoroutine(ReturnToMenu());
         }
     }
