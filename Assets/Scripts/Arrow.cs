@@ -109,17 +109,17 @@ public class Arrow : MonoBehaviour
                 if (Mathf.Abs(transform.position.y - 5.55f) < 1 &&
                     Mathf.Abs(transform.position.y - 5.55f) > 0.35)
                 {
-                    Debug.Log("Good Hit " + Math.Abs(transform.position.y - 5.55f));
+                    //Debug.Log("Good Hit " + Math.Abs(transform.position.y - 5.55f));
                     game.GoodHit();
                 }
                 else if (Mathf.Abs(transform.position.y - 5.55f) <= 0.35)
                 {
-                    Debug.Log("Perfect " + Math.Abs(transform.position.y - 5.55f));
+                    //Debug.Log("Perfect " + Math.Abs(transform.position.y - 5.55f));
                     game.PerfectHit();
                 }
                 else
                 {
-                    Debug.Log("Miss");
+                    //Debug.Log("Miss");
                     game.NoteMiss();
                 }
 
