@@ -53,6 +53,9 @@ public class Achievements : MonoBehaviour
                     //achievementIcons[i].gameObject.SetActive(true);
                     achievementIcons[i].color = new Color(255, 255, 255, 255);
                 //}
+                if(achievementTitle.text.Contains("all")){
+                    achievementManager.unlockSkin();
+                }
             }
             i++;
         }
@@ -79,6 +82,7 @@ public class Achievements : MonoBehaviour
         {
             achievementTitle.color = new Color(255, 255, 255, 0);
         }
+        achievementManager.numSkinsUnlocked = 1;
     }
 
     public void LoadAchievements()
@@ -91,6 +95,11 @@ public class Achievements : MonoBehaviour
                 Debug.Log("Loaded " + achievementTitle.text);
             }
         }
+        achievementManager.checkAllAchievements();
+        achievementManager.checkAllThemes();
+        achievementManager.checkAllDifficulties();
+        achievementManager.checkAllSongs();
+        achievementManager.checkAllPerfect();
         PlayerPrefs.Save();
     }
 

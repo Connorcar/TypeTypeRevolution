@@ -39,6 +39,10 @@ public class ArrowSpawner : MonoBehaviour
     public ParticleSystem particleEffect2;
     public ParticleSystem particleEffect3;
     public ParticleSystem particleEffect4;
+    public ParticleSystem particleEffect5;
+    public ParticleSystem particleEffect6;
+    public ParticleSystem particleEffect7;
+    public ParticleSystem particleEffect8;
 
     // Start is called before the first frame update
     void Start()
@@ -104,7 +108,7 @@ public class ArrowSpawner : MonoBehaviour
         // if the arrow is dequeued already 
         onScreenArrows.Dequeue();
         words.ResetCurrentWord();
-        print("Removing arrow");
+        //print("Removing arrow");
     }
 
     public void playParticleEffect(int n)
@@ -113,17 +117,20 @@ public class ArrowSpawner : MonoBehaviour
         {
             case 1:
                 particleEffect1.Play();
+                particleEffect5.Play();
                 break;
             case 2:
                 particleEffect2.Play();
+                particleEffect6.Play();
                 break;
             case 3:
                 particleEffect3.Play();
+                particleEffect7.Play();
                 break;
             case 4:
-                particleEffect4.Play();                
+                particleEffect4.Play();  
+                particleEffect8.Play();              
                 break;
         }
-        particleEffect4.Play();
     }
 }
