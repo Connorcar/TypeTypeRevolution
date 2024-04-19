@@ -13,35 +13,36 @@ public class PlayButtonSounds : MonoBehaviour
     public AudioClip winterHit;
     public AudioClip evilHit;
 
+    private AudioSource audioSource;
+
     private void Start()
     {
-        AudioSource audio = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         g = GameObject.Find("GameController");
         game = g.GetComponent<Game>();
     }
 
-    void PlaySound()
+    public void PlaySound()
     {
-       
         switch (game.theme_op)
         {
             case 0:
-                audio.clip = defaultHit;
+                audioSource.clip = defaultHit;
                 break;
             case 1:
-                audio.clip = defaultHit;
+                audioSource.clip = farmHit;
                 break;
             case 2:
-                audio.clip = defaultHit;
+                audioSource.clip = oceanHit;
                 break;
             case 3:
-                audio.clip = defaultHit;
+                audioSource.clip = winterHit;
                 break;
             case 4:
-                audio.clip = efaultHit;
+                audioSource.clip = evilHit;
                 break;
         }
-        audio.Play();
+        audioSource.Play();
     }
 
     

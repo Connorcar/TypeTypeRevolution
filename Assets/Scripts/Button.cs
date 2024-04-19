@@ -28,7 +28,7 @@ public class Button : MonoBehaviour
     // public Canvas TrophyCase;
     public GameObject CountDownBackground;
     public AudioSource titleSound;
-    public AudioSource goSound;
+    public PlayButtonSounds goSound;
     public AudioSource mainMenuMusic;
     public SwipeController CDswipeController;
     
@@ -79,9 +79,11 @@ public class Button : MonoBehaviour
         Cursor.visible = false;
         OptionScreen.Play("OP_slideout");
 
+        goSound.PlaySound();
+
         yield return new WaitForSeconds(2f);
         mainMenuMusic.Stop();
-        goSound.Play();
+        
         CountDownBackground.SetActive(true);
         // countdownText.enabled = true;
         yield return new WaitForSeconds(0.8f);
