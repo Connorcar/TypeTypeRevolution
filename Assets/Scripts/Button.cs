@@ -27,6 +27,7 @@ public class Button : MonoBehaviour
     public Canvas Options;
     // public Canvas TrophyCase;
     public GameObject CountDownBackground;
+    public AudioSource countdownSound;
     public AudioSource titleSound;
     public PlayButtonSounds goSound;
     public AudioSource mainMenuMusic;
@@ -83,6 +84,7 @@ public class Button : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
         mainMenuMusic.Stop();
+        countdownSound.Play();
         
         CountDownBackground.SetActive(true);
         // countdownText.enabled = true;
