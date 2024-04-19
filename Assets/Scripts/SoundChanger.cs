@@ -51,16 +51,16 @@ public class SoundChanger : MonoBehaviour
                 typer.GetComponent<AudioSource>().clip = default_type;
                 hitter.hitSound1.clip = default_hit_1;
                 break;
-            case 1: // ocean theme
+            case 1: // farm theme
+                typer.GetComponent<AudioSource>().clip = farm_type;
+                hitter.hitSound1.clip = default_hit_1;
+                break;
+            case 2: // ocean theme
                 typer.GetComponent<AudioSource>().clip = ocean_type;
                 hitter.hitSound1.clip = default_hit_1;
                 break; 
-            case 2: // winter theme
+            case 3: // winter theme
                 typer.GetComponent<AudioSource>().clip = winter_type;
-                hitter.hitSound1.clip = default_hit_1;
-                break;
-            case 3: // farm theme
-                typer.GetComponent<AudioSource>().clip = farm_type;
                 hitter.hitSound1.clip = default_hit_1;
                 break;
             case 4: // evil theme
