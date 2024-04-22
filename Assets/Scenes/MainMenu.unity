@@ -7495,6 +7495,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1043201107}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: onSkinNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &549150372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12695,6 +12707,8 @@ MonoBehaviour:
   letter_op: 0
   theme_op: 0
   song_op: 0
+  skin_op: 0
+  dancer: {fileID: 0}
   achievementParent: {fileID: 867070229}
   canvasName: CanvasPopup
   achievementsPopup: {fileID: 1248156141}
@@ -12704,6 +12718,7 @@ MonoBehaviour:
   achievementColor: {r: 1, g: 1, b: 1, a: 1}
   achievementPanel: {fileID: 459259307}
   Combo: {fileID: 0}
+  achievements: {fileID: 867070235}
   panelRectTransform: {fileID: 459259308}
   slideSpeed: 3000
   waitTime: 1
@@ -14559,6 +14574,18 @@ MonoBehaviour:
       - m_Target: {fileID: 965725133}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1043201107}
+        m_TargetAssemblyTypeName: Options, Assembly-CSharp
+        m_MethodName: onSkinPrev
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

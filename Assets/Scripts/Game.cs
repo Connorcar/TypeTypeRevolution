@@ -44,6 +44,10 @@ public class Game : MonoBehaviour
     public int letter_op;
     public int theme_op;
     public int song_op;
+    public int skin_op;
+
+    //dancer stuff
+    public ChangeSkin dancer;
 
     // Achievements stuff
     public GameObject achievementParent;
@@ -59,6 +63,7 @@ public class Game : MonoBehaviour
     private Queue<string> achievementTitleQueue = new Queue<string>();
     private Queue<Image> achievementIconQueue = new Queue<Image>();
     private bool isAchievementPopupOpen = false;
+    public AchievementManager achievements;
     
     public RectTransform panelRectTransform;
     public float slideSpeed = 1.0f;
@@ -124,7 +129,7 @@ public class Game : MonoBehaviour
 
     public void GameSceneSetup()
     {
-        Debug.Log("Game Scene Setup");
+        Debug.Log("Game Scene Setup"); 
         Combo = GameObject.Find("Combo");
         MT = GameObject.Find("ComboText");
         // AT = GameObject.Find("AccuracyText");
@@ -144,17 +149,38 @@ public class Game : MonoBehaviour
         currentCombo = 0;
         currentScore = 0;
         // currentAcc = 100;
+        dancer = GameObject.Find("Dancer").GetComponent<ChangeSkin>();
+        dancer.ChangeController(skin_op);
     }
     
     // Loads score scene and calculates the score
     IEnumerator Scoring()
     {
+        
         isScoreScene = true;
         yield return new WaitForSeconds(8);
-        SceneManager.LoadScene("Score");
+        
         // score = 100 * hits / possibleHits;
         score = currentScore;
         score = Math.Round(score, 2);
+        if (score < 60f)
+        {
+            achievements.UnlockAchievement("fail");
+        } 
+        else if (score < 85f)
+        {
+            achievements.UnlockAchievement("okay");
+        } 
+        else if (score < 100f)
+        {
+            achievements.UnlockAchievement("golden");
+        }
+        else
+        {
+            achievements.UnlockAchievement("perfect");
+        }
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene("Score");
         
     }
 
@@ -319,12 +345,13 @@ public class Game : MonoBehaviour
         letter_op = 0;
         theme_op = 0;
         song_op = 0;
+        skin_op = 0;
     }
 
     void getCurrentFill()
     {
         float fillAmount = (float)current / (float)maximum;
-        //Mask.fillAmount = fillAmount;
+        Mask.fillAmount = fillAmount;
     }
     
 }

@@ -36,6 +36,7 @@ public class Score : MonoBehaviour
     private AchievementManager achievements;
     public Animator ResultScreen;
     public GameObject Result;
+    public ChangeSkin dancer;
 
     void Start()
     {
@@ -50,26 +51,28 @@ public class Score : MonoBehaviour
         missNum.text = game.numMissed.ToString();
         highestCombo.text = game.highestCombo.ToString();
         
+        dancer = GameObject.Find("Dancer").GetComponent<ChangeSkin>();
+        dancer.ChangeController(game.skin_op);
 
         if (game.score < 60f)
         {
             Result.GetComponent<Image>().sprite = RS_fail;
-            achievements.UnlockAchievement("fail");
+            //achievements.UnlockAchievement("fail");
         } 
         else if (game.score < 85f)
         {
             Result.GetComponent<Image>().sprite = RS_okay;
-            achievements.UnlockAchievement("okay");
+            //achievements.UnlockAchievement("okay");
         } 
         else if (game.score < 100f)
         {
             Result.GetComponent<Image>().sprite = RS_golden;
-            achievements.UnlockAchievement("golden");
+            //achievements.UnlockAchievement("golden");
         }
         else
         {
             Result.GetComponent<Image>().sprite = RS_perfect;
-            achievements.UnlockAchievement("perfect");
+            //achievements.UnlockAchievement("perfect");
         }
 
     }

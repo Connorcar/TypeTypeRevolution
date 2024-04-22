@@ -110,6 +110,7 @@ public class Options : MonoBehaviour
             gc.letter_op = 0;
             gc.theme_op = 0;
             gc.song_op = 0;
+            gc.skin_op = 0;
         }
         else
         {
@@ -403,6 +404,14 @@ public class Options : MonoBehaviour
             isPlaying = true;
         }
         
+    }
+
+    public void onSkinNext(){
+        gc.skin_op++;
+    }
+
+    public void onSkinPrev(){
+        gc.skin_op--;
     }
     
 }
