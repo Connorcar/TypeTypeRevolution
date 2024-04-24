@@ -65,6 +65,10 @@ public class Options : MonoBehaviour
     public Image rightSpeedArrow;
     public Image leftLetterArrow;
     public Image rightLetterArrow;
+    public Image leftThemeArrow;
+    public Image rightThemeArrow;
+    public Image leftSongArrow;
+    public Image rightSongArrow;
 
     
     private List<string> presetArr = new List<string>()
@@ -132,6 +136,8 @@ public class Options : MonoBehaviour
         leftPresetArrow.enabled = false;
         leftSpeedArrow.enabled = false;
         leftLetterArrow.enabled = false;
+        leftThemeArrow.enabled = false;
+        leftSongArrow.enabled = false;
         
     }
 
@@ -360,10 +366,16 @@ public class Options : MonoBehaviour
     
     public void onThemeNext()
     {
+        leftThemeArrow.enabled = true;
+
         int currIndex = themeArr.IndexOf(themeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 4)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[++currIndex];
+            if (currIndex == 4)
+            {
+                rightThemeArrow.enabled = false;
+            }
         }
         else
         {
@@ -380,10 +392,16 @@ public class Options : MonoBehaviour
 
     public void onThemePrev()
     {
+        rightThemeArrow.enabled = true;
+
         int currIndex = themeArr.IndexOf(themeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[--currIndex];
+            if (currIndex == 0)
+            {
+                leftThemeArrow.enabled = false;
+            }
         }
         else
         {
@@ -400,10 +418,16 @@ public class Options : MonoBehaviour
 
     public void onSongNext()
     {
+        leftSongArrow.enabled = true;
+
         int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 1)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[++currIndex];
+            if (currIndex == 1)
+            {
+                rightSongArrow.enabled = false;
+            }
         }
         else
         {
@@ -421,10 +445,15 @@ public class Options : MonoBehaviour
 
     public void onSongPrev()
     {
+        rightSongArrow.enabled = true;
         int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             songText.GetComponent<TextMeshProUGUI>().text = songArr[--currIndex];
+            if (currIndex == 0)
+            {
+                leftSongArrow.enabled = false;
+            }
         }
         else
         {
