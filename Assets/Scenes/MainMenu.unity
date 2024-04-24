@@ -996,6 +996,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
 --- !u!114 &117514210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2162,6 +2168,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
 --- !u!114 &195094033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,6 +3808,12 @@ MonoBehaviour:
   resolve: {fileID: 173309544}
   mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &315393135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7427,6 +7445,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &549150371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11359,6 +11383,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &785846361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14515,6 +14545,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &965725135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15887,6 +15923,12 @@ MonoBehaviour:
   resolve: {fileID: 173309544}
   mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &1045389356 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8633439085817072375, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
@@ -18972,6 +19014,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
 --- !u!114 &1265021636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19729,6 +19777,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
 --- !u!114 &1304069284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20018,6 +20072,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1304069285}
+  rightLetterArrow: {fileID: 1265021637}
 --- !u!114 &1310208406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23894,6 +23954,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
 --- !u!114 &1603529802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24840,6 +24906,12 @@ MonoBehaviour:
   resolve: {fileID: 173309544}
   mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &1652642441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29713,6 +29785,12 @@ MonoBehaviour:
   resolve: {fileID: 0}
   mainMenuMusic: {fileID: 0}
   CustomPanel: {fileID: 699958343}
+  leftPresetArrow: {fileID: 0}
+  rightPresetArrow: {fileID: 0}
+  leftSpeedArrow: {fileID: 0}
+  rightSpeedArrow: {fileID: 0}
+  leftLetterArrow: {fileID: 0}
+  rightLetterArrow: {fileID: 0}
 --- !u!114 &1970727632
 MonoBehaviour:
   m_ObjectHideFlags: 0
