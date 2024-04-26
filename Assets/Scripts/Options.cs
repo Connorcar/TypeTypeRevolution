@@ -419,15 +419,13 @@ public class Options : MonoBehaviour
     public void onSongNext()
     {
         leftSongArrow.enabled = true;
+        rightSongArrow.enabled = false;
 
         int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 1)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[++currIndex];
-            if (currIndex == 1)
-            {
-                rightSongArrow.enabled = false;
-            }
+            rightSongArrow.enabled = false;
         }
         else
         {
@@ -446,14 +444,13 @@ public class Options : MonoBehaviour
     public void onSongPrev()
     {
         rightSongArrow.enabled = true;
+        leftSongArrow.enabled = false;
+
         int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             songText.GetComponent<TextMeshProUGUI>().text = songArr[--currIndex];
-            if (currIndex == 0)
-            {
-                leftSongArrow.enabled = false;
-            }
+            leftSongArrow.enabled = false;
         }
         else
         {

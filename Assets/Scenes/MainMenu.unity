@@ -991,10 +991,10 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
   leftPresetArrow: {fileID: 117514211}
   rightPresetArrow: {fileID: 195094034}
@@ -1002,10 +1002,10 @@ MonoBehaviour:
   rightSpeedArrow: {fileID: 1310208407}
   leftLetterArrow: {fileID: 1603529803}
   rightLetterArrow: {fileID: 1265021637}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &117514210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2167,10 +2167,10 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
   leftPresetArrow: {fileID: 117514211}
   rightPresetArrow: {fileID: 195094034}
@@ -2178,10 +2178,10 @@ MonoBehaviour:
   rightSpeedArrow: {fileID: 1310208407}
   leftLetterArrow: {fileID: 1603529803}
   rightLetterArrow: {fileID: 1265021637}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &195094033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3816,14 +3816,14 @@ MonoBehaviour:
   resolve: {fileID: 173309544}
   mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
 --- !u!114 &315393135
@@ -3913,7 +3913,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315393131}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -11394,21 +11394,21 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
   leftThemeArrow: {fileID: 785846362}
   rightThemeArrow: {fileID: 1970727633}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &785846361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15947,16 +15947,16 @@ MonoBehaviour:
   resolve: {fileID: 173309544}
   mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1045389356 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8633439085817072375, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
@@ -19037,10 +19037,10 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
   leftPresetArrow: {fileID: 117514211}
   rightPresetArrow: {fileID: 195094034}
@@ -19048,10 +19048,10 @@ MonoBehaviour:
   rightSpeedArrow: {fileID: 1310208407}
   leftLetterArrow: {fileID: 1603529803}
   rightLetterArrow: {fileID: 1265021637}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1265021636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19804,10 +19804,10 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
   leftPresetArrow: {fileID: 117514211}
   rightPresetArrow: {fileID: 195094034}
@@ -19815,10 +19815,10 @@ MonoBehaviour:
   rightSpeedArrow: {fileID: 1310208407}
   leftLetterArrow: {fileID: 1603529803}
   rightLetterArrow: {fileID: 1265021637}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1304069284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20103,21 +20103,21 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
   leftPresetArrow: {fileID: 117514211}
   rightPresetArrow: {fileID: 195094034}
   leftSpeedArrow: {fileID: 1304069285}
   rightSpeedArrow: {fileID: 1310208407}
-  leftLetterArrow: {fileID: 1304069285}
+  leftLetterArrow: {fileID: 1603529803}
   rightLetterArrow: {fileID: 1265021637}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1310208406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23989,10 +23989,10 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
   leftPresetArrow: {fileID: 117514211}
   rightPresetArrow: {fileID: 195094034}
@@ -24000,10 +24000,10 @@ MonoBehaviour:
   rightSpeedArrow: {fileID: 1310208407}
   leftLetterArrow: {fileID: 1603529803}
   rightLetterArrow: {fileID: 1265021637}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1603529802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24950,14 +24950,14 @@ MonoBehaviour:
   resolve: {fileID: 173309544}
   mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
+  leftThemeArrow: {fileID: 785846362}
+  rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1652642441
@@ -29828,21 +29828,21 @@ MonoBehaviour:
   themeText: {fileID: 1681499289}
   songText: {fileID: 1094156972}
   isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
+  playText: {fileID: 358097345}
+  bay: {fileID: 179101450}
+  resolve: {fileID: 173309544}
+  mainMenuMusic: {fileID: 1074722820}
   CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
+  leftPresetArrow: {fileID: 117514211}
+  rightPresetArrow: {fileID: 195094034}
+  leftSpeedArrow: {fileID: 1304069285}
+  rightSpeedArrow: {fileID: 1310208407}
+  leftLetterArrow: {fileID: 1603529803}
+  rightLetterArrow: {fileID: 1265021637}
   leftThemeArrow: {fileID: 785846362}
   rightThemeArrow: {fileID: 1970727633}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
+  leftSongArrow: {fileID: 315393136}
+  rightSongArrow: {fileID: 1652642442}
 --- !u!114 &1970727632
 MonoBehaviour:
   m_ObjectHideFlags: 0
