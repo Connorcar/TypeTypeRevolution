@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1006,6 +1006,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &117514210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,6 +2184,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &195094033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2506,6 +2510,8 @@ MonoBehaviour:
   maxPage: 4
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -424, y: 0, z: 0}
   pagesRect: {fileID: 2098345892}
   tweenTime: 0.2
@@ -2826,6 +2832,8 @@ MonoBehaviour:
   maxPage: 4
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -1920, y: 0, z: 0}
   pagesRect: {fileID: 1956516406}
   tweenTime: 0.2
@@ -3826,6 +3834,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &315393135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6651,6 +6661,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &485982476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485982477}
+  - component: {fileID: 485982479}
+  - component: {fileID: 485982478}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &485982477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485982476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 649482111}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 323, y: 167}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &485982478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485982476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c3e24ba86e7723248887eb2f24e70ba8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &485982479
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485982476}
+  m_CullTransparentMesh: 1
 --- !u!114 &493390841 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
@@ -7467,6 +7552,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 0}
   leftSongArrow: {fileID: 0}
   rightSongArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &549150371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9368,6 +9455,7 @@ RectTransform:
   - {fileID: 1150049572}
   - {fileID: 549150368}
   - {fileID: 965725132}
+  - {fileID: 485982477}
   m_Father: {fileID: 1856452978}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10255,6 +10343,8 @@ MonoBehaviour:
   maxPage: 5
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -500, y: 0, z: 0}
   pagesRect: {fileID: 614034601}
   tweenTime: 0.3
@@ -11409,6 +11499,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &785846361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12773,7 +12865,7 @@ MonoBehaviour:
   achievements: {fileID: 867070235}
   panelRectTransform: {fileID: 459259308}
   slideSpeed: 3000
-  waitTime: 1
+  waitTime: 2
   leftStartPos: {x: -1280, y: 0}
   centerPos: {x: 0, y: 0}
   rightTargetPos: {x: 1280, y: 0}
@@ -14675,6 +14767,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 0}
   leftSongArrow: {fileID: 0}
   rightSongArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &965725135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16057,6 +16151,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1045389356 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8633439085817072375, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
@@ -17519,6 +17615,8 @@ MonoBehaviour:
   maxPage: 5
   isControllingSkins: 1
   am: {fileID: 867070235}
+  skinLock: {fileID: 485982476}
+  options: {fileID: 1043201107}
   pageStep: {x: -500, y: 0, z: 0}
   pagesRect: {fileID: 1081663081}
   tweenTime: 0.3
@@ -19261,6 +19359,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &1265021636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20028,6 +20128,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &1304069284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20327,6 +20429,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &1310208406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23814,6 +23918,8 @@ MonoBehaviour:
   maxPage: 6
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -1920, y: 0, z: 0}
   pagesRect: {fileID: 2063464687}
   tweenTime: 0.4
@@ -24213,6 +24319,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &1603529802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25169,6 +25277,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &1652642441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25922,6 +26032,8 @@ MonoBehaviour:
   maxPage: 4
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -550, y: 0, z: 0}
   pagesRect: {fileID: 619090513}
   tweenTime: 0.2
@@ -28128,6 +28240,8 @@ MonoBehaviour:
   maxPage: 2
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -424, y: 0, z: 0}
   pagesRect: {fileID: 682679561}
   tweenTime: 0.2
@@ -30127,6 +30241,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
+  leftSkinArrow: {fileID: 0}
+  rightSkinArrow: {fileID: 0}
 --- !u!114 &1970727632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30821,6 +30937,8 @@ MonoBehaviour:
   maxPage: 4
   isControllingSkins: 0
   am: {fileID: 0}
+  skinLock: {fileID: 0}
+  options: {fileID: 0}
   pageStep: {x: -424, y: 0, z: 0}
   pagesRect: {fileID: 725396932}
   tweenTime: 0.2

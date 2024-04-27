@@ -69,6 +69,8 @@ public class Options : MonoBehaviour
     public Image rightThemeArrow;
     public Image leftSongArrow;
     public Image rightSongArrow;
+    public Image leftSkinArrow;
+    public Image rightSkinArrow;
 
     
     private List<string> presetArr = new List<string>()
@@ -138,7 +140,7 @@ public class Options : MonoBehaviour
         leftLetterArrow.enabled = false;
         leftThemeArrow.enabled = false;
         leftSongArrow.enabled = false;
-        
+        leftSkinArrow.enabled = false;
     }
 
     private void setPreset()
@@ -488,10 +490,18 @@ public class Options : MonoBehaviour
 
     public void onSkinNext(){
         gc.skin_op++;
+        if(gc.skin_op == 4){
+            rightSkinArrow.enabled = false;
+        }
+        leftSkinArrow.enabled = true;
     }
 
     public void onSkinPrev(){
         gc.skin_op--;
+        if(gc.skin_op == 0){
+            leftSkinArrow.enabled = false;
+        }
+        rightSkinArrow.enabled = true;
     }
     
 }
