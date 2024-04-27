@@ -14406,6 +14406,7 @@ MonoBehaviour:
   - {fileID: 620698236}
   - {fileID: 1491332441}
   - {fileID: 1777470890}
+  swipeController: {fileID: 1150049567}
 --- !u!1 &965725131
 GameObject:
   m_ObjectHideFlags: 0
