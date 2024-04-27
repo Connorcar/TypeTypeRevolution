@@ -87,6 +87,8 @@ public class Game : MonoBehaviour
     private GameObject MT;
     private GameObject AT;
     private TextMeshProUGUI comboText;
+
+    public AudioSource achievementSound;
     
     // private TextMeshProUGUI accuracyText;
 
@@ -217,7 +219,9 @@ public class Game : MonoBehaviour
         achievementIconQueue.Enqueue(currAchievementIcon);
         if(!isAchievementPopupOpen){
             instance.StartCoroutine(CloseAchievementsPopup());  
-        }    
+        }
+
+        achievementSound.Play();
     }
 
     public IEnumerator CloseAchievementsPopup()
