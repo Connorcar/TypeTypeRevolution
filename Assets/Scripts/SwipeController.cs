@@ -82,7 +82,6 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
 
     public void ResetPage()
     {
-        print("Reset page");
         targetPos -= pageStep * (currPage-1);
         MovePage();
         currPage = 1;
