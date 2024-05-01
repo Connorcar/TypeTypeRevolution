@@ -84,7 +84,7 @@ public class Achievements : MonoBehaviour
         {
             achievementTitle.color = new Color(255, 255, 255, 0);
         }
-        achievementManager.numSkinsUnlocked = 1;
+        achievementManager.numSkinsUnlocked = 0;
 
         swipeController.ResetPage();
     }
