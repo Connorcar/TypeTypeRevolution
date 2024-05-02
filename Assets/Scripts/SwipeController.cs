@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SwipeController : MonoBehaviour, IEndDragHandler
 {
@@ -14,6 +15,8 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
     private float dragThreshold;
     public bool isControllingSkins;
     [SerializeField]  public AchievementManager am;
+    public GameObject skinLock;
+    public Options options;
 
 
     [SerializeField] private Vector3 pageStep;
@@ -27,6 +30,13 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
         currPage = 1;
         targetPos = pagesRect.localPosition;
         dragThreshold = Screen.width / 15;
+        if(isControllingSkins){
+            if(am.getNumSkinsUnlocked() < 1){
+                skinLock.SetActive(true);
+            }else{
+                skinLock.SetActive(false);
+            }
+        }
     }
 
     public void Next()
@@ -36,10 +46,12 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
             //cannot go past certain skin if it has not been unlocked yet
             if(isControllingSkins){
                 if(currPage >= am.getNumSkinsUnlocked()){
-                    return;
+                    skinLock.SetActive(true);
+                }else{
+                    skinLock.SetActive(false);
                 }
             }
-
+            
             currPage++;
             targetPos += pageStep;
             MovePage();
@@ -53,6 +65,10 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
             currPage--;
             targetPos -= pageStep;
             MovePage();
+            if(isControllingSkins){
+                skinLock.SetActive(false);
+            }
+            
         }
     }
 
@@ -77,6 +93,21 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
         else
         {
             MovePage();
+        }
+    }
+
+    public void ResetPage()
+    {
+        targetPos -= pageStep * (currPage-1);
+        MovePage();
+        currPage = 1;
+        if(isControllingSkins){
+            if(am.getNumSkinsUnlocked() < 1){
+                skinLock.SetActive(true);
+            }else{
+                skinLock.SetActive(false);
+            }
+            options.leftSkinArrow.enabled = false;
         }
     }
 }

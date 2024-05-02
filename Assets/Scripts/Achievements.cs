@@ -12,6 +12,8 @@ public class Achievements : MonoBehaviour
     public Image[] achievementIcons;
     public TextMeshProUGUI[] achievementTitles;
 
+    public SwipeController swipeController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,7 +84,9 @@ public class Achievements : MonoBehaviour
         {
             achievementTitle.color = new Color(255, 255, 255, 0);
         }
-        achievementManager.numSkinsUnlocked = 1;
+        achievementManager.numSkinsUnlocked = 0;
+
+        swipeController.ResetPage();
     }
 
     public void LoadAchievements()

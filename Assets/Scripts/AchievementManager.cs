@@ -83,7 +83,7 @@ public class AchievementManager : MonoBehaviour
             //if already unlocked, return
             if(achievements[achievementName] == true)
             {
-                Debug.Log("already unlocked");
+                Debug.Log("already unlocked" + achievementName);
                 if(achievement.Contains("all") == false && achievement.Contains("played") == false){
                     checkNonScoreAchievements();
                 }

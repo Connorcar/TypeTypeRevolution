@@ -6175,10 +6175,10 @@ MonoBehaviour:
   winter_type: {fileID: 8300000, guid: bb99118e0fea1d245a0389f6223c2474, type: 3}
   winter_hit: {fileID: 8300000, guid: f2a286aeffdffcc4faf5961aaea15fab, type: 3}
   ocean_type: {fileID: 8300000, guid: 310d2742ab0f6d64393b70d2805c4806, type: 3}
-  ocean_hit: {fileID: 8300000, guid: 9f55b46ea2a53c04d97d7ed24883fc91, type: 3}
-  farm_type: {fileID: 8300000, guid: 9d83578815fefca449bec4889586b2f6, type: 3}
+  ocean_hit: {fileID: 8300000, guid: 293ddc22fcf59b949ab3900db1f7dd8f, type: 3}
+  farm_type: {fileID: 8300000, guid: 876caf56ec8993d41a9df6f1f2f1b9c9, type: 3}
   farm_hit: {fileID: 8300000, guid: dbf4bbd25d29bdc45a11276b78087396, type: 3}
-  evil_type: {fileID: 8300000, guid: 434c0953a521cff4393b8084ae1d9fbb, type: 3}
+  evil_type: {fileID: 8300000, guid: 20f2b0c1bc6d239479b03bba918e8eb3, type: 3}
   evil_hit: {fileID: 8300000, guid: 8195a39f3bf52194c80555b42577521f, type: 3}
 --- !u!4 &712235848
 Transform:
@@ -33634,7 +33634,6 @@ GameObject:
   - component: {fileID: 2130563955}
   - component: {fileID: 2130563957}
   - component: {fileID: 2130563956}
-  - component: {fileID: 2130563958}
   m_Layer: 5
   m_Name: Combo
   m_TagString: Untagged

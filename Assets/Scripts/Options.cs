@@ -58,6 +58,20 @@ public class Options : MonoBehaviour
     private Game gc;
     private GameStuff gs;
     private AchievementManager am;
+
+    public Image leftPresetArrow;
+    public Image rightPresetArrow;
+    public Image leftSpeedArrow;
+    public Image rightSpeedArrow;
+    public Image leftLetterArrow;
+    public Image rightLetterArrow;
+    public Image leftThemeArrow;
+    public Image rightThemeArrow;
+    public Image leftSongArrow;
+    public Image rightSongArrow;
+    public Image leftSkinArrow;
+    public Image rightSkinArrow;
+
     
     private List<string> presetArr = new List<string>()
     {
@@ -120,7 +134,13 @@ public class Options : MonoBehaviour
             setTheme();
             setSong();
         }
-        
+
+        leftPresetArrow.enabled = false;
+        leftSpeedArrow.enabled = false;
+        leftLetterArrow.enabled = false;
+        leftThemeArrow.enabled = false;
+        leftSongArrow.enabled = false;
+        leftSkinArrow.enabled = false;
     }
 
     private void setPreset()
@@ -166,17 +186,29 @@ public class Options : MonoBehaviour
 
     public void onPresetNext()
     {
+        leftPresetArrow.enabled = true;
+        leftSpeedArrow.enabled = true;
+        leftLetterArrow.enabled = true;
+
         CustomPanel.SetActive(false);
         int currIndex = presetArr.IndexOf(presetText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 3)
-        {
+        {  
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[++currIndex];
+            if (currIndex == 3)
+            {
+                rightPresetArrow.enabled = false;
+                rightSpeedArrow.enabled = false;
+                rightLetterArrow.enabled = false;
+            }
         }
         else
         {
             currIndex = 3;
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[3];
         }
+
+        print(currIndex);
 
         modeText.GetComponent<TextMeshProUGUI>().text = modeArr[currIndex];
         WLText.GetComponent<TextMeshProUGUI>().text = WLArr[currIndex];
@@ -189,11 +221,21 @@ public class Options : MonoBehaviour
 
     public void onPresetPrev()
     {
+        rightPresetArrow.enabled = true;
+        rightSpeedArrow.enabled = true;
+        rightLetterArrow.enabled = true;
+
         CustomPanel.SetActive(false);
         int currIndex = presetArr.IndexOf(presetText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             presetText.GetComponent<TextMeshProUGUI>().text = presetArr[--currIndex];
+            if (currIndex == 0)
+            {
+                leftPresetArrow.enabled = false;
+                leftSpeedArrow.enabled = false;
+                leftLetterArrow.enabled = false;
+            }
         }
         else
         {
@@ -218,11 +260,16 @@ public class Options : MonoBehaviour
 
     public void onModeNext()
     {
+        leftSpeedArrow.enabled = true;
         
         int currIndex = modeArr.IndexOf(modeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 3)
         {
             modeText.GetComponent<TextMeshProUGUI>().text = modeArr[++currIndex];
+            if (currIndex == 3)
+            {
+                rightSpeedArrow.enabled = false;
+            }
         }
         else
         {
@@ -235,11 +282,16 @@ public class Options : MonoBehaviour
 
     public void onModePrev()
     {
+        rightSpeedArrow.enabled = true;
         
         int currIndex = modeArr.IndexOf(modeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             modeText.GetComponent<TextMeshProUGUI>().text = modeArr[--currIndex];
+            if (currIndex == 0)
+            {
+                leftSpeedArrow.enabled = false;
+            }
         }
         else
         {
@@ -262,11 +314,16 @@ public class Options : MonoBehaviour
 
     public void onWLNext()
     {
+        leftLetterArrow.enabled = true;
         
         int currIndex = WLArr.IndexOf(WLText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 3)
         {
             WLText.GetComponent<TextMeshProUGUI>().text = WLArr[++currIndex];
+            if (currIndex == 3)
+            {
+                rightLetterArrow.enabled = false;
+            }
         }
         else
         {
@@ -279,11 +336,16 @@ public class Options : MonoBehaviour
 
     public void onWLPrev()
     {
-        
+        rightLetterArrow.enabled = true;
+
         int currIndex = WLArr.IndexOf(WLText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             WLText.GetComponent<TextMeshProUGUI>().text = WLArr[--currIndex];
+            if (currIndex == 0)
+            {
+                leftLetterArrow.enabled = false;
+            }
         }
         else
         {
@@ -306,10 +368,16 @@ public class Options : MonoBehaviour
     
     public void onThemeNext()
     {
+        leftThemeArrow.enabled = true;
+
         int currIndex = themeArr.IndexOf(themeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 4)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[++currIndex];
+            if (currIndex == 4)
+            {
+                rightThemeArrow.enabled = false;
+            }
         }
         else
         {
@@ -326,10 +394,16 @@ public class Options : MonoBehaviour
 
     public void onThemePrev()
     {
+        rightThemeArrow.enabled = true;
+
         int currIndex = themeArr.IndexOf(themeText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[--currIndex];
+            if (currIndex == 0)
+            {
+                leftThemeArrow.enabled = false;
+            }
         }
         else
         {
@@ -346,10 +420,14 @@ public class Options : MonoBehaviour
 
     public void onSongNext()
     {
+        leftSongArrow.enabled = true;
+        rightSongArrow.enabled = false;
+
         int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex < 1)
         {
             themeText.GetComponent<TextMeshProUGUI>().text = themeArr[++currIndex];
+            rightSongArrow.enabled = false;
         }
         else
         {
@@ -367,10 +445,14 @@ public class Options : MonoBehaviour
 
     public void onSongPrev()
     {
+        rightSongArrow.enabled = true;
+        leftSongArrow.enabled = false;
+
         int currIndex = songArr.IndexOf(songText.GetComponent<TextMeshProUGUI>().text);
         if (currIndex > 0)
         {
             songText.GetComponent<TextMeshProUGUI>().text = songArr[--currIndex];
+            leftSongArrow.enabled = false;
         }
         else
         {
@@ -408,10 +490,18 @@ public class Options : MonoBehaviour
 
     public void onSkinNext(){
         gc.skin_op++;
+        if(gc.skin_op == 4){
+            rightSkinArrow.enabled = false;
+        }
+        leftSkinArrow.enabled = true;
     }
 
     public void onSkinPrev(){
         gc.skin_op--;
+        if(gc.skin_op == 0){
+            leftSkinArrow.enabled = false;
+        }
+        rightSkinArrow.enabled = true;
     }
     
 }

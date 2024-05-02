@@ -87,6 +87,8 @@ public class Game : MonoBehaviour
     private GameObject MT;
     private GameObject AT;
     private TextMeshProUGUI comboText;
+
+    public AudioSource achievementSound;
     
     // private TextMeshProUGUI accuracyText;
 
@@ -217,7 +219,9 @@ public class Game : MonoBehaviour
         achievementIconQueue.Enqueue(currAchievementIcon);
         if(!isAchievementPopupOpen){
             instance.StartCoroutine(CloseAchievementsPopup());  
-        }    
+        }
+
+        achievementSound.Play();
     }
 
     public IEnumerator CloseAchievementsPopup()
@@ -226,7 +230,7 @@ public class Game : MonoBehaviour
         {
             isAchievementPopupOpen = true;
             achievementPanel.GetComponent<Image>().color = achievementColorQueue.Dequeue();
-            achievementTitle.text = achievementTitleQueue.Dequeue();
+            achievementTitle.text = "Achievement unlocked: " + achievementTitleQueue.Dequeue();
             achievementIcon.sprite = achievementIconQueue.Dequeue().sprite;
             while (panelRectTransform.anchoredPosition.x < centerPos.x)
             {
@@ -242,7 +246,6 @@ public class Game : MonoBehaviour
                 yield return null;
             }
 
-            Debug.Log("moving back left");
             panelRectTransform.anchoredPosition = leftStartPos;
         }
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 0;
@@ -351,7 +354,7 @@ public class Game : MonoBehaviour
     void getCurrentFill()
     {
         float fillAmount = (float)current / (float)maximum;
-        Mask.fillAmount = fillAmount;
+        //Mask.fillAmount = fillAmount;
     }
     
 }
