@@ -254,7 +254,7 @@ public class Game : MonoBehaviour
 
     public IEnumerator WaitForPopup()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(11);
     }
 
     public void NoteHit()
