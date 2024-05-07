@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failevil
+      value: Failed Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -625,7 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82635046}
   m_Layer: 5
-  m_Name: Row5
+  m_Name: RowEvil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1006,8 +1006,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &117514210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedocean
+      value: Played the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -1446,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okaydefault
+      value: Okay Score in the Default Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -2184,8 +2184,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &195094033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3834,8 +3834,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &315393135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4328,7 +4328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okaywinter
+      value: Okay Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -5227,7 +5227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406437664}
   m_Layer: 5
-  m_Name: Row1
+  m_Name: RowDefault
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6106,7 +6106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectocean
+      value: Perfect Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -7430,7 +7430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failocean
+      value: Failed Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -7534,7 +7534,6 @@ GameObject:
   - component: {fileID: 549150373}
   - component: {fileID: 549150372}
   - component: {fileID: 549150371}
-  - component: {fileID: 549150370}
   - component: {fileID: 549150369}
   m_Layer: 5
   m_Name: Button-SkinNext
@@ -7658,41 +7657,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &549150370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549150367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  presetText: {fileID: 2013317777}
-  modeText: {fileID: 2038826544}
-  WLText: {fileID: 648757944}
-  themeText: {fileID: 1681499289}
-  songText: {fileID: 1094156972}
-  isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
-  CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
-  leftSkinArrow: {fileID: 965725136}
-  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &549150371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7840,7 +7804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okayevil
+      value: Okay Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -8707,7 +8671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenwinter
+      value: Golden Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -8898,7 +8862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: alldifficulties
+      value: Played All the Difficulties
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -9334,7 +9298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedfarm
+      value: Played the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -9855,7 +9819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 622af46855916ee44bbb08be69a0db97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EdgesScroll: {fileID: 1585985319}
 --- !u!4 &691864988
 Transform:
   m_ObjectHideFlags: 0
@@ -11027,7 +10990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenevil
+      value: Golden Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -11684,8 +11647,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &785846361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12418,7 +12381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenfarm
+      value: Golden Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -12528,7 +12491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failfarm
+      value: Failed Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -13158,11 +13121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 867070230}
-  theme: default
+  theme: Default
   difficulty: easy
   song: bay
   numSkinsUnlocked: 1
-  achievementSprite: {fileID: 21300000, guid: 38ba61eaf0dfb534386332165e26c4b9, type: 3}
+  achievementSprite: {fileID: 21300000, guid: 4bc2f2c1b2d1a2c4c80805c289dea07c, type: 3}
   achievementIcon: {fileID: 674564181}
 --- !u!82 &867070236
 AudioSource:
@@ -13500,7 +13463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888559590}
   m_Layer: 5
-  m_Name: Row3
+  m_Name: RowWinter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13532,7 +13495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -1100}
+  m_AnchoredPosition: {x: 476, y: -1400}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &896211595
@@ -13843,7 +13806,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playeddefault
+      value: Played the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -14259,7 +14230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedwinter
+      value: Played the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -14592,7 +14563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectevil
+      value: Perfect Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -14931,7 +14902,6 @@ GameObject:
   - component: {fileID: 965725137}
   - component: {fileID: 965725136}
   - component: {fileID: 965725135}
-  - component: {fileID: 965725134}
   - component: {fileID: 965725133}
   m_Layer: 5
   m_Name: Button-SkinPrev
@@ -15055,41 +15025,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &965725134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965725131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  presetText: {fileID: 2013317777}
-  modeText: {fileID: 2038826544}
-  WLText: {fileID: 648757944}
-  themeText: {fileID: 1681499289}
-  songText: {fileID: 1094156972}
-  isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
-  CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
 --- !u!114 &965725135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15226,7 +15161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allthemes
+      value: Played All the Themes
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -16977,7 +16912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allperfect
+      value: Scored Perfect in All Themes
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -18462,7 +18397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161589681}
   m_Layer: 5
-  m_Name: Row4
+  m_Name: RowFarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18494,7 +18429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -1400}
+  m_AnchoredPosition: {x: 476, y: -800}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1164430509
@@ -18947,7 +18882,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectdefault
+      value: Perfect Score in the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990336668465456913, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -19325,7 +19272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okayocean
+      value: Okay Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -19864,8 +19811,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1265021636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20634,8 +20581,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1304069284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21069,8 +21016,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1310208406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21639,7 +21586,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: faileddefault
+      value: Failed Score in the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -21767,7 +21722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectwinter
+      value: Perfect Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -23544,7 +23499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allsongs
+      value: Played All the Songs
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -25096,8 +25051,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1603529802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26188,8 +26143,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1652642441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26645,7 +26600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectfarm
+      value: Perfect Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -27250,7 +27205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691881895}
   m_Layer: 5
-  m_Name: Row6
+  m_Name: RowExtra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27548,7 +27503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenocean
+      value: Golden Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -27939,7 +27894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okayfarm
+      value: Okay Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -28515,7 +28470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allachievements
+      value: Unlocked All Achievements
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -29406,7 +29361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedevil
+      value: Played the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -31287,8 +31242,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1970727632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32376,7 +32331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failwinter
+      value: Failed Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -32981,7 +32936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080359557}
   m_Layer: 5
-  m_Name: Row2
+  m_Name: RowOcean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33013,7 +32968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -800}
+  m_AnchoredPosition: {x: 476, y: -1100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2081158356
@@ -33716,9 +33671,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 406437664}
+  - {fileID: 1161589681}
   - {fileID: 2080359557}
   - {fileID: 888559590}
-  - {fileID: 1161589681}
   - {fileID: 82635046}
   - {fileID: 1691881895}
   m_Father: {fileID: 1160392331}
@@ -33936,7 +33891,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldendefault
+      value: Golden Score in the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990336668465456913, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x

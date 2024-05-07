@@ -55,7 +55,7 @@ public class Achievements : MonoBehaviour
                     //achievementIcons[i].gameObject.SetActive(true);
                     achievementIcons[i].color = new Color(255, 255, 255, 255);
                 //}
-                if(achievementTitle.text.Contains("all")){
+                if(achievementTitle.text.Contains("All")){
                     achievementManager.unlockSkin();
                 }
             }
