@@ -7,13 +7,13 @@ using TMPro;
 public class AchievementManager : MonoBehaviour
 {
     public Game game;
-    public string theme = "default"; 
+    public string theme = "Default"; 
     public string difficulty = "easy";
-    public string song = "bay";
+    public string song = "Bay";
     
     static public int numAchievements = 30;
     private int achievementsUnlocked = 0;
-    public int numSkinsUnlocked = 0;
+    public int numSkinsUnlocked = 1;
     //public bool[] achievements = new bool[numAchievements];
     public Dictionary<string, bool> achievements = new Dictionary<string, bool>();
     public Sprite achievementSprite;
@@ -22,41 +22,41 @@ public class AchievementManager : MonoBehaviour
 
     void Start(){   
 
-        achievements.Add("faildefault", false);
-        achievements.Add("okaydefault", false);
-        achievements.Add("goldendefault", false);
-        achievements.Add("perfectdefault", false);
-        achievements.Add("playeddefault", false);
+        achievements.Add("Failed Score in the Default Theme", false);
+        achievements.Add("Okay Score in the Default Theme", false);
+        achievements.Add("Golden Score in the Default Theme", false);
+        achievements.Add("Perfect Score in the Default Theme", false);
+        achievements.Add("Played the Default Theme", false);
 
-        achievements.Add("failocean", false);
-        achievements.Add("okayocean", false);
-        achievements.Add("goldenocean", false);
-        achievements.Add("perfectocean", false);
-        achievements.Add("playedocean", false);
+        achievements.Add("Failed Score in the Ocean Theme", false);
+        achievements.Add("Okay Score in the Ocean Theme", false);
+        achievements.Add("Golden Score in the Ocean Theme", false);
+        achievements.Add("Perfect Score in the Ocean Theme", false);
+        achievements.Add("Played the Ocean Theme", false);
 
-        achievements.Add("failfarm", false);
-        achievements.Add("okayfarm", false);
-        achievements.Add("goldenfarm", false);
-        achievements.Add("perfectfarm", false);
-        achievements.Add("playedfarm", false);
+        achievements.Add("Failed Score in the Farm Theme", false);
+        achievements.Add("Okay Score in the Farm Theme", false);
+        achievements.Add("Golden Score in the Farm Theme", false);
+        achievements.Add("Perfect Score in the Farm Theme", false);
+        achievements.Add("Played the Farm Theme", false);
 
-        achievements.Add("failwinter", false);
-        achievements.Add("okaywinter", false);
-        achievements.Add("goldenwinter", false);
-        achievements.Add("perfectwinter", false);
-        achievements.Add("playedwinter", false);
+        achievements.Add("Failed Score in the Winter Theme", false);
+        achievements.Add("Okay Score in the Winter Theme", false);
+        achievements.Add("Golden Score in the Winter Theme", false);
+        achievements.Add("Perfect Score in the Winter Theme", false);
+        achievements.Add("Played the Winter Theme", false);
 
-        achievements.Add("failevil", false);
-        achievements.Add("okayevil", false);
-        achievements.Add("goldenevil", false);
-        achievements.Add("perfectevil", false);
-        achievements.Add("playedevil", false);
+        achievements.Add("Failed Score in the Evil Theme", false);
+        achievements.Add("Okay Score in the Evil Theme", false);
+        achievements.Add("Golden Score in the Evil Theme", false);
+        achievements.Add("Perfect Score in the Evil Theme", false);
+        achievements.Add("Played the Evil Theme", false);
 
-        achievements.Add("allperfect", false);
-        achievements.Add("allthemes", false);
-        achievements.Add("alldifficulties", false);
-        achievements.Add("allsongs", false);
-        achievements.Add("allachievements", false);
+        achievements.Add("Scored Perfect in All Themes", false);
+        achievements.Add("Played All the Themes", false);
+        achievements.Add("Played All the Difficulties", false);
+        achievements.Add("Played All the Songs", false);
+        achievements.Add("Unlocked All Achievements", false);
 
         //this list is for internal use only, controls unlockables
         achievements.Add("playedEasyInternal", false);
@@ -73,8 +73,8 @@ public class AchievementManager : MonoBehaviour
     {
         string achievementName = achievement;
         //check if it is a score related achievement
-        if(achievement.Contains("all") == false && achievement.Contains("played") == false){
-            achievementName = achievement + theme;
+        if(achievement.Contains("All") == false && achievement.Contains("Played") == false && achievement.Contains("played") == false){
+            achievementName = achievement + " Score in the "+ theme + " Theme";
         }
         
         Debug.Log("checking for " + achievementName);
@@ -109,58 +109,61 @@ public class AchievementManager : MonoBehaviour
     {
         Debug.Log("checking all themes");
         
-        if(achievements["playeddefault"] == true && achievements["playedocean"] == true && achievements["playedfarm"] == true && achievements["playedwinter"] == true && achievements["playedevil"] == true && achievements["allthemes"] == false)
+        if(achievements["Played the Default Theme"] == true && achievements["Played the Ocean Theme"] == true && achievements["Played the Farm Theme"] == true && achievements["Played the Winter Theme"] == true && achievements["Played the Evil Theme"] == true && achievements["Played All the Themes"] == false)
         {
             Debug.Log("all themes played");
-            UnlockAchievement("allthemes" );
             unlockSkin();
+            UnlockAchievement("Played All the Themes" );
+            
         }else{
-            if(achievements["playeddefault"] == false){
+            if(achievements["Played the Default Theme"] == false){
             Debug.Log("default not played");
             }
-            if(achievements["playedocean"] == false){
+            if(achievements["Played the Ocean Theme"] == false){
                 Debug.Log("ocean not played");
             }
-            if(achievements["playedfarm"] == false){
+            if(achievements["Played the Farm Theme"] == false){
                 Debug.Log("farm not played");
             }
-            if(achievements["playedwinter"] == false){
+            if(achievements["Played the Winter Theme"] == false){
                 Debug.Log("winter not played");
             }
-            if(achievements["playedevil"] == false){
+            if(achievements["Played the Evil Theme"] == false){
                 Debug.Log("evil not played");
             }
         }
     }
     public void checkAllPerfect(){
-        if(achievements["perfectdefault"] == true && achievements["perfectocean"] == true && achievements["perfectfarm"] == true && achievements["perfectwinter"] == true && achievements["perfectevil"] == true && achievements["allperfect"] == false)
+        if(achievements["Perfect Score in the Default Theme"] == true && achievements["Perfect Score in the Ocean Theme"] == true && achievements["Perfect Score in the Farm Theme"] == true && achievements["Perfect Score in the Winter Theme"] == true && achievements["Perfect Score in the Evil Theme"] == true && achievements["Scored Perfect in All Themes"] == false)
         {
-            UnlockAchievement("allperfect" );
             unlockSkin();
+            UnlockAchievement("Scored Perfect in All Themes" );
+            
         }else{
-            if(achievements["perfectdefault"] == false){
+            if(achievements["Perfect Score in the Default Theme"] == false){
             Debug.Log("default not perfect");
             }
-            if(achievements["perfectocean"] == false){
+            if(achievements["Perfect Score in the Ocean Theme"] == false){
                 Debug.Log("ocean not perfect");
             }
-            if(achievements["perfectfarm"] == false){
+            if(achievements["Perfect Score in the Farm Theme"] == false){
                 Debug.Log("farm not perfect");
             }
-            if(achievements["perfectwinter"] == false){
+            if(achievements["Perfect Score in the Winter Theme"] == false){
                 Debug.Log("winter not perfect");
             }
-            if(achievements["perfectevil"] == false){
+            if(achievements["Perfect Score in the Evil Theme"] == false){
                 Debug.Log("evil not perfect");
             }
         }
     }
     public void checkAllDifficulties(){
         
-        if(achievements["playedEasyInternal"] == true && achievements["playedNormalInternal"] == true && achievements["playedHardInternal"] == true && achievements["playedDemonInternal"] == true && achievements["alldifficulties"] == false)
+        if(achievements["playedEasyInternal"] == true && achievements["playedNormalInternal"] == true && achievements["playedHardInternal"] == true && achievements["playedDemonInternal"] == true && achievements["Played All the Difficulties"] == false)
         {
-            UnlockAchievement("alldifficulties");
             unlockSkin();
+            UnlockAchievement("Played All the Difficulties");
+            
         }else{
             if(achievements["playedEasyInternal"] == false){
             Debug.Log("easy not played");
@@ -177,10 +180,11 @@ public class AchievementManager : MonoBehaviour
         }
     }
     public void checkAllSongs(){
-        if(achievements["playedBayInternal"] == true && achievements["playedResolveInternal"] == true && achievements["allsongs"] == false)
+        if(achievements["playedBayInternal"] == true && achievements["playedResolveInternal"] == true && achievements["Played All the Songs"] == false)
         {
-            UnlockAchievement("allsongs");
             unlockSkin();
+            UnlockAchievement("Played All the Songs");
+            
         }else{
             if(achievements["playedBayInternal"] == false){
             Debug.Log("bay not played");
@@ -191,32 +195,32 @@ public class AchievementManager : MonoBehaviour
         }
     }
     public void checkAllAchievements(){
-        if(achievementsUnlocked == numAchievements && achievements["allachievements"] == false)
+        if(achievementsUnlocked == numAchievements && achievements["Unlocked All Achievements"] == false)
         {
-            UnlockAchievement("allachievements");
-            unlockSkin();
+            UnlockAchievement("Unlocked All Achievements");
+            //unlockSkin();
         }
     }
     public void checkIfPlayed(string theme){
-        if(theme == "default"){
-            if(achievements["playeddefault"] == false){
-                UnlockAchievement("playeddefault" );
+        if(theme == "Default"){
+            if(achievements["Played the Default Theme"] == false){
+                UnlockAchievement("Played the Default Theme" );
             }
-        }else if(theme == "ocean"){
-            if(achievements["playedocean"] == false){
-                UnlockAchievement("playedocean" );
+        }else if(theme == "Ocean"){
+            if(achievements["Played the Ocean Theme"] == false){
+                UnlockAchievement("Played the Ocean Theme" );
             }
-        }else if(theme == "farm"){
-            if(achievements["playedfarm"] == false){
-                UnlockAchievement("playedfarm" );
+        }else if(theme == "Farm"){
+            if(achievements["Played the Farm Theme"] == false){
+                UnlockAchievement("Played the Farm Theme" );
             }
-        }else if(theme == "winter"){
-            if(achievements["playedwinter"] == false){
-                UnlockAchievement("playedwinter" );
+        }else if(theme == "Winter"){
+            if(achievements["Played the Winter Theme"] == false){
+                UnlockAchievement("Played the Winter Theme" );
             }
-        }else if(theme == "evil"){
-            if(achievements["playedevil"] == false){
-                UnlockAchievement("playedevil" );
+        }else if(theme == "Evil"){
+            if(achievements["Played the Evil Theme"] == false){
+                UnlockAchievement("Played the Evil Theme" );
             }
         }
         return;
@@ -238,6 +242,7 @@ public class AchievementManager : MonoBehaviour
 
     public void setTheme(string newTheme){
         theme = newTheme.ToLower();
+        theme = char.ToUpper(theme[0]) + theme.Substring(1);
         Debug.Log("current theme is " + theme);
     }
     public void setDifficulty(string newDifficulty){
@@ -246,9 +251,9 @@ public class AchievementManager : MonoBehaviour
     }
     public void setSong(int newSong){
         if(newSong == 0){
-            song = "bay";
+            song = "Bay";
         }else{
-            song = "resolve";
+            song = "Resolve";
         }
         Debug.Log("current song is " + song);
     }
@@ -271,7 +276,7 @@ public class AchievementManager : MonoBehaviour
 
     public void checkNonScoreAchievements(){
         checkIfPlayed(theme);
-            if(PartialMatch("perfect")){
+            if(PartialMatch("Perfect")){
                 checkAllPerfect();
             }
 

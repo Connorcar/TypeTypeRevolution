@@ -67,7 +67,7 @@ public class Game : MonoBehaviour
     
     public RectTransform panelRectTransform;
     public float slideSpeed = 1.0f;
-    public float waitTime = 2.0f;
+    public float waitTime = 3.0f;
     public Vector2 leftStartPos;
     public Vector2 centerPos;
     public Vector2 rightTargetPos;
@@ -167,21 +167,21 @@ public class Game : MonoBehaviour
         score = Math.Round(score, 2);
         if (score < 60f)
         {
-            achievements.UnlockAchievement("fail");
+            achievements.UnlockAchievement("Failed");
         } 
         else if (score < 85f)
         {
-            achievements.UnlockAchievement("okay");
+            achievements.UnlockAchievement("Okay");
         } 
         else if (score < 100f)
         {
-            achievements.UnlockAchievement("golden");
+            achievements.UnlockAchievement("Golden");
         }
         else
         {
-            achievements.UnlockAchievement("perfect");
+            achievements.UnlockAchievement("Perfect");
         }
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(8);
         SceneManager.LoadScene("Score");
         
     }
