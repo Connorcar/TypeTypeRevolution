@@ -78,6 +78,26 @@ public class Arrow : MonoBehaviour
         {
             if (canBePressed && isFullyTyped)
             {
+                
+                // StartCoroutine(DestroyDelay());         
+
+                if (Mathf.Abs(transform.position.y - 5.55f) < 1 &&
+                    Mathf.Abs(transform.position.y - 5.55f) > 0.35)
+                {
+                    Debug.Log("Good Hit " + Math.Abs(transform.position.y - 5.55f));
+                    game.GoodHit();
+                }
+                else if (Mathf.Abs(transform.position.y - 5.55f) <= 0.35)
+                {
+                    Debug.Log("Perfect " + Math.Abs(transform.position.y - 5.55f));
+                    game.PerfectHit();
+                }
+                else
+                {
+                    Debug.Log("Miss");
+                    game.NoteMiss();
+                }
+
                 switch (keyToPress)
                 {
                     case KeyCode.Alpha1:
@@ -104,24 +124,6 @@ public class Arrow : MonoBehaviour
 
                 Destroy(gameObject);
                 arrowSpawner.removeArrow(); 
-                // StartCoroutine(DestroyDelay());         
-
-                if (Mathf.Abs(transform.position.y - 5.55f) < 1 &&
-                    Mathf.Abs(transform.position.y - 5.55f) > 0.35)
-                {
-                    Debug.Log("Good Hit " + Math.Abs(transform.position.y - 5.55f));
-                    game.GoodHit();
-                }
-                else if (Mathf.Abs(transform.position.y - 5.55f) <= 0.35)
-                {
-                    Debug.Log("Perfect " + Math.Abs(transform.position.y - 5.55f));
-                    game.PerfectHit();
-                }
-                else
-                {
-                    Debug.Log("Miss");
-                    game.NoteMiss();
-                }
 
             }
         }
