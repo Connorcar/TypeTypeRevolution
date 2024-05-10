@@ -20,7 +20,7 @@ public class ChangePose : MonoBehaviour
         public Animator animator; // Reference to the Animator component
         //public AnimationClip newAnimationClip; // The new animation clip you want to play
 
-    private void Start()
+    public void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
 
@@ -85,7 +85,7 @@ public class ChangePose : MonoBehaviour
            
         }
 
-        void ChangeClip(string clipName)
+        public void ChangeClip(string clipName)
         {
             // Check if the Animator component and the new animation clip are assigned
             if (animator != null)

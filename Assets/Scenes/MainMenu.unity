@@ -3277,8 +3277,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Programming
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7c453add2471594db196ed43140e5b9, type: 2}
-  m_sharedMaterial: {fileID: 6340574390998933940, guid: b7c453add2471594db196ed43140e5b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4477,11 +4477,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "   ---------------- Claudia Celio\n\n ----------------- Claudia Celio\n\n-----------------
-    Claudia Celio"
+  m_text: '    -------------- Claudia Celio
+
+
+    ----------------- Claudia Celio
+
+
+    -----------------
+    Claudia Celio'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4505,8 +4511,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4977,7 +4983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: -90}
+  m_AnchoredPosition: {x: -260, y: -74}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &379582950
@@ -5008,8 +5014,8 @@ MonoBehaviour:
 
     Designer'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5033,8 +5039,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7296,7 +7302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -145, y: 395.6}
+  m_AnchoredPosition: {x: -420, y: 502}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541144541
@@ -7319,15 +7325,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1) Completely Type the Word
-
-    2) Hit the Number At the Target
-
-    3)
-    Type the Next Word'
+  m_text: "1) Completely Type the Word\n2) when it reaches the top, \npress the corresponding
+    number\n3) Type the Next Word"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11712,8 +11714,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11737,8 +11739,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -12982,7 +12984,7 @@ MonoBehaviour:
   difficulty: easy
   song: bay
   numSkinsUnlocked: 1
-  achievementSprite: {fileID: 21300000, guid: 38ba61eaf0dfb534386332165e26c4b9, type: 3}
+  achievementSprite: {fileID: 21300000, guid: 4bc2f2c1b2d1a2c4c80805c289dea07c, type: 3}
   achievementIcon: {fileID: 674564181}
 --- !u!82 &867070236
 AudioSource:
@@ -13208,7 +13210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -113, y: -179}
+  m_AnchoredPosition: {x: -157.00009, y: -206.99998}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883299675
@@ -13231,12 +13233,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "    ------------------- Arisa Trombley\n\n                  ----------
-    Gabriele De Capitani\n\n--------------------- Claudia Celio\n\n         ----------------
+  m_text: "      ------------------ Arisa Trombley\n\n                  --------
+    Gabriele De Capitani\n\n   -------------------- Claudia Celio\n\n          --------------
     Arisa Trombley"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13260,8 +13262,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13820,8 +13822,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Production
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7c453add2471594db196ed43140e5b9, type: 2}
-  m_sharedMaterial: {fileID: 6340574390998933940, guid: b7c453add2471594db196ed43140e5b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14236,8 +14238,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Music
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7c453add2471594db196ed43140e5b9, type: 2}
-  m_sharedMaterial: {fileID: 6340574390998933940, guid: b7c453add2471594db196ed43140e5b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14997,7 +14999,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965725131}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -19995,7 +19997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -195, y: -160}
+  m_AnchoredPosition: {x: -260, y: -160}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1293259682
@@ -20026,8 +20028,8 @@ MonoBehaviour:
 
     Programmer'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20051,8 +20053,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21279,8 +21281,8 @@ MonoBehaviour:
 
     Performed by Caiden Craig'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21304,8 +21306,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -22847,7 +22849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 565, y: 20}
+  m_AnchoredPosition: {x: 565, y: -108}
   m_SizeDelta: {x: 1000, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446048873
@@ -23234,7 +23236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -214, y: -193}
+  m_AnchoredPosition: {x: -260, y: -221}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485747287
@@ -23271,8 +23273,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -23296,8 +23298,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -27666,8 +27668,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Art
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b7c453add2471594db196ed43140e5b9, type: 2}
-  m_sharedMaterial: {fileID: 6340574390998933940, guid: b7c453add2471594db196ed43140e5b9, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -28112,7 +28114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -160}
+  m_AnchoredPosition: {x: -9, y: -160}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768779451
@@ -28135,11 +28137,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "        ---------- Arisa Trombley\n\n -------------- Connor Caruthers\n\n
+  m_text: "        --------- Arisa Trombley\n\n -------------- Connor Caruthers\n\n
     -------------- Briana Craig"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
+  m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -28163,8 +28165,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

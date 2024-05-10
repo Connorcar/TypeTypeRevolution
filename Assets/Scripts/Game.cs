@@ -18,7 +18,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Transactions;
 using Unity.VisualScripting;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 
 public class Game : MonoBehaviour
 {
@@ -48,6 +48,7 @@ public class Game : MonoBehaviour
 
     //dancer stuff
     public ChangeSkin dancer;
+    public ChangePose pose;
 
     // Achievements stuff
     public GameObject achievementParent;
@@ -66,8 +67,8 @@ public class Game : MonoBehaviour
     public AchievementManager achievements;
     
     public RectTransform panelRectTransform;
-    public float slideSpeed = 1.0f;
-    public float waitTime = 2.0f;
+    public float slideSpeed = 3.0f;
+    public float waitTime = 1.0f;
     public Vector2 leftStartPos;
     public Vector2 centerPos;
     public Vector2 rightTargetPos;
@@ -327,6 +328,8 @@ public class Game : MonoBehaviour
         HitStatusParent.GetComponent<Animator>().Play("G_misshit");
         comboText.text = currentCombo.ToString();
         // accuracyText.text = "Accuracy: " + Math.Round(currentAcc,2) + "%";
+        pose = GameObject.Find("Dancer").GetComponent<ChangePose>();
+        pose.ChangeClip("DAB");
     }
 
     public void setAchievementColor(Color theme)
