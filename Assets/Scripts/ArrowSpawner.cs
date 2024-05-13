@@ -34,15 +34,12 @@ public class ArrowSpawner : MonoBehaviour
     private bool isWaiting;
     private float spawnTime;
     private int count = 0;
+    private int accuracy;
 
-    public ParticleSystem particleEffect1;
-    public ParticleSystem particleEffect2;
-    public ParticleSystem particleEffect3;
-    public ParticleSystem particleEffect4;
-    public ParticleSystem particleEffect5;
-    public ParticleSystem particleEffect6;
-    public ParticleSystem particleEffect7;
-    public ParticleSystem particleEffect8;
+    public ParticleSystem[] particleEffects;
+    public ParticleSystem[] perfectEffects;
+    public ParticleSystem[] goodEffects;
+    public ParticleSystem[] missEffects;
 
     // Start is called before the first frame update
     void Start()
@@ -113,23 +110,38 @@ public class ArrowSpawner : MonoBehaviour
 
     public void playParticleEffect(int n)
     {
-        switch (n)
+        // switch (n)
+        // {
+        //     case 1:
+        //         particleEffect1.Play();
+        //         particleEffect5.Play();
+        //         break;
+        //     case 2:
+        //         particleEffect2.Play();
+        //         particleEffect6.Play();
+        //         break;
+        //     case 3:
+        //         particleEffect3.Play();
+        //         particleEffect7.Play();
+        //         break;
+        //     case 4:
+        //         particleEffect4.Play();  
+        //         particleEffect8.Play();              
+        //         break;
+        // }
+        n--;
+        particleEffects[n].Play();
+        int accuracy = game.getAccuracyValue();
+        switch (accuracy)
         {
+            case 0:
+                //missEffects[n].Play();
+                break;
             case 1:
-                particleEffect1.Play();
-                particleEffect5.Play();
+                goodEffects[n].Play();
                 break;
             case 2:
-                particleEffect2.Play();
-                particleEffect6.Play();
-                break;
-            case 3:
-                particleEffect3.Play();
-                particleEffect7.Play();
-                break;
-            case 4:
-                particleEffect4.Play();  
-                particleEffect8.Play();              
+                perfectEffects[n].Play();
                 break;
         }
     }

@@ -13007,7 +13007,7 @@ MonoBehaviour:
   achievementIcon: {fileID: 674564181}
   achievementTitle: {fileID: 586941216}
   canvasTransform: {fileID: 459259308}
-  achievementColor: {r: 1, g: 1, b: 1, a: 1}
+  achievementColor: {r: 0.6, g: 0.20000002, b: 0.6, a: 1}
   achievementPanel: {fileID: 459259307}
   Combo: {fileID: 0}
   achievements: {fileID: 867070235}
@@ -13062,7 +13062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   themeColors:
-  - {r: 0.4716981, g: 0.47021475, b: 0.47021475, a: 1}
+  - {r: 0.6, g: 0.20000002, b: 0.6, a: 1}
   - {r: 0.046279732, g: 0.735849, b: 0.23115377, a: 1}
   - {r: 0.3147027, g: 0.36160874, b: 0.9622642, a: 1}
   - {r: 0.34757325, g: 0.9528302, b: 0.9286781, a: 1}

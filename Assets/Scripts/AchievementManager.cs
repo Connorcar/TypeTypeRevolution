@@ -66,6 +66,8 @@ public class AchievementManager : MonoBehaviour
         achievements.Add("playedBayInternal", false);
         achievements.Add("playedResolveInternal", false);
 
+        Debug.Log("Achievements initialized to false");
+
         achievementIcon.sprite = achievementSprite;   
     }
 
@@ -84,7 +86,7 @@ public class AchievementManager : MonoBehaviour
             if(achievements[achievementName] == true)
             {
                 Debug.Log("already unlocked" + achievementName);
-                if(achievement.Contains("all") == false && achievement.Contains("played") == false){
+                if(achievement.Contains("all") == false && achievement.Contains("played") == false && achievement.Contains("Played") == false && achievement.Contains("All") == false){
                     checkNonScoreAchievements();
                 }
                 return;
@@ -296,7 +298,7 @@ public class AchievementManager : MonoBehaviour
                 UnlockAchievement("playedDemonInternal");
             }
 
-            if(PartialMatch("played")){
+            if(PartialMatch("played") || PartialMatch("Played")){
                 checkAllThemes();
                 checkAllAchievements();
                 checkAllDifficulties();
