@@ -135,15 +135,12 @@ public class ArrowSpawner : MonoBehaviour
         switch (accuracy)
         {
             case 0:
-                Debug.Log("Miss");
-                missEffects[n].Play();
+                //missEffects[n].Play();
                 break;
             case 1:
-                Debug.Log("Good");
                 goodEffects[n].Play();
                 break;
             case 2:
-                Debug.Log("Perfect");
                 perfectEffects[n].Play();
                 break;
         }
