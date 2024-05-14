@@ -7325,8 +7325,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1) Completely Type the Word\n2) when it reaches the top, \npress the corresponding
-    number\n3) Type the Next Word"
+  m_text: "1)  Completely Type the Word!\n2) When it reaches the top, \n    press
+    the right number!\n3) Type the Next Word!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
   m_sharedMaterial: {fileID: -7593289732339207051, guid: 8ca92a6ced43cea44a17d359f10d9a93, type: 2}
@@ -7335,8 +7335,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284913971
-  m_fontColor: {r: 0.20000002, g: 0.6, b: 0.40000004, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7363,7 +7363,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 3.59
   m_wordSpacing: 0
   m_lineSpacing: 17.4
   m_lineSpacingMax: 0
@@ -12860,6 +12860,7 @@ MonoBehaviour:
   song_op: 0
   skin_op: 0
   dancer: {fileID: 0}
+  pose: {fileID: 0}
   achievementParent: {fileID: 867070229}
   canvasName: CanvasPopup
   achievementsPopup: {fileID: 1248156141}
@@ -22849,7 +22850,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 565, y: -108}
+  m_AnchoredPosition: {x: 527.06, y: -108}
   m_SizeDelta: {x: 1000, y: 330}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446048873
