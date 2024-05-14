@@ -162,6 +162,7 @@ public class Game : MonoBehaviour
     {
         
         isScoreScene = true;
+
         yield return new WaitForSeconds(8);
         
         // score = 100 * hits / possibleHits;
