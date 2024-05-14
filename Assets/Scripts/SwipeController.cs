@@ -45,10 +45,13 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
         {
             //cannot go past certain skin if it has not been unlocked yet
             if(isControllingSkins){
+                Debug.Log("Number of skins unlocked: " + am.getNumSkinsUnlocked());
                 if(currPage >= am.getNumSkinsUnlocked()){
                     skinLock.SetActive(true);
+                    Debug.Log("locked");
                 }else{
                     skinLock.SetActive(false);
+                    Debug.Log("unlocked");
                 }
             }
             
@@ -102,7 +105,7 @@ public class SwipeController : MonoBehaviour, IEndDragHandler
         MovePage();
         currPage = 1;
         if(isControllingSkins){
-            if(am.getNumSkinsUnlocked() < 1){
+            if(am.getNumSkinsUnlocked() <= 1){
                 skinLock.SetActive(true);
             }else{
                 skinLock.SetActive(false);

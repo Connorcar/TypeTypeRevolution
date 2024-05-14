@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failevil
+      value: Failed Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -625,7 +625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82635046}
   m_Layer: 5
-  m_Name: Row5
+  m_Name: RowEvil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1006,8 +1006,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &117514210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedocean
+      value: Played the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -1446,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okaydefault
+      value: Okay Score in the Default Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -2184,8 +2184,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &195094033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2550,7 +2550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3133,7 +3133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3484,7 +3484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3834,8 +3834,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &315393135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4227,7 +4227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4328,7 +4328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okaywinter
+      value: Okay Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -5140,7 +5140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5233,7 +5233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406437664}
   m_Layer: 5
-  m_Name: Row1
+  m_Name: RowDefault
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5541,7 +5541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5675,7 +5675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5750,7 +5750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6015,7 +6015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6112,7 +6112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectocean
+      value: Perfect Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -6573,7 +6573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6804,7 +6804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7185,7 +7185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -7432,7 +7432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failocean
+      value: Failed Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -7536,7 +7536,6 @@ GameObject:
   - component: {fileID: 549150373}
   - component: {fileID: 549150372}
   - component: {fileID: 549150371}
-  - component: {fileID: 549150370}
   - component: {fileID: 549150369}
   m_Layer: 5
   m_Name: Button-SkinNext
@@ -7660,41 +7659,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &549150370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549150367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  presetText: {fileID: 2013317777}
-  modeText: {fileID: 2038826544}
-  WLText: {fileID: 648757944}
-  themeText: {fileID: 1681499289}
-  songText: {fileID: 1094156972}
-  isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
-  CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
-  leftSkinArrow: {fileID: 965725136}
-  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &549150371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7842,7 +7806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okayevil
+      value: Okay Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -8232,7 +8196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -8709,7 +8673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenwinter
+      value: Golden Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -8900,7 +8864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: alldifficulties
+      value: Played All the Difficulties
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -9111,7 +9075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9336,7 +9300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedfarm
+      value: Played the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -9828,6 +9792,184 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &691864986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 691864988}
+  - component: {fileID: 691864987}
+  m_Layer: 0
+  m_Name: PreventScroll
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &691864987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691864986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 622af46855916ee44bbb08be69a0db97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &691864988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691864986}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7145.833, y: 750.1192, z: -1.789856}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &692844811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692844812}
+  - component: {fileID: 692844814}
+  - component: {fileID: 692844813}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &692844812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692844811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 699958344}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 16.65}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &692844813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692844811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: CUSTOM
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279566321
+  m_fontColor: {r: 0.9451932, g: 1, b: 0.07924521, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 85.9
+  m_fontSizeBase: 85.9
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &692844814
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692844811}
+  m_CullTransparentMesh: 1
 --- !u!114 &698058673 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8633439085817072375, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
@@ -10369,7 +10511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10748,7 +10890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -10849,7 +10991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenevil
+      value: Golden Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -11254,13 +11396,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Farm Girl
+  m_text: Farm
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -11506,8 +11648,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &785846361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11942,7 +12084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12201,7 +12343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12240,7 +12382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenfarm
+      value: Golden Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -12350,7 +12492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failfarm
+      value: Failed Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -12867,7 +13009,7 @@ MonoBehaviour:
   achievementIcon: {fileID: 674564181}
   achievementTitle: {fileID: 586941216}
   canvasTransform: {fileID: 459259308}
-  achievementColor: {r: 1, g: 1, b: 1, a: 1}
+  achievementColor: {r: 0.6, g: 0.20000002, b: 0.6, a: 1}
   achievementPanel: {fileID: 459259307}
   Combo: {fileID: 0}
   achievements: {fileID: 867070235}
@@ -12922,7 +13064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   themeColors:
-  - {r: 0.4716981, g: 0.47021475, b: 0.47021475, a: 1}
+  - {r: 0.6, g: 0.20000002, b: 0.6, a: 1}
   - {r: 0.046279732, g: 0.735849, b: 0.23115377, a: 1}
   - {r: 0.3147027, g: 0.36160874, b: 0.9622642, a: 1}
   - {r: 0.34757325, g: 0.9528302, b: 0.9286781, a: 1}
@@ -12981,7 +13123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   game: {fileID: 867070230}
-  theme: default
+  theme: Default
   difficulty: easy
   song: bay
   numSkinsUnlocked: 1
@@ -13323,7 +13465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 888559590}
   m_Layer: 5
-  m_Name: Row3
+  m_Name: RowWinter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13355,7 +13497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -1100}
+  m_AnchoredPosition: {x: 476, y: -1400}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &896211595
@@ -13666,7 +13808,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playeddefault
+      value: Played the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -13949,7 +14099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -14082,7 +14232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedwinter
+      value: Played the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -14415,7 +14565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectevil
+      value: Perfect Score in the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -14754,7 +14904,6 @@ GameObject:
   - component: {fileID: 965725137}
   - component: {fileID: 965725136}
   - component: {fileID: 965725135}
-  - component: {fileID: 965725134}
   - component: {fileID: 965725133}
   m_Layer: 5
   m_Name: Button-SkinPrev
@@ -14878,41 +15027,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &965725134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 965725131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 755779c43e3533a438aa362f3176c9cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  presetText: {fileID: 2013317777}
-  modeText: {fileID: 2038826544}
-  WLText: {fileID: 648757944}
-  themeText: {fileID: 1681499289}
-  songText: {fileID: 1094156972}
-  isPlaying: 0
-  playText: {fileID: 0}
-  bay: {fileID: 0}
-  resolve: {fileID: 0}
-  mainMenuMusic: {fileID: 0}
-  CustomPanel: {fileID: 699958343}
-  leftPresetArrow: {fileID: 0}
-  rightPresetArrow: {fileID: 0}
-  leftSpeedArrow: {fileID: 0}
-  rightSpeedArrow: {fileID: 0}
-  leftLetterArrow: {fileID: 0}
-  rightLetterArrow: {fileID: 0}
-  leftThemeArrow: {fileID: 0}
-  rightThemeArrow: {fileID: 0}
-  leftSongArrow: {fileID: 0}
-  rightSongArrow: {fileID: 0}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
 --- !u!114 &965725135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15049,7 +15163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allthemes
+      value: Played All the Themes
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -16800,7 +16914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allperfect
+      value: Scored Perfect in All Themes
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -17448,7 +17562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17811,7 +17925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -17963,7 +18077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -18102,7 +18216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -18285,7 +18399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161589681}
   m_Layer: 5
-  m_Name: Row4
+  m_Name: RowFarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18317,7 +18431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -1400}
+  m_AnchoredPosition: {x: 476, y: -800}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1164430509
@@ -18770,7 +18884,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectdefault
+      value: Perfect Score in the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990336668465456913, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -18913,7 +19039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -19047,7 +19173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -19148,7 +19274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okayocean
+      value: Okay Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -19291,7 +19417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -19687,8 +19813,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1265021636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19870,7 +19996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -20457,8 +20583,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1304069284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20892,8 +21018,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1310208406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21075,7 +21201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -21462,7 +21588,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: faileddefault
+      value: Failed Score in the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -21590,7 +21724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectwinter
+      value: Perfect Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -22047,7 +22181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -22154,7 +22288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -23367,7 +23501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allsongs
+      value: Played All the Songs
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -24638,7 +24772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -24919,8 +25053,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1603529802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25494,7 +25628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.8}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -25714,7 +25848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -26011,8 +26145,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1652642441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26468,7 +26602,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: perfectfarm
+      value: Perfect Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -26686,7 +26820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.69803923}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -26816,7 +26950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -27073,7 +27207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1691881895}
   m_Layer: 5
-  m_Name: Row6
+  m_Name: RowExtra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27371,7 +27505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldenocean
+      value: Golden Score in the Ocean Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -27762,7 +27896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: okayfarm
+      value: Okay Score in the Farm Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -28338,7 +28472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: allachievements
+      value: Unlocked All Achievements
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -29128,7 +29262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -29229,7 +29363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: playedevil
+      value: Played the Evil Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -30175,7 +30309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -30665,7 +30799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -31110,8 +31244,8 @@ MonoBehaviour:
   rightThemeArrow: {fileID: 1970727633}
   leftSongArrow: {fileID: 315393136}
   rightSongArrow: {fileID: 1652642442}
-  leftSkinArrow: {fileID: 0}
-  rightSkinArrow: {fileID: 0}
+  leftSkinArrow: {fileID: 965725136}
+  rightSkinArrow: {fileID: 549150372}
 --- !u!114 &1970727632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31307,7 +31441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -31826,7 +31960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -31964,7 +32098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -32199,7 +32333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: failwinter
+      value: Failed Score in the Winter Theme
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -32377,7 +32511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -32541,7 +32675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -32804,7 +32938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080359557}
   m_Layer: 5
-  m_Name: Row2
+  m_Name: RowOcean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32836,7 +32970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 476, y: -800}
+  m_AnchoredPosition: {x: 476, y: -1100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2081158356
@@ -33293,7 +33427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -33539,9 +33673,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 406437664}
+  - {fileID: 1161589681}
   - {fileID: 2080359557}
   - {fileID: 888559590}
-  - {fileID: 1161589681}
   - {fileID: 82635046}
   - {fileID: 1691881895}
   m_Father: {fileID: 1160392331}
@@ -33759,7 +33893,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_text
-      value: goldendefault
+      value: Golden Score in the Default Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289742192098728067, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990336668465456913, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 2345468845576009852, guid: df3ef88eba04bd64fa393f606a269844, type: 3}
       propertyPath: m_Pivot.x
@@ -34148,7 +34294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -34305,3 +34451,4 @@ SceneRoots:
   - {fileID: 1074722821}
   - {fileID: 1525346856}
   - {fileID: 2074210354}
+  - {fileID: 691864988}

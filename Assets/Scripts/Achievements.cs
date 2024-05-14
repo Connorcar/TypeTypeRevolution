@@ -37,6 +37,7 @@ public class Achievements : MonoBehaviour
         //     achievements.Add(achievementName, true);
             // Display achievement unlocked message
             ShowAchievementUnlocked(achievementName);
+            achievementManager.achievements[achievementName] = true;
             PlayerPrefs.SetInt(achievementName, 1);
             PlayerPrefs.Save();
         //}
@@ -55,7 +56,7 @@ public class Achievements : MonoBehaviour
                     //achievementIcons[i].gameObject.SetActive(true);
                     achievementIcons[i].color = new Color(255, 255, 255, 255);
                 //}
-                if(achievementTitle.text.Contains("all")){
+                if(achievementTitle.text.Contains("All")){
                     achievementManager.unlockSkin();
                 }
             }

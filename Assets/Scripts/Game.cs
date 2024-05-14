@@ -67,8 +67,8 @@ public class Game : MonoBehaviour
     public AchievementManager achievements;
     
     public RectTransform panelRectTransform;
-    public float slideSpeed = 3.0f;
-    public float waitTime = 1.0f;
+    public float slideSpeed = 1.0f;
+    public float waitTime = 3.0f;
     public Vector2 leftStartPos;
     public Vector2 centerPos;
     public Vector2 rightTargetPos;
@@ -82,6 +82,7 @@ public class Game : MonoBehaviour
     public double currentScore = 0;
     public Color32 lowComboColor; //= new Color32(153, 51, 153, 1);
     public Color32 highComboColor; //= new Color32(255,255,204,1);
+    public int accuracyValue;//0 = bad, 1 = good, 2 = perfect
     // public double currentAcc = 100;
     private double scorePerGoodNote = 1;
     private double scorePerPerfectNote = 1.25;
@@ -168,21 +169,21 @@ public class Game : MonoBehaviour
         score = Math.Round(score, 2);
         if (score < 60f)
         {
-            achievements.UnlockAchievement("fail");
+            achievements.UnlockAchievement("Failed");
         } 
         else if (score < 85f)
         {
-            achievements.UnlockAchievement("okay");
+            achievements.UnlockAchievement("Okay");
         } 
         else if (score < 100f)
         {
-            achievements.UnlockAchievement("golden");
+            achievements.UnlockAchievement("Golden");
         }
         else
         {
-            achievements.UnlockAchievement("perfect");
+            achievements.UnlockAchievement("Perfect");
         }
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(8);
         SceneManager.LoadScene("Score");
         
     }
@@ -210,7 +211,7 @@ public class Game : MonoBehaviour
            // Debug.Log("Achievement Popup already open");
             instance.StartCoroutine(WaitForPopup());
         }
-        if(currAchievementTitle.Contains("all")){
+        if(currAchievementTitle.Contains("All")){
             achievementColor = new Color(253, 206, 11, 255);
         } 
         achievementsPopup.gameObject.GetComponent<CanvasGroup>().alpha = 1;
@@ -290,6 +291,7 @@ public class Game : MonoBehaviour
         hits += scorePerGoodNote;
         currentCombo++;
         numGood++;
+        accuracyValue = 1;
         // currentAcc -= 100 * 0.25 / possibleHits;
         StartCoroutine(HitStatus(GoodHitStatus));
         HitStatusParent.GetComponent<Animator>().Play("G_goodhit");
@@ -305,6 +307,7 @@ public class Game : MonoBehaviour
         hits += scorePerPerfectNote;
         currentCombo++;
         numPerfect++;
+        accuracyValue = 2;
         StartCoroutine(HitStatus(PerfectHitStatus));
         HitStatusParent.GetComponent<Animator>().Play("G_perfecthit");
         NoteHit();
@@ -323,6 +326,7 @@ public class Game : MonoBehaviour
         comboText.color = lowComboColor;
         comboText.fontSize = 130;
         numMissed++;
+        accuracyValue = 0;
         // currentAcc -= 100 * 1 / possibleHits;
         StartCoroutine(HitStatus(MissHitStatus));
         HitStatusParent.GetComponent<Animator>().Play("G_misshit");
@@ -358,6 +362,11 @@ public class Game : MonoBehaviour
     {
         float fillAmount = (float)current / (float)maximum;
         //Mask.fillAmount = fillAmount;
+    }
+
+    public int getAccuracyValue()
+    {
+        return accuracyValue;
     }
     
 }
