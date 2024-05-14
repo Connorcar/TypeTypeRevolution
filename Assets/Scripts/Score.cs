@@ -9,11 +9,12 @@ Type Type Revolution
 /* DESCRIPTION
 Contains methods that handle the scoring scene's appearance and function
 */
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.Animations;
+//using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -79,12 +80,14 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        if (Input.anyKey)
-        {
-            game.ResetGame();
-            game.ResetOptions();
-            StartCoroutine(ReturnToMenu());
-        }
+        
+    }
+
+    public void onMenuClick()
+    {
+        game.ResetGame();
+        game.ResetOptions();
+        StartCoroutine(ReturnToMenu());
     }
 
     IEnumerator ReturnToMenu()
@@ -92,5 +95,19 @@ public class Score : MonoBehaviour
         ResultScreen.Play("R_fadeout");
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void onRestartClick()
+    {
+        StartCoroutine(TryAgain());
+    }
+
+    IEnumerator TryAgain()
+    {
+        ResultScreen.Play("R_fadeout");
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Game");
+        game.ResetGame();
+        Time.timeScale = 1;
     }
 }

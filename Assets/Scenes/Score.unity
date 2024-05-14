@@ -1305,6 +1305,7 @@ MonoBehaviour:
   highestCombo: {fileID: 373377847}
   ResultScreen: {fileID: 1410681909}
   Result: {fileID: 2121231648}
+  dancer: {fileID: 0}
 --- !u!1 &1026439194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,7 +1355,7 @@ Animator:
   m_GameObject: {fileID: 1026439194}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4e8b234a014f930498dc2c151ebaed6a, type: 2}
+  m_Controller: {fileID: 9100000, guid: c052e698ac06ca347a30504bdf1b3731, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1402,13 +1403,25 @@ MonoBehaviour:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
+    m_SelectedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1186392767}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 979391274}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: onRestartClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1026439198
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3072,13 +3085,25 @@ MonoBehaviour:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
+    m_SelectedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 692417485}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 979391274}
+        m_TargetAssemblyTypeName: Score, Assembly-CSharp
+        m_MethodName: onMenuClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2049468833
 CanvasRenderer:
   m_ObjectHideFlags: 0
